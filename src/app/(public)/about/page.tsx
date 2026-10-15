@@ -1,4 +1,0 @@
-import styles from '@/components/site.module.css';
-import {site,absolute} from '@/lib/site';
-export const metadata={title:'space 소개',description:'경제를 차분하게 이해하고 나만의 시선을 만드는 공간, space.',alternates:{canonical:absolute('/about')}};
-export default function About() {return <section className={styles.about}><p className={styles.eyebrow}>ABOUT SPACE</p><h1>생각이 머물고,<br/>시야가 넓어지는 공간.</h1><div className="prose"><p>매일 새로운 숫자와 뉴스가 쏟아집니다. space는 그 사이에서 잠시 속도를 늦추고, 경제가 우리의 삶과 어떻게 연결되는지 살펴보는 블로그입니다.</p><h2>우리가 다루는 이야기</h2><p>경제의 기본 개념, 금리와 금융의 흐름, 기업과 산업, 부동산과 일상의 변화를 다룹니다. 어려운 용어를 풀어 설명하고, 하나의 현상을 여러 관점에서 읽으려 합니다.</p><h2>글을 쓰는 기준</h2><p>사실과 해석을 구분하고, 인용한 통계와 자료의 출처 및 기준일을 함께 밝힙니다. 내용에 변화가 생기면 글을 수정하고 수정일을 표시합니다.</p><h2>운영자</h2><p>{site.author}</p>{process.env.CONTACT_EMAIL&&<p>문의 · <a href={`mailto:${process.env.CONTACT_EMAIL}`}>{process.env.CONTACT_EMAIL}</a></p>}<p>space의 글은 경제를 이해하기 위한 일반 정보입니다. 특정 상품의 매수·매도를 권유하거나 개인별 투자 자문을 제공하지 않습니다.</p></div></section>;}

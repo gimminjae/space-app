@@ -1,0 +1,6 @@
+import Link from '@/components/I18n';
+import styles from '@/components/member.module.css';
+import { getI18n,localizedMetadata } from '@/lib/i18n/server';
+import { publicSpaces } from '@/lib/server/spaces';
+export async function generateMetadata(){const {t,locale,absolute}=await getI18n();return localizedMetadata({title:t("공간 둘러보기"),description:t("서로 다른 시선으로 경제를 읽는 회원들의 공간을 만나 보세요."),alternates:{canonical:absolute('/spaces')}},locale);}
+export default async function Spaces(){const {t}=await getI18n();const spaces=await publicSpaces();return <section className={styles.directory}><p className="eyebrow">MANY VOICES, NEW PERSPECTIVES</p><div className={styles.heading}><div><h1>{t("각자의 시선이 모이는 공간")}</h1><p>{t("관심 있는 이야기를 발견하고, 나만의 기록도 시작해 보세요.")}</p></div><Link href="/admin" className="button">{t("나의 공간 만들기 ↗")}</Link></div><div className={styles.grid}>{spaces.map(s=><Link className={`${styles.card} ${styles[s.accent]}`} href={`/s/${s.slug}`} key={s.id}><small>space / {s.slug}</small><h2>{s.name}</h2><p>{s.description||t("새로운 이야기를 준비하고 있습니다.")}</p><span>{t("공간 둘러보기 →")}</span></Link>)}</div>{!spaces.length&&<div className={styles.empty}><h2>{t("첫 번째 공간의 주인공이 되어 보세요.")}</h2><p>{t("회원가입 후 나만의 주소로 글을 발행할 수 있습니다.")}</p><Link href="/signup">{t("시작하기 →")}</Link></div>}</section>;}

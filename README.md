@@ -143,3 +143,19 @@ TypeScript 검사, 프로덕션 빌드, 5개 자동 테스트를 통과했습니
 `node --env-file=.env.local scripts/live-check.mjs`는 실제 Supabase에 임시 계정 두 개를 만들어 45개 항목(HTTPS 운영 환경에서는 Secure 쿠키 2개 검사를 더해 47개)을 확인하고 계정 및 공간을 정리합니다. 로그인·HttpOnly 쿠키·온보딩·글 작성/수정/공개전환/삭제·검색 메타데이터·사이트맵·RSS·교차 회원 접근 차단·인증 토큰을 통한 비밀번호 변경, 인증 주소의 토큰 제거를 포함합니다. 메일 수신과 실제 S3 업로드는 해당 서비스 설정 후 별도로 검증해야 합니다. 결과는 `docs/live-checks.json`에 있습니다.
 
 운영 HTTP 점검은 `node scripts/smoke.mjs`로 재실행합니다. Netlify 별칭을 사용할 경우 두 번째 인자로 `https://space.service.io.kr`을 지정합니다.
+
+## 한국어·영어 (i18n)
+
+한국어는 기존 주소(`/`, `/admin`, `/s/...`)를 유지하고 영어는 `/en`, `/en/admin`, `/en/s/...`를 사용합니다. 상단의 **한국어 / EN** 버튼은 현재 페이지와 검색·필터·페이지 번호를 유지합니다. 언어를 바꿀 때 편집 중인 미저장 글이 있으면 이동 전에 확인합니다.
+
+공개 화면, 로그인·가입·비밀번호 화면, 개인 공간과 글 편집기, 기본 카테고리, 안내·오류, 날짜와 읽기 시간, 페이지 제목과 검색 설명을 번역했습니다. 글 제목·본문·태그·직접 수정한 카테고리 및 공간 이름·소개는 작성한 원문을 유지합니다. 자동 번역 기능은 포함하지 않습니다.
+
+- `src/lib/i18n/en.json`: 한국어 원문 키에 대응하는 영어 번역
+- `src/lib/i18n/routing.ts`: 언어별 주소 생성과 API·인증·첨부 경로 제외
+- `src/lib/i18n/server.ts`: 요청 언어, canonical, hreflang 메타데이터
+- `src/components/I18n.tsx`: 언어 전환, 링크, 클라이언트 번역
+- `src/app/[locale]`: 언어별 공개·관리 화면
+
+주소가 화면 언어의 기준입니다. `space_locale` 쿠키는 인증 링크를 거친 뒤 선택한 언어로 돌아오는 데 사용하며, 한국어 주소를 영어로 강제 이동시키지는 않습니다. 언어별 `html lang`, Open Graph locale, canonical, `ko`·`en`·`x-default` alternate 링크와 사이트맵을 제공합니다. 기존 인증 콜백 주소를 재사용하므로 Supabase 허용 URL을 추가로 확장하지 않습니다.
+
+검사: `npm test`, `npm run build`, `node scripts/i18n-check.mjs [앱주소] [요청 Origin]`. 개발 서버의 `SITE_URL`을 별도로 지정했다면 검사에서도 같은 값을 사용하세요. `SPACE_TEST_LOCALE=en`으로 `scripts/live-check.mjs`를 실행하면 실제 회원·글 흐름을 영어 주소에서 검증합니다. 이 검사는 임시 계정을 생성하고 마지막에 삭제합니다.

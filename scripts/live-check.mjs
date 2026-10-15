@@ -8,10 +8,12 @@ const canonicalOrigin=new URL(process.env.SITE_URL||base).origin;
 const options={auth:{persistSession:false,autoRefreshToken:false}};
 const admin=createClient(process.env.SUPABASE_URL,process.env.SUPABASE_SECRET_KEY,options);
 const anon=createClient(process.env.SUPABASE_URL,process.env.SUPABASE_PUBLISHABLE_KEY,options);
+const locale=process.env.SPACE_TEST_LOCALE==='en'?'en':'ko';
+const uiPath=path=>locale==='en'&&!/^\/(api|auth|media)(?:\/|$)/.test(path)&&!/^\/[^?]*\.[a-z]+(?:\?|$)/.test(path)?'/en'+(path==='/'?'':path):path;
 const created=[],checks=[];const stamp=randomUUID().slice(0,8);
 function check(name,condition){assert.ok(condition,name);checks.push(name);console.log('PASS',name);}
 async function request(path,{method='GET',body,jar,requestOrigin=origin}={}){
- const response=await fetch(base+path,{method,redirect:'manual',headers:{...(body?{'Content-Type':'application/json'}:{}),...(method!=='GET'?{Origin:requestOrigin}:{}),...(jar?{Cookie:[...jar].map(([k,v])=>`${k}=${v}`).join('; ')}:{})},body:body?JSON.stringify(body):undefined});
+ const response=await fetch(base+uiPath(path),{method,redirect:'manual',headers:{'x-space-language':locale,...(body?{'Content-Type':'application/json'}:{}),...(method!=='GET'?{Origin:requestOrigin}:{}),...(jar?{Cookie:[...jar].map(([k,v])=>`${k}=${v}`).join('; ')}:{})},body:body?JSON.stringify(body):undefined});
  for(const cookie of response.headers.getSetCookie()){const part=cookie.split(';')[0],index=part.indexOf('=');if(jar)jar.set(part.slice(0,index),part.slice(index+1));}
  const text=await response.text();let data;try{data=JSON.parse(text);}catch{}return {status:response.status,headers:response.headers,text,data};
 }
@@ -21,18 +23,18 @@ try{
   const {data,error}=await admin.auth.admin.createUser({email,password,email_confirm:true});if(error)throw error;created.push({id:data.user.id,email,password,jar:new Map()});
  }
  const [a,b]=created;
- check('anonymous studio redirects to login',(await request('/admin')).headers.get('location')?.includes('/login'));
+ check('anonymous studio redirects to login',(await request('/admin')).headers.get('location')?.includes(uiPath('/login')));
  check('anonymous writes rejected',(await request('/api/admin/posts',{method:'POST',body:{}})).status===401);
  check('cross-origin authentication rejected',(await request('/api/auth',{method:'POST',requestOrigin:'https://untrusted.invalid',body:{action:'login',email:a.email,password:a.password}})).status===403);
  for(const callback of ['/auth/confirm?type=unsupported&token_hash=invalid-test-token','/auth/callback?code=invalid-test-code&next=https://untrusted.invalid']){
   const rejected=await request(callback),target=new URL(rejected.headers.get('location'),origin);
-  check('invalid auth callback strips credentials '+callback.split('?')[0],rejected.status===307&&target.origin===canonicalOrigin&&target.pathname==='/login'&&target.search==='?error=expired');
+  check('invalid auth callback strips credentials '+callback.split('?')[0],rejected.status===307&&target.origin===canonicalOrigin&&target.pathname===uiPath('/login')&&target.search==='?error=expired');
  }
  for(const u of created){
   const response=await request('/api/auth',{method:'POST',jar:u.jar,body:{action:'login',email:u.email,password:u.password}});check('real email/password login '+u.email.slice(-13),response.status===200&&response.data.redirect==='/admin');
   check('HttpOnly session cookie',response.headers.getSetCookie().some(c=>/httponly/i.test(c)));
   if(base.startsWith('https://'))check('Secure production session cookie',response.headers.getSetCookie().some(c=>/; Secure/i.test(c)));
-  check('new account goes to onboarding',(await request('/admin',{jar:u.jar})).headers.get('location')?.includes('/onboarding'));
+  check('new account goes to onboarding',(await request('/admin',{jar:u.jar})).headers.get('location')?.includes(uiPath('/onboarding')));
   const result=await request('/api/space',{method:'POST',jar:u.jar,body:{slug:`verify-${stamp}-${u===a?'a':'b'}`,name:`검증용 공간 ${u===a?'A':'B'}`,description:'자동 기능 검증 후 삭제되는 임시 공간입니다.',accent:'forest'}});
   check('create personal space',result.status===200&&result.data.space.id);u.space=result.data.space;
   const cats=await admin.from('space_categories').select('*').eq('space_id',u.space.id).order('sort_order');if(cats.error)throw cats.error;u.category=cats.data[0];u.replacement=cats.data[1];
@@ -49,7 +51,7 @@ try{
  check('cross-space category rejected',(await request('/api/admin/posts',{method:'POST',jar:a.jar,body:{post:{...post,category_id:b.category.id}}})).status!==200);
  const hidden=await anon.from('space_tags').select('*').eq('space_id',a.space.id);check('private tags hidden',!hidden.error&&hidden.data.length===0);
  result=await request('/api/admin/posts',{method:'POST',jar:a.jar,body:{post:{...post,status:'public'}}});check('publish existing post',result.status===200&&result.data.post.version===2);post={...post,...result.data.post};
- const article=await request(path);check('public article rendered on server',article.status===200&&article.text.includes(post.title)&&article.text.includes('BlogPosting'));
+ const article=await request(path);check('public article rendered on server',article.status===200&&article.text.includes(`<html lang="${locale}"`)&&article.text.includes(post.title)&&article.text.includes('BlogPosting'));
  check('canonical URL contains personal space',article.text.includes(`/s/${a.space.slug}/posts/${post.slug}`));
  check('public sitemap contains article',(await request('/sitemap.xml')).text.includes(path));
  check('public RSS contains article',(await request('/feed.xml')).text.includes(path));
@@ -69,16 +71,16 @@ try{
  result=await request('/api/admin/posts',{method:'DELETE',jar:a.jar,body:{id:post.id,version:post.version}});check('owner can delete post',result.status===200);
  check('deleted editor unavailable',(await request(`/admin/edit/${post.id}`,{jar:a.jar})).status===404);
  check('owner logout',(await request('/api/auth',{method:'DELETE',jar:a.jar})).status===200);
- check('studio protected after logout',(await request('/admin',{jar:a.jar})).headers.get('location')?.includes('/login'));
+ check('studio protected after logout',(await request('/admin',{jar:a.jar})).headers.get('location')?.includes(uiPath('/login')));
  const recovery=await admin.auth.admin.generateLink({type:'recovery',email:a.email});if(recovery.error)throw recovery.error;
  const recovered=await request('/auth/confirm?type=recovery&token_hash='+encodeURIComponent(recovery.data.properties.hashed_token),{jar:a.jar});
  const recoveredUrl=new URL(recovered.headers.get('location'),origin);
- check('recovery token creates a protected session without URL credentials',recovered.status===307&&recoveredUrl.origin===canonicalOrigin&&recoveredUrl.pathname==='/account/password'&&recoveredUrl.search==='?verified=1'&&recovered.headers.get('referrer-policy')==='no-referrer');
+ check('recovery token creates a protected session without URL credentials',recovered.status===307&&recoveredUrl.origin===canonicalOrigin&&recoveredUrl.pathname===uiPath('/account/password')&&recoveredUrl.search==='?verified=1'&&recovered.headers.get('referrer-policy')==='no-referrer');
  const newPassword=`R${randomUUID()}!`;const updatedPassword=await request('/api/auth',{method:'POST',jar:a.jar,body:{action:'update-password',password:newPassword}});check('password update signs out the session',updatedPassword.status===200&&updatedPassword.data.redirect==='/login?changed=1');
  const newLogin=await request('/api/auth',{method:'POST',jar:a.jar,body:{action:'login',email:a.email,password:newPassword}});check('changed password authenticates',newLogin.status===200);
 }finally{
  for(const u of created){const {error}=await admin.auth.admin.deleteUser(u.id);if(error)throw new Error('Temporary account cleanup failed: '+error.message);}
  console.log('Temporary accounts and their spaces removed.');
 }
-await writeFile(process.env.SPACE_CHECK_REPORT||'docs/live-checks.json',JSON.stringify({checkedAt:new Date().toISOString(),target:base,checks,total:checks.length,temporaryAccountsRemoved:true},null,2)+'\n');
+await writeFile(process.env.SPACE_CHECK_REPORT||'docs/live-checks.json',JSON.stringify({checkedAt:new Date().toISOString(),target:base,locale,checks,total:checks.length,temporaryAccountsRemoved:true},null,2)+'\n');
 console.log(`Verified ${checks.length} live checks.`);

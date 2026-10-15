@@ -1,6 +1,11 @@
-import type {MetadataRoute} from 'next';
-import {allPublicPosts} from '@/lib/server/posts';
-import {publicSpaces} from '@/lib/server/spaces';
-import {absolute,postPath} from '@/lib/site';
+import { locales,localizePath } from '@/lib/i18n/routing';
+import { languageAlternates } from '@/lib/i18n/server';
+import { allPublicPosts } from '@/lib/server/posts';
+import { absolute,postPath } from '@/lib/site';
+import type { MetadataRoute } from 'next';
 export const dynamic='force-dynamic';
-export default async function sitemap():Promise<MetadataRoute.Sitemap>{const posts=await allPublicPosts();const spaces=[...new Map(posts.filter(p=>p.space).map(p=>[p.space!.id,p.space!])).values()];return [{url:absolute('/')},{url:absolute('/about')},{url:absolute('/spaces')},...spaces.filter(s=>posts.some(p=>p.space_id===s.id)).map(s=>({url:absolute(`/s/${s.slug}`),lastModified:s.updated_at})),...posts.map(p=>({url:absolute(postPath(p)),lastModified:p.updated_at}))];}
+export default async function sitemap():Promise<MetadataRoute.Sitemap>{
+ const posts=await allPublicPosts(),spaces=[...new Map(posts.filter(p=>p.space).map(p=>[p.space!.id,p.space!])).values()];
+ const pages=[{path:'/'},{path:'/about'},{path:'/spaces'},...spaces.map(s=>({path:`/s/${s.slug}`,lastModified:s.updated_at})),...posts.map(p=>({path:postPath(p),lastModified:p.updated_at}))];
+ return pages.flatMap(({path,...rest})=>locales.map(locale=>({url:absolute(localizePath(path,locale)),...rest,alternates:{languages:languageAlternates(path)}})));
+}

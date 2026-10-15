@@ -1,9 +1,11 @@
+import { getI18n } from '@/lib/i18n/server';
+import { site } from '@/lib/site';
+import { NextResponse } from 'next/server';
 import 'server-only';
-import {NextResponse} from 'next/server';
-import {site} from '@/lib/site';
 
-export function authRedirect(path:'/admin'|'/account/password'|'/login?error=expired'){
- const destination=new URL(path,site.url);
+export async function authRedirect(path:'/admin'|'/account/password'|'/login?error=expired'){
+ const {l}=await getI18n();
+ const destination=new URL(l(path),site.url);
  // Netlify forwards the original query when Location has none. Replace it so
  // one-time codes and token hashes never follow users into another page.
  if(!destination.search)destination.searchParams.set('verified','1');
