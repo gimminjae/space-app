@@ -3,7 +3,7 @@ import { site } from '@/lib/site';
 import { NextResponse } from 'next/server';
 import 'server-only';
 
-export async function authRedirect(path:'/admin'|'/account/password'|'/login?error=expired'){
+export async function authRedirect(path:'/mypage'|'/account/password'|'/login?error=expired'){
  const {l}=await getI18n();
  const destination=new URL(l(path),site.url);
  // Netlify forwards the original query when Location has none. Replace it so

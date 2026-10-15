@@ -21,6 +21,6 @@ export async function POST(request:Request){try{
  }
  const {data,error}=action==='signup'?await client.auth.signUp({email:email!,password:password!,options:{emailRedirectTo:`${site.url}/auth/callback`}}):await client.auth.signInWithPassword({email:email!,password:password!});
  if(error){const message=error.code==='email_not_confirmed'?'이메일 인증을 완료한 후 로그인해 주세요.':error.status===429?'요청이 많습니다. 잠시 후 다시 시도해 주세요.':action==='login'?'이메일 또는 비밀번호가 올바르지 않습니다.':'가입을 완료하지 못했습니다. 이메일을 확인하거나 잠시 후 다시 시도해 주세요.';throw new HttpError(error.status===429?429:400,message);}
- return Response.json(data.session?{redirect:'/admin'}:{message:'이메일로 보낸 인증 링크를 열어 가입을 완료해 주세요. 기존 회원이라면 로그인 또는 비밀번호 재설정을 이용해 주세요.'});
+ return Response.json(data.session?{redirect:'/mypage'}:{message:'이메일로 보낸 인증 링크를 열어 가입을 완료해 주세요. 기존 회원이라면 로그인 또는 비밀번호 재설정을 이용해 주세요.'});
 }catch(error){return errorResponse(error);}}
 export async function DELETE(request:Request){try{assertOrigin(request);const client=await userDb();await client.auth.signOut();return Response.json({ok:true});}catch(error){return errorResponse(error);}}
