@@ -4,6 +4,7 @@ import {writeFile} from 'node:fs/promises';
 import {createClient} from '@supabase/supabase-js';
 const base=process.argv[2]||'http://127.0.0.1:3000';
 const origin=process.argv[3]||base;
+const canonicalOrigin=new URL(process.env.SITE_URL||base).origin;
 const options={auth:{persistSession:false,autoRefreshToken:false}};
 const admin=createClient(process.env.SUPABASE_URL,process.env.SUPABASE_SECRET_KEY,options);
 const anon=createClient(process.env.SUPABASE_URL,process.env.SUPABASE_PUBLISHABLE_KEY,options);
@@ -23,6 +24,10 @@ try{
  check('anonymous studio redirects to login',(await request('/admin')).headers.get('location')?.includes('/login'));
  check('anonymous writes rejected',(await request('/api/admin/posts',{method:'POST',body:{}})).status===401);
  check('cross-origin authentication rejected',(await request('/api/auth',{method:'POST',requestOrigin:'https://untrusted.invalid',body:{action:'login',email:a.email,password:a.password}})).status===403);
+ for(const callback of ['/auth/confirm?type=unsupported&token_hash=invalid-test-token','/auth/callback?code=invalid-test-code&next=https://untrusted.invalid']){
+  const rejected=await request(callback),target=new URL(rejected.headers.get('location'),origin);
+  check('invalid auth callback strips credentials '+callback.split('?')[0],rejected.status===307&&target.origin===canonicalOrigin&&target.pathname==='/login'&&target.search==='?error=expired');
+ }
  for(const u of created){
   const response=await request('/api/auth',{method:'POST',jar:u.jar,body:{action:'login',email:u.email,password:u.password}});check('real email/password login '+u.email.slice(-13),response.status===200&&response.data.redirect==='/admin');
   check('HttpOnly session cookie',response.headers.getSetCookie().some(c=>/httponly/i.test(c)));
@@ -67,12 +72,13 @@ try{
  check('studio protected after logout',(await request('/admin',{jar:a.jar})).headers.get('location')?.includes('/login'));
  const recovery=await admin.auth.admin.generateLink({type:'recovery',email:a.email});if(recovery.error)throw recovery.error;
  const recovered=await request('/auth/confirm?type=recovery&token_hash='+encodeURIComponent(recovery.data.properties.hashed_token),{jar:a.jar});
- check('recovery token creates a protected session',recovered.status===307&&recovered.headers.get('location')?.endsWith('/account/password'));
+ const recoveredUrl=new URL(recovered.headers.get('location'),origin);
+ check('recovery token creates a protected session without URL credentials',recovered.status===307&&recoveredUrl.origin===canonicalOrigin&&recoveredUrl.pathname==='/account/password'&&recoveredUrl.search==='?verified=1'&&recovered.headers.get('referrer-policy')==='no-referrer');
  const newPassword=`R${randomUUID()}!`;const updatedPassword=await request('/api/auth',{method:'POST',jar:a.jar,body:{action:'update-password',password:newPassword}});check('password update signs out the session',updatedPassword.status===200&&updatedPassword.data.redirect==='/login?changed=1');
  const newLogin=await request('/api/auth',{method:'POST',jar:a.jar,body:{action:'login',email:a.email,password:newPassword}});check('changed password authenticates',newLogin.status===200);
- await writeFile(process.env.SPACE_CHECK_REPORT||'docs/live-checks.json',JSON.stringify({checkedAt:new Date().toISOString(),target:base,checks,total:checks.length,temporaryAccountsRemoved:true},null,2)+'\n');
- console.log(`Verified ${checks.length} live checks.`);
 }finally{
  for(const u of created){const {error}=await admin.auth.admin.deleteUser(u.id);if(error)throw new Error('Temporary account cleanup failed: '+error.message);}
  console.log('Temporary accounts and their spaces removed.');
 }
+await writeFile(process.env.SPACE_CHECK_REPORT||'docs/live-checks.json',JSON.stringify({checkedAt:new Date().toISOString(),target:base,checks,total:checks.length,temporaryAccountsRemoved:true},null,2)+'\n');
+console.log(`Verified ${checks.length} live checks.`);

@@ -140,6 +140,6 @@ Supabase 백업은 선택한 서비스 요금제·설정에 따릅니다. 정기
 
 TypeScript 검사, 프로덕션 빌드, 5개 자동 테스트를 통과했습니다. PostgreSQL 호환 PGlite에서 실제 마이그레이션을 적용해 공개·비공개 권한, 회원 간 접근 차단, 외래키, 동시 수정 충돌, 분류 이동, Markdown 정화를 검사합니다.
 
-`node --env-file=.env.local scripts/live-check.mjs`는 실제 Supabase에 임시 계정 두 개를 만들어 43개 항목을 확인하고 계정 및 공간을 정리합니다. 로그인·HttpOnly 쿠키·온보딩·글 작성/수정/공개전환/삭제·검색 메타데이터·사이트맵·RSS·교차 회원 접근 차단·인증 토큰을 통한 비밀번호 변경을 포함합니다. 메일 수신과 실제 S3 업로드는 해당 서비스 설정 후 별도로 검증해야 합니다. 결과는 `docs/live-checks.json`에 있습니다.
+`node --env-file=.env.local scripts/live-check.mjs`는 실제 Supabase에 임시 계정 두 개를 만들어 45개 항목(HTTPS 운영 환경에서는 Secure 쿠키 2개 검사를 더해 47개)을 확인하고 계정 및 공간을 정리합니다. 로그인·HttpOnly 쿠키·온보딩·글 작성/수정/공개전환/삭제·검색 메타데이터·사이트맵·RSS·교차 회원 접근 차단·인증 토큰을 통한 비밀번호 변경, 인증 주소의 토큰 제거를 포함합니다. 메일 수신과 실제 S3 업로드는 해당 서비스 설정 후 별도로 검증해야 합니다. 결과는 `docs/live-checks.json`에 있습니다.
 
 운영 HTTP 점검은 `node scripts/smoke.mjs`로 재실행합니다. Netlify 별칭을 사용할 경우 두 번째 인자로 `https://space.service.io.kr`을 지정합니다.

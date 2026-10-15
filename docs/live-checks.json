@@ -1,10 +1,12 @@
 {
-  "checkedAt": "2026-10-15T14:09:59.723Z",
+  "checkedAt": "2026-10-15T14:29:46.866Z",
   "target": "http://127.0.0.1:3000",
   "checks": [
     "anonymous studio redirects to login",
     "anonymous writes rejected",
     "cross-origin authentication rejected",
+    "invalid auth callback strips credentials /auth/confirm",
+    "invalid auth callback strips credentials /auth/callback",
     "real email/password login a@example.com",
     "HttpOnly session cookie",
     "new account goes to onboarding",
@@ -42,10 +44,10 @@
     "deleted editor unavailable",
     "owner logout",
     "studio protected after logout",
-    "recovery token creates a protected session",
+    "recovery token creates a protected session without URL credentials",
     "password update signs out the session",
     "changed password authenticates"
   ],
-  "total": 43,
+  "total": 45,
   "temporaryAccountsRemoved": true
 }

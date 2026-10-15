@@ -29,17 +29,19 @@
 
 - TypeScript 및 프로덕션 빌드 통과
 - 자동 테스트 5개: 원래 데이터 구조의 회귀 검사와 두 회원의 데이터 분리 검사 포함
-- 실제 Supabase + 앱 HTTP 요청 43개: 두 계정 로그인, 공간 생성, 글 생명주기, 타 회원의 수정/삭제 차단, 비공개 글·태그·첨부 접근 차단, DB 직접 접근 차단, 비밀번호 변경
+- 실제 Supabase + 앱 HTTP 요청 45개: 두 계정 로그인, 공간 생성, 글 생명주기, 타 회원의 수정/삭제 차단, 비공개 글·태그·첨부 접근 차단, DB 직접 접근 차단, 비밀번호 변경, 인증 토큰의 이동 주소 잔류 방지
 - 임시 테스트 계정과 공간은 검사 후 삭제
 - Supabase 보안 검사 오류 0건. 기본 Auth의 유출 비밀번호 검사 비활성 경고는 설정 변경 없이 유지
 - Chrome에서 로그인 → 개인 공간 생성 → Markdown 비공개 글 저장 → 미리보기 확인
 - 393px 모바일 화면의 가로 넘침 수정 및 실제 화면 확인
 - 런타임 의존성 보안 검사 취약점 0건
 - SMTP 메일 수신과 실제 S3 객체 업로드는 미검증
-- 배포 후 결과는 live-checks.json 및 production-checks.json 참조
+- live-checks.json은 실제 DB와 로컬 앱의 최신 통합 검사입니다. HTTPS 운영 환경에서는 Secure 쿠키 검사를 추가해 47개 항목을 실행합니다. production-checks.json은 최초 배포 당시 HTTP 기록입니다. 최신 운영 검사는 전달한 space-production-live-checks.json 및 space-production-http-checks.json에 저장합니다.
 
 기존 DNS, 다른 Supabase 프로젝트, Google 광고·검색 연결은 변경하지 않았습니다. 현재 프로젝트의 모든 서비스 키는 서버 환경변수에만 저장하며 GitHub에 포함하지 않습니다.
 
 ## 변경된 이용 방식
 
 공통 관리 비밀번호를 폐기하고 회원 로그인으로 전환했습니다. `/admin`에서 자기 공간과 글을 관리하고, 공개 공간은 `/s/공간주소`, 공개 글은 `/s/공간주소/posts/글주소`입니다. 공개 글만 사이트맵·RSS에 포함됩니다. 삭제는 비공개 처리와 deleted_at 기록으로 수행합니다.
+
+인증 성공 후에는 `?verified=1`만 전달하고 코드·토큰을 주소에서 제거합니다. 이는 [Netlify의 쿼리 전달 동작](https://github.com/opennextjs/opennextjs-netlify/issues/2209)에 대응하며, 인증 응답에 캐시 금지와 referrer 차단도 적용합니다.
