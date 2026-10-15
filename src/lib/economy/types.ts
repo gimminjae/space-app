@@ -1,0 +1,12 @@
+import type { PostPreview } from '@/lib/types';
+export type LocalizedCopy={name:string;summary:string;body?:string;example?:string};
+export type Topic={slug:string;ko:LocalizedCopy;en:LocalizedCopy;active:boolean;sort_order:number};
+export type Term={slug:string;topic_slug:string;ko:LocalizedCopy;en:LocalizedCopy;aliases:string[];related:string[];source_url:string;reviewed_at:string;active:boolean};
+export type Folder={id:string;name:string};
+export type Bookmark={id:string;post_id:string|null;folder_id:string|null;note:string;version:number;created_at:string;updated_at:string;post:{id:string;title:string;slug:string;summary:string;status:string;space_slug:string;space_name:string}|null};
+export type ReaderPost=PostPreview & {followed_space?:boolean;followed_topics?:string[]};
+export type Indicator={slug:string;country:'KR'|'US';ko:LocalizedCopy;en:LocalizedCopy;topic_slug:string;term_slug:string;unit:string;frequency:'D'|'M'|'Q';adjustment:string;change_kind:'points'|'percent'|'yoy';sort_order:number;active:boolean};
+export type Series={id:string;indicator_slug:string;provider:'fred'|'ecos';code:string;item_code:string|null;role:'value'|'lower'|'upper';source_url:string;approved:boolean;last_success_at?:string|null;last_error?:string|null};
+export type Observation={series_id:string;period:string;value:number|null;fetched_at?:string;source_updated_at?:string|null};
+export type EconomicEvent={id:string;country:'KR'|'US';kind:string;ko:LocalizedCopy;en:LocalizedCopy;topic_slug:string;event_date:string;starts_at:string|null;source_timezone:string;precision:'time'|'date_only';status:'scheduled'|'released'|'postponed'|'cancelled';source_url:string;provider:string;provider_key:string;reference_period:string|null;indicator_slugs:string[];manual_override:boolean;active:boolean;reviewed_at:string;updated_at:string;history:{at:string;date:string;status:string}[]};
+export type EventResult={event_id:string;series_id:string;period:string;captured_value:number|null;previous_value:number|null;captured_at:string;first_release_verified:boolean};

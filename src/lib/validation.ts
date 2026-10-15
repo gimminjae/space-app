@@ -5,6 +5,7 @@ export const postSchema = z.object({
   content: z.string().max(200_000), summary: z.string().max(300).default(''),
   status: z.enum(['public','private']), category_id: z.uuid().nullable(), cover_asset_id: z.uuid().nullable(),
   seo_title: z.string().max(150).default(''), seo_description: z.string().max(300).default(''),
+  topics: z.array(z.string().regex(/^[a-z0-9-]+$/)).max(3).optional(),
   tags: z.array(z.string().trim().min(1).max(40)).max(12), author: z.string().trim().min(1).max(60),
 }).superRefine((value,ctx) => { if(value.status === 'public' && !value.content.trim()) ctx.addIssue({code:'custom',path:['content'],message:'공개할 글의 본문을 입력해 주세요.'}); });
 export const MAX_UPLOAD_SIZE = 4 * 1024 * 1024;

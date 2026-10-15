@@ -1,3 +1,4 @@
+import ReaderOverview from '@/components/economy/ReaderOverview';
 import Link from '@/components/I18n';
 import AdminLogout from '@/components/AdminLogout';
 import ProfileForm from '@/components/ProfileForm';
@@ -53,6 +54,7 @@ export default async function MyPage() {
       </aside>
 
       <div className={styles.content}>
+        <ReaderOverview/>
         <section className={styles.spaceCard} aria-labelledby="space-title">
           <p className="eyebrow">MY JOURNAL</p>
           <h2 id="space-title">{space ? space.name : t('아직 나의 공간이 없습니다.')}</h2>

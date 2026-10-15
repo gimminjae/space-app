@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fed-lower",
+    "indicator_slug": "us-policy-rate",
+    "provider": "fred",
+    "code": "DFEDTARL",
+    "item_code": null,
+    "role": "lower",
+    "source_url": "https://fred.stlouisfed.org/series/DFEDTARL",
+    "approved": true
+  },
+  {
+    "id": "fed-upper",
+    "indicator_slug": "us-policy-rate",
+    "provider": "fred",
+    "code": "DFEDTARU",
+    "item_code": null,
+    "role": "upper",
+    "source_url": "https://fred.stlouisfed.org/series/DFEDTARU",
+    "approved": true
+  },
+  {
+    "id": "us-cpi",
+    "indicator_slug": "us-cpi",
+    "provider": "fred",
+    "code": "CPIAUCNS",
+    "item_code": null,
+    "role": "value",
+    "source_url": "https://fred.stlouisfed.org/series/CPIAUCNS",
+    "approved": true
+  },
+  {
+    "id": "us-unemployment",
+    "indicator_slug": "us-unemployment",
+    "provider": "fred",
+    "code": "UNRATE",
+    "item_code": null,
+    "role": "value",
+    "source_url": "https://fred.stlouisfed.org/series/UNRATE",
+    "approved": true
+  },
+  {
+    "id": "us-10y",
+    "indicator_slug": "us-treasury-10y",
+    "provider": "fred",
+    "code": "DGS10",
+    "item_code": null,
+    "role": "value",
+    "source_url": "https://fred.stlouisfed.org/series/DGS10",
+    "approved": true
+  },
+  {
+    "id": "kr-policy-rate",
+    "indicator_slug": "kr-policy-rate",
+    "provider": "ecos",
+    "code": "722Y001",
+    "item_code": "0101000",
+    "role": "value",
+    "source_url": "https://ecos.bok.or.kr/",
+    "approved": false
+  },
+  {
+    "id": "kr-usd",
+    "indicator_slug": "kr-usd",
+    "provider": "ecos",
+    "code": "731Y001",
+    "item_code": "0000001",
+    "role": "value",
+    "source_url": "https://ecos.bok.or.kr/",
+    "approved": false
+  },
+  {
+    "id": "kr-cpi",
+    "indicator_slug": "kr-cpi",
+    "provider": "ecos",
+    "code": "901Y009",
+    "item_code": "0",
+    "role": "value",
+    "source_url": "https://ecos.bok.or.kr/",
+    "approved": false
+  },
+  {
+    "id": "kr-unemployment",
+    "indicator_slug": "kr-unemployment",
+    "provider": "ecos",
+    "code": "901Y027",
+    "item_code": "I61BC/I28B",
+    "role": "value",
+    "source_url": "https://ecos.bok.or.kr/",
+    "approved": false
+  }
+]

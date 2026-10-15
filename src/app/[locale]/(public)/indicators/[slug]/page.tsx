@@ -1,0 +1,13 @@
+import DataNotice from '@/components/economy/DataNotice';
+import Link from '@/components/I18n';
+import {notFound} from 'next/navigation';
+import {getI18n,localizedMetadata} from '@/lib/i18n/server';
+import {economyText} from '@/lib/economy/messages';
+import {glossary,indicatorData,indicators,readerPosts,readerState} from '@/lib/server/economy';
+import IndicatorPanel from '@/components/economy/IndicatorPanel';
+import ReaderAction from '@/components/economy/ReaderAction';
+import {PostList} from '@/components/PostList';
+import styles from '@/components/economy/economy.module.css';
+type Props={params:Promise<{slug:string}>};
+export async function generateMetadata({params}:Props){const {locale,absolute}=await getI18n(),slug=(await params).slug,d=indicators.find(i=>i.slug===slug);if(!d)return {robots:{index:false}};return localizedMetadata({title:d[locale].name,description:d[locale].summary,alternates:{canonical:absolute('/indicators/'+slug)}},locale);}
+export default async function Page({params}:Props){const slug=(await params).slug,{locale}=await getI18n(),data=await indicatorData(slug,6);if(!data)notFound();const {definition,series,observations}=data,[state,posts]=await Promise.all([readerState(),readerPosts('topic',definition.topic_slug)]),e=(k:Parameters<typeof economyText>[1])=>economyText(locale,k),term=glossary.find(t=>t.slug===definition.term_slug);return <div className={styles.page}><div className={styles.detail}><div className={styles.breadcrumbs}><Link href="/indicators">{e('indicators')}</Link> / {definition[locale].name}</div><div className={styles.head}><div><p className={styles.label}>{definition.country} · {definition.frequency==='D'?(locale==='ko'?'일별':'Daily'):definition.frequency==='M'?(locale==='ko'?'월별':'Monthly'):(locale==='ko'?'분기별':'Quarterly')} · {definition.adjustment==='SA'?(locale==='ko'?'계절조정':'Seasonally adjusted'):(locale==='ko'?'비계절조정':'Not seasonally adjusted')}</p><h1>{definition[locale].name}</h1></div><ReaderAction kind="indicator" id={slug} signedIn={!!state} active={state?.favorites.some(f=>f.indicator_slug===slug)}/></div><p className={styles.lead}>{definition[locale].summary}</p><IndicatorPanel definition={definition} series={series} observations={observations}/><div className={styles.source}>{series.map(s=><a href={s.source_url} key={s.id} target="_blank" rel="noreferrer">{s.provider.toUpperCase()} · {s.code} ↗</a>)}</div>{term&&<div className={styles.example}><strong>{term[locale].name}</strong><p>{term[locale].summary}</p><Link href={'/glossary/'+term.slug}>{e('readMore')} →</Link></div>}<h2>{e('relatedPosts')}</h2><PostList posts={posts.items.slice(0,6)}/><div className={styles.source}><Link href="/data-terms">{e('dataTerms')} →</Link></div></div><DataNotice/></div>;}

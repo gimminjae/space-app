@@ -1,0 +1,162 @@
+[
+  {
+    "slug": "kr-policy-rate",
+    "country": "KR",
+    "ko": {
+      "name": "한국 기준금리",
+      "summary": "한국은행의 정책 기준금리입니다. 개별 예금·대출금리와 다릅니다."
+    },
+    "en": {
+      "name": "Bank of Korea base rate",
+      "summary": "The Bank of Korea policy rate, distinct from retail deposit and loan rates."
+    },
+    "topic_slug": "monetary",
+    "term_slug": "policy-rate",
+    "unit": "%",
+    "frequency": "D",
+    "adjustment": "NSA",
+    "change_kind": "points",
+    "sort_order": 0,
+    "active": true
+  },
+  {
+    "slug": "kr-usd",
+    "country": "KR",
+    "ko": {
+      "name": "원/달러 환율",
+      "summary": "미국 달러 1달러에 대한 원화 매매기준율입니다. 실제 거래 환율과 차이가 날 수 있습니다."
+    },
+    "en": {
+      "name": "KRW per US dollar",
+      "summary": "The reference rate in won per US dollar; actual transaction rates may differ."
+    },
+    "topic_slug": "global",
+    "term_slug": "exchange-rate",
+    "unit": "KRW/USD",
+    "frequency": "D",
+    "adjustment": "NSA",
+    "change_kind": "percent",
+    "sort_order": 1,
+    "active": true
+  },
+  {
+    "slug": "kr-cpi",
+    "country": "KR",
+    "ko": {
+      "name": "한국 소비자물가",
+      "summary": "소비자물가지수 수준과 같은 계열의 전년 동월 대비 변화를 구분해 표시합니다."
+    },
+    "en": {
+      "name": "Korea consumer prices",
+      "summary": "Consumer price index levels and year-over-year changes from the same series."
+    },
+    "topic_slug": "prices",
+    "term_slug": "cpi",
+    "unit": "Index (2020=100)",
+    "frequency": "M",
+    "adjustment": "NSA",
+    "change_kind": "yoy",
+    "sort_order": 2,
+    "active": true
+  },
+  {
+    "slug": "kr-unemployment",
+    "country": "KR",
+    "ko": {
+      "name": "한국 실업률",
+      "summary": "경제활동인구 중 실업자의 비율입니다. 계절조정계열을 사용합니다."
+    },
+    "en": {
+      "name": "Korea unemployment rate",
+      "summary": "The unemployed share of the labor force, using seasonally adjusted observations."
+    },
+    "topic_slug": "macro",
+    "term_slug": "unemployment",
+    "unit": "%",
+    "frequency": "M",
+    "adjustment": "SA",
+    "change_kind": "points",
+    "sort_order": 3,
+    "active": true
+  },
+  {
+    "slug": "us-policy-rate",
+    "country": "US",
+    "ko": {
+      "name": "미국 정책금리 목표 범위",
+      "summary": "연준 연방기금금리 목표의 하한과 상한입니다. 실제 거래에서 형성된 실효금리와 구분합니다."
+    },
+    "en": {
+      "name": "US policy rate target range",
+      "summary": "Lower and upper bounds of the federal funds target range, not the effective traded rate."
+    },
+    "topic_slug": "monetary",
+    "term_slug": "policy-rate",
+    "unit": "%",
+    "frequency": "D",
+    "adjustment": "NSA",
+    "change_kind": "points",
+    "sort_order": 4,
+    "active": true
+  },
+  {
+    "slug": "us-cpi",
+    "country": "US",
+    "ko": {
+      "name": "미국 소비자물가",
+      "summary": "미국 도시 소비자의 전체 품목 물가지수입니다. 비계절조정계열로 전년 동월 대비를 계산합니다."
+    },
+    "en": {
+      "name": "US consumer prices",
+      "summary": "All-items CPI for urban US consumers. Year-over-year changes use the unadjusted series."
+    },
+    "topic_slug": "prices",
+    "term_slug": "cpi",
+    "unit": "Index (1982–84=100)",
+    "frequency": "M",
+    "adjustment": "NSA",
+    "change_kind": "yoy",
+    "sort_order": 5,
+    "active": true
+  },
+  {
+    "slug": "us-unemployment",
+    "country": "US",
+    "ko": {
+      "name": "미국 실업률",
+      "summary": "미국 민간 경제활동인구의 실업률입니다. 계절조정계열을 사용합니다."
+    },
+    "en": {
+      "name": "US unemployment rate",
+      "summary": "The US civilian unemployment rate, seasonally adjusted."
+    },
+    "topic_slug": "macro",
+    "term_slug": "unemployment",
+    "unit": "%",
+    "frequency": "M",
+    "adjustment": "SA",
+    "change_kind": "points",
+    "sort_order": 6,
+    "active": true
+  },
+  {
+    "slug": "us-treasury-10y",
+    "country": "US",
+    "ko": {
+      "name": "미국 10년 국채금리",
+      "summary": "10년 고정만기 국채 시장수익률입니다. 채권 가격과 수익률의 관계를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US 10-year Treasury yield",
+      "summary": "The 10-year constant-maturity Treasury market yield. Consider the relationship between bond prices and yields."
+    },
+    "topic_slug": "monetary",
+    "term_slug": "bond-yield",
+    "unit": "%",
+    "frequency": "D",
+    "adjustment": "NSA",
+    "change_kind": "points",
+    "sort_order": 7,
+    "active": true
+  }
+]

@@ -6,6 +6,8 @@ export type Post = {
   status: 'public' | 'private'; category_id: string | null; cover_asset_id: string | null;
   seo_title: string; seo_description: string; author: string;
   created_at: string; updated_at: string; published_at: string | null; deleted_at: string | null;
-  version: number; category?: Category | null; tags?: Tag[];
+  version: number; topics?: string[]; category?: Category | null; tags?: Tag[];
 };
 export type Asset = { id: string; post_id: string; space_id?: string; storage_key?: string; name: string; mime: string; size: number; ready: boolean };
+
+export type PostPreview=Pick<Post,"id"|"space_id"|"space"|"title"|"slug"|"summary"|"status"|"author"|"created_at"|"updated_at"|"published_at"|"cover_asset_id"|"category_id"|"category"> & {content?:string;reading_minutes?:number};

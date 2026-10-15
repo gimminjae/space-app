@@ -1,0 +1,817 @@
+[
+  {
+    "slug": "policy-rate",
+    "topic_slug": "monetary",
+    "ko": {
+      "name": "기준금리",
+      "summary": "중앙은행이 통화정책의 기준으로 정하는 금리.",
+      "body": "기준금리는 단기 시장금리와 금융기관의 자금 조달 여건에 영향을 줍니다. 예금·대출금리는 신용위험과 만기 등도 반영하므로 같은 폭으로 움직이지 않을 수 있습니다.",
+      "example": "기준금리 3%는 모든 대출의 금리가 3%라는 뜻이 아닙니다."
+    },
+    "en": {
+      "name": "Policy rate",
+      "summary": "A rate set by a central bank to guide monetary policy.",
+      "body": "The policy rate influences short-term market rates and funding costs. Deposit and loan rates also reflect credit risk and maturity, so their changes need not match it.",
+      "example": "A 3% policy rate does not mean every loan charges 3%."
+    },
+    "aliases": [
+      "기준금리",
+      "policy rate"
+    ],
+    "related": [
+      "market-rate",
+      "monetary-policy"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "market-rate",
+    "topic_slug": "monetary",
+    "ko": {
+      "name": "시장금리",
+      "summary": "시장에서 자금의 수요와 공급 등을 반영해 형성되는 금리.",
+      "body": "시장금리는 정책 기대뿐 아니라 물가 전망, 신용위험, 만기에 따라 달라집니다. 같은 날에도 국채와 회사채의 금리가 다를 수 있습니다.",
+      "example": "만기가 같은 회사채라도 발행 기업의 신용위험에 따라 금리가 다릅니다."
+    },
+    "en": {
+      "name": "Market interest rate",
+      "summary": "An interest rate determined in financial markets.",
+      "body": "Market rates reflect expected policy, inflation, credit risk and maturity. Government and corporate bonds can have different yields on the same day.",
+      "example": "Two corporate bonds with the same maturity may offer different yields because of credit risk."
+    },
+    "aliases": [
+      "시장금리",
+      "market rate"
+    ],
+    "related": [
+      "policy-rate",
+      "spread"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "inflation",
+    "topic_slug": "prices",
+    "ko": {
+      "name": "인플레이션",
+      "summary": "경제 전반의 물가 수준이 지속적으로 오르는 현상.",
+      "body": "한 품목의 가격 상승과 전체 물가 상승은 구분해야 합니다. 물가가 오르면 같은 금액으로 살 수 있는 상품과 서비스가 줄어듭니다.",
+      "example": "평균 물가가 3% 올라도 개인의 소비 구성에 따라 체감 상승률은 다릅니다."
+    },
+    "en": {
+      "name": "Inflation",
+      "summary": "A sustained rise in the general price level.",
+      "body": "A price rise in one item differs from inflation across the economy. Higher prices reduce what a fixed amount of money can buy.",
+      "example": "A 3% rise in average prices may differ from your own cost increase."
+    },
+    "aliases": [
+      "인플레이션",
+      "inflation"
+    ],
+    "related": [
+      "cpi",
+      "real-rate"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "deflation",
+    "topic_slug": "prices",
+    "ko": {
+      "name": "디플레이션",
+      "summary": "경제 전반의 물가 수준이 지속적으로 하락하는 현상.",
+      "body": "물가 상승률이 낮아지는 것과 물가가 하락하는 것은 다릅니다. 광범위한 물가 하락은 명목 부채의 실질 부담을 높일 수 있습니다.",
+      "example": "물가 상승률이 5%에서 2%로 낮아져도 물가 수준은 여전히 오릅니다."
+    },
+    "en": {
+      "name": "Deflation",
+      "summary": "A sustained decline in the general price level.",
+      "body": "Slower inflation is not the same as falling prices. Broad price declines can increase the real burden of nominal debts.",
+      "example": "When inflation falls from 5% to 2%, the price level is still rising."
+    },
+    "aliases": [
+      "디플레이션",
+      "deflation"
+    ],
+    "related": [
+      "inflation",
+      "recession"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "cpi",
+    "topic_slug": "prices",
+    "ko": {
+      "name": "소비자물가지수",
+      "summary": "가계가 구매하는 대표 상품·서비스 가격의 변화를 측정하는 지수.",
+      "body": "품목별 지출 비중을 가중치로 사용합니다. 지수의 수준과 지수의 변화율을 구별하고, 전월 대비와 전년 동월 대비를 같은 수치로 취급하지 않아야 합니다.",
+      "example": "지수가 100에서 103으로 오르면 해당 구간의 상승률은 3%입니다."
+    },
+    "en": {
+      "name": "Consumer Price Index",
+      "summary": "An index tracking prices of a representative household consumption basket.",
+      "body": "Items are weighted by spending shares. Distinguish the index level from its rate of change and monthly changes from year-over-year changes.",
+      "example": "An increase from 100 to 103 is a 3% rise over that interval."
+    },
+    "aliases": [
+      "소비자물가지수",
+      "CPI",
+      "Consumer Price Index"
+    ],
+    "related": [
+      "inflation",
+      "base-effect"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "gdp",
+    "topic_slug": "macro",
+    "ko": {
+      "name": "국내총생산",
+      "summary": "일정 기간 한 나라 안에서 생산된 최종 재화·서비스의 가치.",
+      "body": "명목 GDP는 그때의 가격을 사용하고 실질 GDP는 물가 변동을 조정합니다. GDP 성장률만으로 소득 분배나 생활의 모든 측면을 설명할 수는 없습니다.",
+      "example": "가격만 상승해 명목 GDP가 늘어도 실질 생산량은 같을 수 있습니다."
+    },
+    "en": {
+      "name": "Gross Domestic Product",
+      "summary": "The value of final goods and services produced within a country over a period.",
+      "body": "Nominal GDP uses current prices; real GDP adjusts for price changes. GDP growth alone does not capture distribution or every aspect of wellbeing.",
+      "example": "Nominal GDP may rise solely because prices increase while output stays unchanged."
+    },
+    "aliases": [
+      "국내총생산",
+      "GDP",
+      "gross domestic product"
+    ],
+    "related": [
+      "recession",
+      "fiscal-policy"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "unemployment",
+    "topic_slug": "macro",
+    "ko": {
+      "name": "실업률",
+      "summary": "경제활동인구 중 실업자가 차지하는 비율.",
+      "body": "전체 인구를 분모로 계산하지 않습니다. 취업하지 않은 사람 모두가 실업자로 분류되는 것도 아니며, 구직 활동 등 통계 기준을 충족해야 합니다.",
+      "example": "구직을 중단한 사람이 늘면 고용이 늘지 않아도 실업률이 낮아질 수 있습니다."
+    },
+    "en": {
+      "name": "Unemployment rate",
+      "summary": "The share of the labor force that is unemployed.",
+      "body": "The denominator is the labor force, not the entire population. Not every person without a job counts as unemployed; statistical job-search criteria matter.",
+      "example": "Unemployment can fall without job growth if people stop looking for work."
+    },
+    "aliases": [
+      "실업률",
+      "unemployment rate"
+    ],
+    "related": [
+      "gdp",
+      "recession"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "exchange-rate",
+    "topic_slug": "global",
+    "ko": {
+      "name": "환율",
+      "summary": "서로 다른 통화를 교환하는 비율.",
+      "body": "원/달러 환율은 달러 1단위를 사는 데 필요한 원화를 뜻합니다. 이 수치가 오르면 같은 달러를 얻는 데 더 많은 원화가 필요합니다.",
+      "example": "원/달러가 1,000에서 1,100으로 오르면 달러 대비 원화 가치는 하락합니다."
+    },
+    "en": {
+      "name": "Exchange rate",
+      "summary": "The price of one currency in terms of another.",
+      "body": "KRW per USD states the won needed for one dollar. A rise means more won are required to buy the same dollar amount.",
+      "example": "If KRW per USD rises from 1,000 to 1,100, the won depreciates against the dollar."
+    },
+    "aliases": [
+      "환율",
+      "exchange rate"
+    ],
+    "related": [
+      "trade-balance",
+      "inflation"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "bond",
+    "topic_slug": "monetary",
+    "ko": {
+      "name": "채권",
+      "summary": "발행자가 정해진 조건에 따라 원금·이자를 지급하기로 한 증권.",
+      "body": "정부나 기업은 채권을 발행해 자금을 조달합니다. 원금 손실 가능성이 없는 것은 아니며, 신용위험과 시장금리 변동의 영향을 받습니다.",
+      "example": "고정 이자 채권의 시장 가격은 만기 전에 오르거나 내릴 수 있습니다."
+    },
+    "en": {
+      "name": "Bond",
+      "summary": "A security representing an issuer’s obligation to make specified payments.",
+      "body": "Governments and companies issue bonds to raise funds. Bonds can lose value because of credit risk and changing market interest rates.",
+      "example": "The market price of a fixed-coupon bond can rise or fall before maturity."
+    },
+    "aliases": [
+      "채권",
+      "bond"
+    ],
+    "related": [
+      "bond-yield",
+      "spread"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "bond-yield",
+    "topic_slug": "monetary",
+    "ko": {
+      "name": "채권수익률",
+      "summary": "채권 가격과 미래 지급액 등을 바탕으로 계산하는 수익률.",
+      "body": "표면금리와 시장 수익률은 다릅니다. 다른 조건이 같다면 고정 이자 채권의 가격이 오를 때 수익률은 내려갑니다.",
+      "example": "같은 지급액을 받을 채권을 더 비싸게 사면 기대 수익률은 낮아집니다."
+    },
+    "en": {
+      "name": "Bond yield",
+      "summary": "A return measure based on a bond’s price and expected payments.",
+      "body": "The coupon rate differs from the market yield. Other things equal, a fixed-coupon bond’s yield falls as its price rises.",
+      "example": "Paying more for the same future payments reduces the yield."
+    },
+    "aliases": [
+      "채권수익률",
+      "bond yield"
+    ],
+    "related": [
+      "bond",
+      "market-rate"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "spread",
+    "topic_slug": "monetary",
+    "ko": {
+      "name": "금리 스프레드",
+      "summary": "두 금리 또는 수익률 사이의 차이.",
+      "body": "신용 스프레드는 비교 기준 국채와 회사채 등의 금리 차이를 뜻합니다. 비교할 때 만기·통화·금리 정의를 맞춰야 합니다.",
+      "example": "5%와 3%의 금리 차이는 2%포인트입니다."
+    },
+    "en": {
+      "name": "Interest rate spread",
+      "summary": "The difference between two interest rates or yields.",
+      "body": "A credit spread compares a bond yield with a benchmark such as a government bond. Match maturity, currency and rate definitions when comparing.",
+      "example": "The spread between 5% and 3% is 2 percentage points."
+    },
+    "aliases": [
+      "금리 스프레드",
+      "credit spread"
+    ],
+    "related": [
+      "bond",
+      "percentage-point"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "real-rate",
+    "topic_slug": "monetary",
+    "ko": {
+      "name": "실질금리",
+      "summary": "물가 변동을 고려한 금리.",
+      "body": "낮은 금리·물가 수준에서는 명목금리에서 물가 상승률을 빼 근사합니다. 기대 물가를 쓰는 사전 실질금리와 실제 물가를 쓰는 사후 실질금리는 다릅니다.",
+      "example": "명목금리 4%, 물가 상승률 3%라면 근사 실질금리는 1%입니다."
+    },
+    "en": {
+      "name": "Real interest rate",
+      "summary": "An interest rate adjusted for inflation.",
+      "body": "At modest rates, subtracting inflation from the nominal rate gives an approximation. Expected inflation gives an ex-ante rate; realized inflation gives an ex-post rate.",
+      "example": "A 4% nominal rate and 3% inflation imply roughly a 1% real rate."
+    },
+    "aliases": [
+      "실질금리",
+      "real interest rate"
+    ],
+    "related": [
+      "inflation",
+      "nominal-rate"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "nominal-rate",
+    "topic_slug": "monetary",
+    "ko": {
+      "name": "명목금리",
+      "summary": "물가 변동을 조정하지 않은 표시 금리.",
+      "body": "예금이나 대출에 표시되는 금리는 대개 명목금리입니다. 이자 수익의 구매력은 물가와 세금·수수료 등에 따라 달라집니다.",
+      "example": "예금 이자가 늘어도 물가가 더 빠르게 오르면 구매력이 줄 수 있습니다."
+    },
+    "en": {
+      "name": "Nominal interest rate",
+      "summary": "An interest rate before adjustment for inflation.",
+      "body": "Quoted deposit or loan rates are usually nominal. The purchasing power of interest income also depends on inflation, taxes and fees.",
+      "example": "Purchasing power can fall even with interest income if prices rise faster."
+    },
+    "aliases": [
+      "명목금리",
+      "nominal interest rate"
+    ],
+    "related": [
+      "real-rate",
+      "compound-interest"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "liquidity",
+    "topic_slug": "basics",
+    "ko": {
+      "name": "유동성",
+      "summary": "자산을 큰 손실 없이 현금으로 바꿀 수 있는 정도.",
+      "body": "시장 유동성과 자금 조달 유동성은 서로 관련되지만 다른 개념입니다. 거래 상대가 적거나 급하게 팔아야 하면 가격 손실이 커질 수 있습니다.",
+      "example": "부동산은 예금보다 현금화에 시간이 오래 걸릴 수 있습니다."
+    },
+    "en": {
+      "name": "Liquidity",
+      "summary": "How readily an asset can be converted to cash without a large price loss.",
+      "body": "Market liquidity and funding liquidity are related but distinct. Few buyers or an urgent sale can lead to larger price discounts.",
+      "example": "Property may take longer to turn into cash than a bank deposit."
+    },
+    "aliases": [
+      "유동성",
+      "liquidity"
+    ],
+    "related": [
+      "bond",
+      "risk-return"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "quantitative-easing",
+    "topic_slug": "monetary",
+    "ko": {
+      "name": "양적완화",
+      "summary": "중앙은행이 자산 매입 등을 통해 금융 여건 완화를 추진하는 정책.",
+      "body": "주로 장기금리와 금융시장 여건에 영향을 주려는 정책입니다. 효과는 경제 상황과 기대에 따라 달라지며 특정 자산 가격 상승을 보장하지 않습니다.",
+      "example": "중앙은행의 국채 매입은 시장의 채권 수급을 바꿀 수 있습니다."
+    },
+    "en": {
+      "name": "Quantitative easing",
+      "summary": "Central bank asset purchases intended to ease financial conditions.",
+      "body": "It aims to influence longer-term rates and financial conditions. Effects depend on conditions and expectations, with no guarantee for particular asset prices.",
+      "example": "Central bank bond purchases can change bond supply and demand."
+    },
+    "aliases": [
+      "양적완화",
+      "quantitative easing",
+      "QE"
+    ],
+    "related": [
+      "quantitative-tightening",
+      "monetary-policy"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "quantitative-tightening",
+    "topic_slug": "monetary",
+    "ko": {
+      "name": "양적긴축",
+      "summary": "중앙은행이 보유 자산을 줄여 정책을 정상화하거나 긴축하는 과정.",
+      "body": "만기 도래 자산의 재투자를 줄이거나 자산을 매각하는 방식이 있습니다. 기준금리 변경과는 별도의 정책 수단입니다.",
+      "example": "만기 국채의 원금을 재투자하지 않으면 보유 자산이 감소할 수 있습니다."
+    },
+    "en": {
+      "name": "Quantitative tightening",
+      "summary": "A reduction in central bank asset holdings.",
+      "body": "It can involve reducing reinvestment of maturing assets or selling holdings. It is distinct from changing the policy rate.",
+      "example": "Not reinvesting a maturing bond can reduce the central bank’s holdings."
+    },
+    "aliases": [
+      "양적긴축",
+      "quantitative tightening",
+      "QT"
+    ],
+    "related": [
+      "quantitative-easing",
+      "policy-rate"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "fiscal-policy",
+    "topic_slug": "policy",
+    "ko": {
+      "name": "재정정책",
+      "summary": "정부가 지출과 세금 등을 통해 경제에 영향을 주는 정책.",
+      "body": "재정정책은 수요와 소득 분배, 장기 생산 여건에 영향을 줄 수 있습니다. 정책 효과는 재원 조달 방식과 경제의 여유 생산능력 등에 좌우됩니다.",
+      "example": "공공투자 확대와 세금 변경은 서로 다른 경로로 경제에 영향을 줍니다."
+    },
+    "en": {
+      "name": "Fiscal policy",
+      "summary": "Government use of spending and taxation to influence the economy.",
+      "body": "Fiscal policy can affect demand, distribution and productive capacity. Its effects depend on financing and the economy’s available capacity.",
+      "example": "Public investment and tax changes influence the economy through different channels."
+    },
+    "aliases": [
+      "재정정책",
+      "fiscal policy"
+    ],
+    "related": [
+      "monetary-policy",
+      "gdp"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "monetary-policy",
+    "topic_slug": "monetary",
+    "ko": {
+      "name": "통화정책",
+      "summary": "중앙은행이 금리와 금융 여건에 영향을 주는 정책.",
+      "body": "물가 안정 등 법적 목표 아래 금리·유동성 수단을 사용합니다. 정책 변화가 소비·투자·물가로 전달되는 데에는 시간이 걸립니다.",
+      "example": "금리 변경 직후 물가가 같은 폭으로 변하지는 않습니다."
+    },
+    "en": {
+      "name": "Monetary policy",
+      "summary": "Central bank policy affecting interest rates and financial conditions.",
+      "body": "Central banks use rate and liquidity tools to pursue their mandates. Changes take time to transmit to spending, investment and prices.",
+      "example": "Prices do not immediately change by the same amount as a policy-rate adjustment."
+    },
+    "aliases": [
+      "통화정책",
+      "monetary policy"
+    ],
+    "related": [
+      "policy-rate",
+      "fiscal-policy"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "current-account",
+    "topic_slug": "global",
+    "ko": {
+      "name": "경상수지",
+      "summary": "재화·서비스 거래와 소득 등의 대외 거래 수지를 합한 지표.",
+      "body": "상품수지뿐 아니라 서비스수지와 본원·이전소득수지 등을 포함합니다. 경상수지 흑자만으로 모든 경제 상황이 좋다고 단정할 수는 없습니다.",
+      "example": "상품수지가 흑자여도 다른 항목 때문에 경상수지 규모는 달라질 수 있습니다."
+    },
+    "en": {
+      "name": "Current account",
+      "summary": "A balance covering trade in goods and services and income flows with other economies.",
+      "body": "It includes goods, services, primary income and secondary income. A surplus alone does not prove that all aspects of an economy are strong.",
+      "example": "A goods surplus may be offset by other current-account components."
+    },
+    "aliases": [
+      "경상수지",
+      "current account"
+    ],
+    "related": [
+      "trade-balance",
+      "exchange-rate"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "trade-balance",
+    "topic_slug": "global",
+    "ko": {
+      "name": "무역수지",
+      "summary": "정해진 통계 기준에 따른 상품 수출과 수입의 차이.",
+      "body": "통관 기준 무역수지와 국제수지의 상품수지는 작성 기준이 달라 수치가 다를 수 있습니다. 같은 정의의 시계열끼리 비교해야 합니다.",
+      "example": "수출 100, 수입 90이면 같은 기준에서 무역수지는 10의 흑자입니다."
+    },
+    "en": {
+      "name": "Trade balance",
+      "summary": "The difference between goods exports and imports under a specified statistical basis.",
+      "body": "Customs trade balances can differ from balance-of-payments goods balances because of statistical definitions. Compare consistently defined series.",
+      "example": "Exports of 100 and imports of 90 imply a surplus of 10 on the same basis."
+    },
+    "aliases": [
+      "무역수지",
+      "trade balance"
+    ],
+    "related": [
+      "current-account",
+      "exchange-rate"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "stagflation",
+    "topic_slug": "macro",
+    "ko": {
+      "name": "스태그플레이션",
+      "summary": "경기 부진과 높은 물가 상승이 함께 나타나는 상황.",
+      "body": "공급 충격 등으로 생산 비용이 오르면 성장과 물가 목표 사이의 정책 선택이 어려워질 수 있습니다. 한 달의 지표만으로 확정하지 않습니다.",
+      "example": "에너지 비용 급등은 생산을 위축시키면서 물가를 올릴 수 있습니다."
+    },
+    "en": {
+      "name": "Stagflation",
+      "summary": "Weak economic activity occurring alongside high inflation.",
+      "body": "Supply shocks can raise production costs and complicate the trade-off between growth and inflation. A single month of data is not sufficient to establish the condition.",
+      "example": "A jump in energy costs can weaken production while pushing prices higher."
+    },
+    "aliases": [
+      "스태그플레이션",
+      "stagflation"
+    ],
+    "related": [
+      "inflation",
+      "recession"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "recession",
+    "topic_slug": "macro",
+    "ko": {
+      "name": "경기침체",
+      "summary": "경제 활동이 광범위하게 위축되는 국면.",
+      "body": "생산·고용·소득·소비 등 여러 지표를 함께 봅니다. 실질 GDP의 연속 감소는 참고 기준이지만 모든 나라에서 동일한 공식 판정 규칙은 아닙니다.",
+      "example": "GDP와 고용, 소비를 함께 보면 경기 위축의 폭을 파악하기 쉽습니다."
+    },
+    "en": {
+      "name": "Recession",
+      "summary": "A broad contraction in economic activity.",
+      "body": "Production, employment, income and spending are considered together. Consecutive GDP declines are a rule of thumb, not a universal official definition.",
+      "example": "Looking at GDP, jobs and spending together gives a fuller picture of contraction."
+    },
+    "aliases": [
+      "경기침체",
+      "recession"
+    ],
+    "related": [
+      "gdp",
+      "unemployment"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "base-effect",
+    "topic_slug": "prices",
+    "ko": {
+      "name": "기저효과",
+      "summary": "비교 기준 시점의 수준 때문에 변화율이 크게 달라지는 효과.",
+      "body": "현재 수준이 비슷해도 과거 기준값이 높거나 낮으면 증가율이 달라집니다. 변화율과 실제 수준을 함께 살펴야 합니다.",
+      "example": "지난해 가격이 급등했다면 올해 전년 대비 상승률이 낮게 보일 수 있습니다."
+    },
+    "en": {
+      "name": "Base effect",
+      "summary": "An effect on growth rates caused by the level of the comparison period.",
+      "body": "Even with a similar current level, an unusually high or low earlier value changes the measured growth rate. Check both levels and rates.",
+      "example": "An unusually high price a year ago can make today’s annual inflation rate look lower."
+    },
+    "aliases": [
+      "기저효과",
+      "base effect"
+    ],
+    "related": [
+      "cpi",
+      "inflation"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "diversification",
+    "topic_slug": "basics",
+    "ko": {
+      "name": "분산투자",
+      "summary": "서로 다른 위험 요인에 자산을 나누어 투자하는 방식.",
+      "body": "자산 개수뿐 아니라 가격이 함께 움직이는 정도도 중요합니다. 분산은 특정 위험을 줄일 수 있지만 모든 손실 가능성을 없애지는 못합니다.",
+      "example": "같은 업종 주식 여러 개만 보유하면 업종 공통 위험이 남습니다."
+    },
+    "en": {
+      "name": "Diversification",
+      "summary": "Spreading investments across different sources of risk.",
+      "body": "Correlations matter as well as the number of holdings. Diversification may reduce some risks but cannot remove every possibility of loss.",
+      "example": "Many stocks from one industry can still share substantial industry risk."
+    },
+    "aliases": [
+      "분산투자",
+      "diversification"
+    ],
+    "related": [
+      "risk-return",
+      "equity"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "risk-return",
+    "topic_slug": "basics",
+    "ko": {
+      "name": "위험과 수익",
+      "summary": "불확실한 손실 가능성과 기대 보상의 관계.",
+      "body": "높은 기대 수익은 실제 고수익을 보장하지 않습니다. 가격 변동, 신용, 유동성, 환율 등 위험의 종류와 감당 가능한 손실을 구분해야 합니다.",
+      "example": "기대 수익률 10%인 상품도 실제로 손실을 낼 수 있습니다."
+    },
+    "en": {
+      "name": "Risk and return",
+      "summary": "The relationship between uncertainty of outcomes and expected reward.",
+      "body": "A higher expected return is not a promise. Consider market, credit, liquidity and currency risks alongside losses you can bear.",
+      "example": "An investment with a 10% expected return can still lose money."
+    },
+    "aliases": [
+      "위험과 수익",
+      "risk and return"
+    ],
+    "related": [
+      "diversification",
+      "liquidity"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "compound-interest",
+    "topic_slug": "basics",
+    "ko": {
+      "name": "복리",
+      "summary": "원금뿐 아니라 누적된 이자에도 이자가 붙는 계산 방식.",
+      "body": "이자를 재투자하고 같은 수익률이 유지된다는 가정에서 계산합니다. 실제 결과에는 수익률 변동, 세금, 수수료가 영향을 줍니다.",
+      "example": "100만원을 연 5%로 2년 복리 계산하면 세전 110만 2,500원입니다."
+    },
+    "en": {
+      "name": "Compound interest",
+      "summary": "Interest calculated on both principal and accumulated interest.",
+      "body": "The calculation assumes reinvestment and a stated rate. Actual results depend on changing returns, taxes and fees.",
+      "example": "At 5% annually, 1,000 grows to 1,102.50 over two years before tax."
+    },
+    "aliases": [
+      "복리",
+      "compound interest"
+    ],
+    "related": [
+      "nominal-rate",
+      "real-rate"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "equity",
+    "topic_slug": "business",
+    "ko": {
+      "name": "주식",
+      "summary": "기업의 소유 지분을 나타내는 증권.",
+      "body": "주주는 기업 성과에 따른 이익과 손실에 노출됩니다. 배당과 의결권은 주식 종류와 기업 결정 등에 따라 달라집니다.",
+      "example": "회사의 이익이 늘어도 주가나 배당이 반드시 오르지는 않습니다."
+    },
+    "en": {
+      "name": "Equity",
+      "summary": "A security representing ownership in a company.",
+      "body": "Shareholders participate in a company’s gains and losses. Dividends and voting rights depend on the share class and company decisions.",
+      "example": "Higher company profits do not guarantee a higher share price or dividend."
+    },
+    "aliases": [
+      "주식",
+      "equity"
+    ],
+    "related": [
+      "dividend",
+      "risk-return"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "dividend",
+    "topic_slug": "business",
+    "ko": {
+      "name": "배당",
+      "summary": "기업이 이익 등의 일부를 주주에게 나누는 것.",
+      "body": "배당은 확정된 예금 이자가 아닙니다. 배당수익률은 주당 배당금과 주가로 계산하므로 주가 하락만으로 높아질 수도 있습니다.",
+      "example": "주당 배당금 1,000원, 주가 20,000원이면 단순 배당수익률은 5%입니다."
+    },
+    "en": {
+      "name": "Dividend",
+      "summary": "A distribution by a company to its shareholders.",
+      "body": "A dividend is not guaranteed deposit interest. Dividend yield depends on both the dividend and the share price, and can rise just because the price falls.",
+      "example": "A dividend of 1 on a share priced at 20 gives a simple dividend yield of 5%."
+    },
+    "aliases": [
+      "배당",
+      "dividend"
+    ],
+    "related": [
+      "equity",
+      "risk-return"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "percentage-point",
+    "topic_slug": "basics",
+    "ko": {
+      "name": "퍼센트포인트",
+      "summary": "두 백분율 사이의 단순한 차이를 나타내는 단위.",
+      "body": "비율 자체의 증가율인 퍼센트와 구별해야 합니다. 금리·실업률 변화는 퍼센트포인트로 표현하면 차이를 명확히 알 수 있습니다.",
+      "example": "금리가 2%에서 3%가 되면 1%포인트 상승이며, 기존 금리 대비로는 50% 증가입니다."
+    },
+    "en": {
+      "name": "Percentage point",
+      "summary": "The arithmetic difference between two percentages.",
+      "body": "It differs from percentage growth in the rate itself. Percentage points make changes in rates such as interest or unemployment easier to interpret.",
+      "example": "A rate rising from 2% to 3% increases by 1 percentage point, or 50% relative to its old value."
+    },
+    "aliases": [
+      "퍼센트포인트",
+      "%포인트",
+      "percentage point"
+    ],
+    "related": [
+      "policy-rate",
+      "unemployment"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  },
+  {
+    "slug": "seasonal-adjustment",
+    "topic_slug": "macro",
+    "ko": {
+      "name": "계절조정",
+      "summary": "반복되는 계절적 패턴을 통계에서 조정하는 과정.",
+      "body": "휴가·명절 등 반복 요인이 비교를 흐릴 수 있어 조정합니다. 조정치도 개정될 수 있으며 원계열과 계절조정계열을 섞어 비교하지 않아야 합니다.",
+      "example": "매년 비슷한 시기에 늘어나는 고용을 조정하면 최근 흐름을 비교하기 쉽습니다."
+    },
+    "en": {
+      "name": "Seasonal adjustment",
+      "summary": "A statistical adjustment for recurring seasonal patterns.",
+      "body": "Holidays and other recurring patterns can obscure comparisons. Adjusted data can be revised; avoid mixing adjusted and unadjusted series.",
+      "example": "Removing a recurring annual hiring pattern can make recent employment trends clearer."
+    },
+    "aliases": [
+      "계절조정",
+      "seasonal adjustment"
+    ],
+    "related": [
+      "unemployment",
+      "gdp"
+    ],
+    "source_url": "https://www.bok.or.kr/portal/bbs/B0000249/view.do?menuNo=200765&nttId=235017",
+    "reviewed_at": "2026-10-16",
+    "active": true
+  }
+]

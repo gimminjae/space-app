@@ -1,3 +1,5 @@
+import {glossary} from '@/lib/economy/catalog';
+import {findTermSlugs} from '@/lib/economy/term-links';
 import { assertOrigin, requireSpace, errorResponse, readJson, HttpError } from '@/lib/server/auth';
 import { db, dbError } from '@/lib/server/db';
 import { postSchema } from '@/lib/validation';
@@ -10,7 +12,7 @@ export async function POST(request:Request) {
     if(post.status==='public' && !post.category_id) throw new HttpError(400,'카테고리를 선택해 주세요.');
     const tags=[...new Set(post.tags)].map(name=>({name,slug:slugify(name)}));
     if(tags.some(t=>!t.slug)) throw new HttpError(400,'태그에 문자나 숫자를 포함해 주세요.');
-    const {data,error}=await client.rpc('space_save_post',{p_post:{...post,summary:post.summary||excerpt(post.content)},p_tags:tags}); dbError(error);
+    const {data,error}=await client.rpc('space_save_post',{p_post:{...post,terms:findTermSlugs(post.content,glossary),summary:post.summary||excerpt(post.content)},p_tags:tags}); dbError(error);
     return Response.json({post:data},{headers:{'Cache-Control':'no-store'}});
   } catch(error) { return errorResponse(error); }
 }

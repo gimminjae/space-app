@@ -1,0 +1,1300 @@
+[
+  {
+    "id": "bok-2026-10",
+    "country": "KR",
+    "kind": "policy-rate",
+    "ko": {
+      "name": "한국은행 통화정책방향 결정",
+      "summary": "중앙은행의 통화정책 결정 일정입니다. 날짜만 확인된 경우 발표 시각을 추정하지 않습니다."
+    },
+    "en": {
+      "name": "Bank of Korea policy decision",
+      "summary": "A scheduled monetary policy decision. No release time is inferred when only the date is confirmed."
+    },
+    "topic_slug": "monetary",
+    "event_date": "2026-10-22",
+    "starts_at": null,
+    "source_timezone": "Asia/Seoul",
+    "precision": "date_only",
+    "status": "scheduled",
+    "source_url": "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A",
+    "provider": "editorial",
+    "provider_key": "bok-2026-10",
+    "reference_period": null,
+    "indicator_slugs": [
+      "kr-policy-rate"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "fomc-2026-10",
+    "country": "US",
+    "kind": "policy-rate",
+    "ko": {
+      "name": "미 연준 금리 결정",
+      "summary": "중앙은행의 통화정책 결정 일정입니다. 날짜만 확인된 경우 발표 시각을 추정하지 않습니다."
+    },
+    "en": {
+      "name": "Federal Reserve rate decision",
+      "summary": "A scheduled monetary policy decision. No release time is inferred when only the date is confirmed."
+    },
+    "topic_slug": "monetary",
+    "event_date": "2026-10-28",
+    "starts_at": null,
+    "source_timezone": "America/New_York",
+    "precision": "date_only",
+    "status": "scheduled",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "provider": "editorial",
+    "provider_key": "fomc-2026-10",
+    "reference_period": null,
+    "indicator_slugs": [
+      "us-policy-rate"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bea-gdp-2026-q3-advance",
+    "country": "US",
+    "kind": "gdp",
+    "ko": {
+      "name": "미국 3분기 GDP 속보 추정",
+      "summary": "한 분기의 경제 생산을 추정한 자료입니다. 속보치와 수정치의 차이, 전기 대비 연율의 의미를 구분하세요."
+    },
+    "en": {
+      "name": "US Q3 GDP advance estimate",
+      "summary": "An estimate of quarterly economic output. Distinguish advance and revised estimates and annualized quarterly growth."
+    },
+    "topic_slug": "macro",
+    "event_date": "2026-10-29",
+    "starts_at": "2026-10-29T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bea.gov/news/schedule",
+    "provider": "editorial",
+    "provider_key": "bea-gdp-2026-q3-advance",
+    "reference_period": "2026-Q3",
+    "indicator_slugs": [],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2026-10",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2026-11-06",
+    "starts_at": "2026-11-06T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2026-10",
+    "reference_period": "2026-10",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2026-10",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2026-11-10",
+    "starts_at": "2026-11-10T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2026-10",
+    "reference_period": "2026-10",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bea-gdp-2026-q3-second",
+    "country": "US",
+    "kind": "gdp",
+    "ko": {
+      "name": "미국 3분기 GDP 2차 추정",
+      "summary": "한 분기의 경제 생산을 추정한 자료입니다. 속보치와 수정치의 차이, 전기 대비 연율의 의미를 구분하세요."
+    },
+    "en": {
+      "name": "US Q3 GDP second estimate",
+      "summary": "An estimate of quarterly economic output. Distinguish advance and revised estimates and annualized quarterly growth."
+    },
+    "topic_slug": "macro",
+    "event_date": "2026-11-25",
+    "starts_at": "2026-11-25T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bea.gov/news/schedule",
+    "provider": "editorial",
+    "provider_key": "bea-gdp-2026-q3-second",
+    "reference_period": "2026-Q3",
+    "indicator_slugs": [],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bok-2026-11",
+    "country": "KR",
+    "kind": "policy-rate",
+    "ko": {
+      "name": "한국은행 통화정책방향 결정",
+      "summary": "중앙은행의 통화정책 결정 일정입니다. 날짜만 확인된 경우 발표 시각을 추정하지 않습니다."
+    },
+    "en": {
+      "name": "Bank of Korea policy decision",
+      "summary": "A scheduled monetary policy decision. No release time is inferred when only the date is confirmed."
+    },
+    "topic_slug": "monetary",
+    "event_date": "2026-11-26",
+    "starts_at": null,
+    "source_timezone": "Asia/Seoul",
+    "precision": "date_only",
+    "status": "scheduled",
+    "source_url": "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A",
+    "provider": "editorial",
+    "provider_key": "bok-2026-11",
+    "reference_period": null,
+    "indicator_slugs": [
+      "kr-policy-rate"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2026-11",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2026-12-04",
+    "starts_at": "2026-12-04T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2026-11",
+    "reference_period": "2026-11",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "fomc-2026-12",
+    "country": "US",
+    "kind": "policy-rate",
+    "ko": {
+      "name": "미 연준 금리 결정",
+      "summary": "중앙은행의 통화정책 결정 일정입니다. 날짜만 확인된 경우 발표 시각을 추정하지 않습니다."
+    },
+    "en": {
+      "name": "Federal Reserve rate decision",
+      "summary": "A scheduled monetary policy decision. No release time is inferred when only the date is confirmed."
+    },
+    "topic_slug": "monetary",
+    "event_date": "2026-12-09",
+    "starts_at": null,
+    "source_timezone": "America/New_York",
+    "precision": "date_only",
+    "status": "scheduled",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "provider": "editorial",
+    "provider_key": "fomc-2026-12",
+    "reference_period": null,
+    "indicator_slugs": [
+      "us-policy-rate"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2026-11",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2026-12-10",
+    "starts_at": "2026-12-10T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2026-11",
+    "reference_period": "2026-11",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2026-12",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2027-01-08",
+    "starts_at": "2027-01-08T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2026-12",
+    "reference_period": "2026-12",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2026-12",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2027-01-13",
+    "starts_at": "2027-01-13T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2026-12",
+    "reference_period": "2026-12",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "fomc-2027-01",
+    "country": "US",
+    "kind": "policy-rate",
+    "ko": {
+      "name": "미 연준 금리 결정",
+      "summary": "중앙은행의 통화정책 결정 일정입니다. 날짜만 확인된 경우 발표 시각을 추정하지 않습니다."
+    },
+    "en": {
+      "name": "Federal Reserve rate decision",
+      "summary": "A scheduled monetary policy decision. No release time is inferred when only the date is confirmed."
+    },
+    "topic_slug": "monetary",
+    "event_date": "2027-01-27",
+    "starts_at": null,
+    "source_timezone": "America/New_York",
+    "precision": "date_only",
+    "status": "scheduled",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "provider": "editorial",
+    "provider_key": "fomc-2027-01",
+    "reference_period": null,
+    "indicator_slugs": [
+      "us-policy-rate"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2027-01",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2027-02-05",
+    "starts_at": "2027-02-05T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2027-01",
+    "reference_period": "2027-01",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2027-01",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2027-02-11",
+    "starts_at": "2027-02-11T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2027-01",
+    "reference_period": "2027-01",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2027-02",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2027-03-05",
+    "starts_at": "2027-03-05T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2027-02",
+    "reference_period": "2027-02",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2027-02",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2027-03-10",
+    "starts_at": "2027-03-10T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2027-02",
+    "reference_period": "2027-02",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "fomc-2027-03",
+    "country": "US",
+    "kind": "policy-rate",
+    "ko": {
+      "name": "미 연준 금리 결정",
+      "summary": "중앙은행의 통화정책 결정 일정입니다. 날짜만 확인된 경우 발표 시각을 추정하지 않습니다."
+    },
+    "en": {
+      "name": "Federal Reserve rate decision",
+      "summary": "A scheduled monetary policy decision. No release time is inferred when only the date is confirmed."
+    },
+    "topic_slug": "monetary",
+    "event_date": "2027-03-17",
+    "starts_at": null,
+    "source_timezone": "America/New_York",
+    "precision": "date_only",
+    "status": "scheduled",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "provider": "editorial",
+    "provider_key": "fomc-2027-03",
+    "reference_period": null,
+    "indicator_slugs": [
+      "us-policy-rate"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2027-03",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2027-04-02",
+    "starts_at": "2027-04-02T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2027-03",
+    "reference_period": "2027-03",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2027-03",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2027-04-13",
+    "starts_at": "2027-04-13T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2027-03",
+    "reference_period": "2027-03",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "fomc-2027-04",
+    "country": "US",
+    "kind": "policy-rate",
+    "ko": {
+      "name": "미 연준 금리 결정",
+      "summary": "중앙은행의 통화정책 결정 일정입니다. 날짜만 확인된 경우 발표 시각을 추정하지 않습니다."
+    },
+    "en": {
+      "name": "Federal Reserve rate decision",
+      "summary": "A scheduled monetary policy decision. No release time is inferred when only the date is confirmed."
+    },
+    "topic_slug": "monetary",
+    "event_date": "2027-04-28",
+    "starts_at": null,
+    "source_timezone": "America/New_York",
+    "precision": "date_only",
+    "status": "scheduled",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "provider": "editorial",
+    "provider_key": "fomc-2027-04",
+    "reference_period": null,
+    "indicator_slugs": [
+      "us-policy-rate"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2027-04",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2027-05-07",
+    "starts_at": "2027-05-07T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2027-04",
+    "reference_period": "2027-04",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2027-04",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2027-05-12",
+    "starts_at": "2027-05-12T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2027-04",
+    "reference_period": "2027-04",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2027-05",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2027-06-04",
+    "starts_at": "2027-06-04T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2027-05",
+    "reference_period": "2027-05",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "fomc-2027-06",
+    "country": "US",
+    "kind": "policy-rate",
+    "ko": {
+      "name": "미 연준 금리 결정",
+      "summary": "중앙은행의 통화정책 결정 일정입니다. 날짜만 확인된 경우 발표 시각을 추정하지 않습니다."
+    },
+    "en": {
+      "name": "Federal Reserve rate decision",
+      "summary": "A scheduled monetary policy decision. No release time is inferred when only the date is confirmed."
+    },
+    "topic_slug": "monetary",
+    "event_date": "2027-06-09",
+    "starts_at": null,
+    "source_timezone": "America/New_York",
+    "precision": "date_only",
+    "status": "scheduled",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "provider": "editorial",
+    "provider_key": "fomc-2027-06",
+    "reference_period": null,
+    "indicator_slugs": [
+      "us-policy-rate"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2027-05",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2027-06-10",
+    "starts_at": "2027-06-10T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2027-05",
+    "reference_period": "2027-05",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2027-06",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2027-07-02",
+    "starts_at": "2027-07-02T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2027-06",
+    "reference_period": "2027-06",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2027-06",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2027-07-14",
+    "starts_at": "2027-07-14T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2027-06",
+    "reference_period": "2027-06",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "fomc-2027-07",
+    "country": "US",
+    "kind": "policy-rate",
+    "ko": {
+      "name": "미 연준 금리 결정",
+      "summary": "중앙은행의 통화정책 결정 일정입니다. 날짜만 확인된 경우 발표 시각을 추정하지 않습니다."
+    },
+    "en": {
+      "name": "Federal Reserve rate decision",
+      "summary": "A scheduled monetary policy decision. No release time is inferred when only the date is confirmed."
+    },
+    "topic_slug": "monetary",
+    "event_date": "2027-07-28",
+    "starts_at": null,
+    "source_timezone": "America/New_York",
+    "precision": "date_only",
+    "status": "scheduled",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "provider": "editorial",
+    "provider_key": "fomc-2027-07",
+    "reference_period": null,
+    "indicator_slugs": [
+      "us-policy-rate"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2027-07",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2027-08-06",
+    "starts_at": "2027-08-06T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2027-07",
+    "reference_period": "2027-07",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2027-07",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2027-08-11",
+    "starts_at": "2027-08-11T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2027-07",
+    "reference_period": "2027-07",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2027-08",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2027-09-03",
+    "starts_at": "2027-09-03T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2027-08",
+    "reference_period": "2027-08",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2027-08",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2027-09-14",
+    "starts_at": "2027-09-14T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2027-08",
+    "reference_period": "2027-08",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "fomc-2027-09",
+    "country": "US",
+    "kind": "policy-rate",
+    "ko": {
+      "name": "미 연준 금리 결정",
+      "summary": "중앙은행의 통화정책 결정 일정입니다. 날짜만 확인된 경우 발표 시각을 추정하지 않습니다."
+    },
+    "en": {
+      "name": "Federal Reserve rate decision",
+      "summary": "A scheduled monetary policy decision. No release time is inferred when only the date is confirmed."
+    },
+    "topic_slug": "monetary",
+    "event_date": "2027-09-15",
+    "starts_at": null,
+    "source_timezone": "America/New_York",
+    "precision": "date_only",
+    "status": "scheduled",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "provider": "editorial",
+    "provider_key": "fomc-2027-09",
+    "reference_period": null,
+    "indicator_slugs": [
+      "us-policy-rate"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2027-09",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2027-10-08",
+    "starts_at": "2027-10-08T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2027-09",
+    "reference_period": "2027-09",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2027-09",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2027-10-14",
+    "starts_at": "2027-10-14T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2027-09",
+    "reference_period": "2027-09",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "fomc-2027-10",
+    "country": "US",
+    "kind": "policy-rate",
+    "ko": {
+      "name": "미 연준 금리 결정",
+      "summary": "중앙은행의 통화정책 결정 일정입니다. 날짜만 확인된 경우 발표 시각을 추정하지 않습니다."
+    },
+    "en": {
+      "name": "Federal Reserve rate decision",
+      "summary": "A scheduled monetary policy decision. No release time is inferred when only the date is confirmed."
+    },
+    "topic_slug": "monetary",
+    "event_date": "2027-10-27",
+    "starts_at": null,
+    "source_timezone": "America/New_York",
+    "precision": "date_only",
+    "status": "scheduled",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "provider": "editorial",
+    "provider_key": "fomc-2027-10",
+    "reference_period": null,
+    "indicator_slugs": [
+      "us-policy-rate"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2027-10",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2027-11-05",
+    "starts_at": "2027-11-05T12:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2027-10",
+    "reference_period": "2027-10",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2027-10",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2027-11-10",
+    "starts_at": "2027-11-10T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2027-10",
+    "reference_period": "2027-10",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-employment-2027-11",
+    "country": "US",
+    "kind": "employment",
+    "ko": {
+      "name": "미국 고용동향 발표",
+      "summary": "고용과 실업 관련 통계 발표입니다. 실업률의 계절조정 여부와 조사 기준을 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Employment Situation",
+      "summary": "An employment and unemployment release. Check seasonal adjustment and survey definitions."
+    },
+    "topic_slug": "macro",
+    "event_date": "2027-12-03",
+    "starts_at": "2027-12-03T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "provider": "editorial",
+    "provider_key": "bls-employment-2027-11",
+    "reference_period": "2027-11",
+    "indicator_slugs": [
+      "us-unemployment"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "fomc-2027-12",
+    "country": "US",
+    "kind": "policy-rate",
+    "ko": {
+      "name": "미 연준 금리 결정",
+      "summary": "중앙은행의 통화정책 결정 일정입니다. 날짜만 확인된 경우 발표 시각을 추정하지 않습니다."
+    },
+    "en": {
+      "name": "Federal Reserve rate decision",
+      "summary": "A scheduled monetary policy decision. No release time is inferred when only the date is confirmed."
+    },
+    "topic_slug": "monetary",
+    "event_date": "2027-12-08",
+    "starts_at": null,
+    "source_timezone": "America/New_York",
+    "precision": "date_only",
+    "status": "scheduled",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "provider": "editorial",
+    "provider_key": "fomc-2027-12",
+    "reference_period": null,
+    "indicator_slugs": [
+      "us-policy-rate"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  },
+  {
+    "id": "bls-cpi-2027-11",
+    "country": "US",
+    "kind": "cpi",
+    "ko": {
+      "name": "미국 소비자물가지수 발표",
+      "summary": "소비자가 구입하는 상품과 서비스의 가격 변화를 발표합니다. 발표 대상 기간과 전년 대비 변화를 함께 확인하세요."
+    },
+    "en": {
+      "name": "US Consumer Price Index",
+      "summary": "A release on changes in consumer prices. Check the reference period and year-over-year comparison."
+    },
+    "topic_slug": "prices",
+    "event_date": "2027-12-10",
+    "starts_at": "2027-12-10T13:30:00Z",
+    "source_timezone": "America/New_York",
+    "precision": "time",
+    "status": "scheduled",
+    "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "provider": "editorial",
+    "provider_key": "bls-cpi-2027-11",
+    "reference_period": "2027-11",
+    "indicator_slugs": [
+      "us-cpi"
+    ],
+    "manual_override": true,
+    "active": true,
+    "reviewed_at": "2026-10-16T00:00:00Z",
+    "updated_at": "2026-10-16T00:00:00Z",
+    "history": []
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "slug": "basics",
+    "ko": {
+      "name": "경제 기초",
+      "summary": "경제를 이해하는 개념과 일상의 선택."
+    },
+    "en": {
+      "name": "Economic foundations",
+      "summary": "Concepts that explain everyday economic choices."
+    },
+    "active": true,
+    "sort_order": 0
+  },
+  {
+    "slug": "macro",
+    "ko": {
+      "name": "거시경제",
+      "summary": "성장과 고용, 경제 전체의 흐름."
+    },
+    "en": {
+      "name": "Macroeconomics",
+      "summary": "Growth, employment and the wider economy."
+    },
+    "active": true,
+    "sort_order": 1
+  },
+  {
+    "slug": "monetary",
+    "ko": {
+      "name": "금리·통화정책",
+      "summary": "중앙은행과 돈의 흐름."
+    },
+    "en": {
+      "name": "Interest rates & monetary policy",
+      "summary": "Central banks and the cost of money."
+    },
+    "active": true,
+    "sort_order": 2
+  },
+  {
+    "slug": "business",
+    "ko": {
+      "name": "주식·기업",
+      "summary": "기업과 산업, 자본시장의 변화."
+    },
+    "en": {
+      "name": "Stocks & business",
+      "summary": "Companies, industries and capital markets."
+    },
+    "active": true,
+    "sort_order": 3
+  },
+  {
+    "slug": "real-estate",
+    "ko": {
+      "name": "부동산",
+      "summary": "주거와 토지, 부동산 경제."
+    },
+    "en": {
+      "name": "Real estate",
+      "summary": "Housing, land and property markets."
+    },
+    "active": true,
+    "sort_order": 4
+  },
+  {
+    "slug": "global",
+    "ko": {
+      "name": "환율·국제경제",
+      "summary": "환율과 무역, 세계 경제의 연결."
+    },
+    "en": {
+      "name": "Currencies & global economy",
+      "summary": "Exchange rates, trade and global connections."
+    },
+    "active": true,
+    "sort_order": 5
+  },
+  {
+    "slug": "prices",
+    "ko": {
+      "name": "물가·생활경제",
+      "summary": "물가와 가계의 구매력."
+    },
+    "en": {
+      "name": "Prices & everyday economy",
+      "summary": "Prices and household purchasing power."
+    },
+    "active": true,
+    "sort_order": 6
+  },
+  {
+    "slug": "policy",
+    "ko": {
+      "name": "재정·정책",
+      "summary": "정부의 지출과 세금, 경제 정책."
+    },
+    "en": {
+      "name": "Fiscal policy",
+      "summary": "Government spending, taxation and public policy."
+    },
+    "active": true,
+    "sort_order": 7
+  }
+]
