@@ -5,6 +5,7 @@ Next.js · Supabase · AWS S3 기반 한국어 경제 블로그입니다.
 - 운영 주소: https://space.service.io.kr
 - 관리 화면: https://space.service.io.kr/admin
 - 배포 관리: https://app.netlify.com/projects/space-service-io-kr
+- 소스 저장소: https://github.com/gimminjae/space-app (`master` 브랜치)
 - 사이트맵: https://space.service.io.kr/sitemap.xml
 - RSS: https://space.service.io.kr/feed.xml
 
@@ -107,13 +108,23 @@ Google Search Console의 기존 `service.io.kr` 도메인 속성은 `space.servi
 
 ## 재배포
 
+Netlify가 GitHub의 `gimminjae/space-app` 저장소와 연결되어 있습니다. `master` 브랜치에 커밋을 푸시하면 자동 테스트와 Next.js 프로덕션 빌드를 실행하고, 성공한 결과를 https://space.service.io.kr 에 자동 반영합니다. 빌드 실패 시 이전 정상 배포가 유지됩니다.
+
+```sh
+git add .
+git commit -m "변경 내용"
+git push origin master
+```
+
+환경변수는 Netlify에서 관리하며 GitHub에 저장하지 않습니다. 환경변수만 변경했을 때는 Netlify의 Deploys에서 새 배포를 실행합니다. 수동 배포가 필요할 때만 아래 CLI 명령을 사용합니다.
+
 ```sh
 npx netlify login
 npx netlify link --id 4321a8b0-9509-4377-af54-d9cc0f64ede3
 npx netlify deploy --prod --context production
 ```
 
-CLI 배포는 빌드와 Next.js 함수 패키징까지 수행합니다. 환경변수 변경 후에도 재배포해야 합니다. `.env.local`과 관리 비밀번호 파일을 Git·소스 ZIP에 포함하지 마세요. 향후 Git 저장소와 Netlify를 연결하면 커밋마다 자동 배포할 수 있습니다. 현재는 CLI 배포입니다.
+CLI 배포도 빌드와 Next.js 함수 패키징까지 수행합니다. 환경변수 변경 후에도 재배포해야 합니다. `.env.local`과 관리 비밀번호 파일을 Git·소스 ZIP에 포함하지 마세요.
 
 ## 데이터 보존
 

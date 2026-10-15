@@ -5,6 +5,8 @@
 | 항목 | 상태 |
 | --- | --- |
 | Next.js 배포 | Netlify `space-service-io-kr`에 배포 |
+| GitHub 저장소 | https://github.com/gimminjae/space-app |
+| 자동 배포 | `master` 커밋 → 자동 테스트 → Next.js 빌드 → 운영 배포 |
 | 운영 주소 | https://space.service.io.kr 브라우저 HTTPS 접속 확인 |
 | DNS | 가비아 CNAME `space` → `space-service-io-kr.netlify.app.` 추가, TTL 600 |
 | HTTPS | Netlify 인증서 활성화, HTTPS 강제 사용 |
@@ -50,6 +52,12 @@ AdSense `service.io.kr`의 사이트 소유권은 확인됐고 심사 요청이 
 
 백업 자동화나 S3 미사용 파일 정리 작업은 별도로 생성하지 않았습니다. README의 데이터 보존 안내를 기준으로 운영 정책을 정하세요.
 
-최종 배포 ID: `6ad0d49180368b5cb3a4250e`
+GitHub 연결 전 CLI 배포 ID: `6ad0d49180368b5cb3a4250e`
 
 운영 점검 15개를 모두 통과했습니다. 로컬 네트워크의 새 도메인 DNS 캐시가 갱신되지 않아 HTTP 자동 검사는 동일한 운영 배포의 Netlify 기본 주소에서 수행했습니다. 전용 도메인의 HTTPS 화면은 Chrome에서, 사이트맵 수집은 Google Search Console에서 확인했습니다. 개별 결과는 `production-checks.json`에 있습니다.
+
+## GitHub 자동 배포
+
+기존 Netlify 프로젝트에 `gimminjae/space-app` 저장소의 `master` 브랜치를 연결했습니다. 빌드 명령은 저장소의 `netlify.toml`에 정의한 `npm test && npm run build`, 게시 디렉터리는 `.next`, Node.js 버전은 22입니다. 실제 배포 결과와 커밋 ID는 Netlify Deploys에서 확인할 수 있습니다.
+
+`.env.local`, 관리자 비밀번호, Netlify 인증 파일, node_modules, 빌드 결과물, Supabase 임시 파일은 Git에서 제외했습니다. 기존 Netlify 환경변수와 도메인 설정을 그대로 사용합니다.
