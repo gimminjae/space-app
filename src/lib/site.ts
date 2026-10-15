@@ -11,3 +11,5 @@ export function readingMinutes(content: string) { return Math.max(1, Math.ceil(c
 export function slugify(input: string) { return input.normalize('NFKC').toLowerCase().trim().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/[\s-]+/g, '-').replace(/^-|-$/g, '').slice(0, 100); }
 export function excerpt(content: string) { return content.replace(/!\[[^\]]*\]\([^)]*\)/g,'').replace(/\[([^\]]*)\]\([^)]*\)/g,'$1').replace(/[#*_>`~|]/g,'').replace(/\s+/g,' ').trim().slice(0,160); }
 export function xmlEscape(input: string) { return input.replace(/[<>&"']/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;',"'":'&apos;'}[c]!)); }
+
+export function postPath(post:{slug:string;space?:{slug:string}}){return post.space?`/s/${post.space.slug}/posts/${post.slug}`:`/posts/${post.slug}`;}

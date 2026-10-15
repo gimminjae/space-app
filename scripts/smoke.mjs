@@ -24,7 +24,10 @@ await check('/about', 200);
 await check('/privacy', 200);
 await check('/category/basics', 200);
 await check('/search?q=%EA%B8%88%EB%A6%AC', 200, html => assert.match(html, /name="robots" content="noindex/));
-await check('/admin', 200, html => assert.match(html, /name="robots" content="noindex/));
+await check('/login', 200, html => assert.match(html, /name="robots" content="noindex/));
+await check('/signup', 200);
+await check('/spaces', 200);
+await check('/admin', 307, (_html,response)=>assert.match(response.headers.get('location'),/\/login$/));
 await check('/posts/nonexistent-space-smoke-test', 404);
 await check('/media/not-a-valid-id', 404);
 await check('/sitemap.xml', 200, (xml, response) => {

@@ -8,14 +8,13 @@
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test tests/*.test.ts",
-    "admin:password": "node scripts/admin-password.mjs",
     "smoke": "node scripts/smoke.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "3.1152.0",
+    "@supabase/ssr": "0.12.7",
     "@supabase/supabase-js": "2.117.3",
     "@uiw/react-md-editor": "4.1.2",
-    "jose": "6.2.12",
     "lucide-react": "1.57.0",
     "next": "16.4.1",
     "react": "19.3.1",

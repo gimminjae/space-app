@@ -4,60 +4,42 @@
 
 | 항목 | 상태 |
 | --- | --- |
-| Next.js 배포 | Netlify `space-service-io-kr`에 배포 |
-| GitHub 저장소 | https://github.com/gimminjae/space-app |
-| 자동 배포 | `master` 커밋 → 자동 테스트 → Next.js 빌드 → 운영 배포 |
-| 운영 주소 | https://space.service.io.kr 브라우저 HTTPS 접속 확인 |
-| DNS | 가비아 CNAME `space` → `space-service-io-kr.netlify.app.` 추가, TTL 600 |
-| HTTPS | Netlify 인증서 활성화, HTTPS 강제 사용 |
-| Google Search Console | 기존 `service.io.kr` 도메인 속성에 사이트맵 제출, **성공**, 발견 페이지 2개 |
-| AdSense | 게시자 연결 및 ads.txt 정상 응답, 상위 사이트 `service.io.kr` 심사 중 |
-| Supabase | GPT 계정 `space` 조직 생성, 프로젝트 생성은 사용자 요청으로 보류 |
-| S3 | 서버 업로드 구현 완료, 실제 버킷 및 환경변수 입력 필요 |
-| 게시글 | 아직 작성·발행한 글 없음 |
+| 운영 주소 | https://space.service.io.kr |
+| GitHub | https://github.com/gimminjae/space-app, master 자동 배포 |
+| Netlify | space-service-io-kr / 4321a8b0-9509-4377-af54-d9cc0f64ede3 |
+| Supabase | space / qkhhjhfnuclneuotfrkt / 도쿄 / 실제 연결 완료 |
+| 마이그레이션 | 20261015120706_space_blog, 20261015135050_member_spaces, 20261015141457_member_policy_indexes 적용 |
+| 로그인·회원 공간 | 구현 및 실제 계정 검증 완료 |
+| 글 등록·수정·삭제 | 실제 Supabase에서 검증 완료 |
+| 일반 회원가입·재설정 메일 | SMTP 미설정 및 Redirect URL 허용 승인 대기, AUTH_EMAIL_READY=false |
+| S3 | 환경변수로 활성화 가능, 실제 버킷/접근 키 필요 |
+| Search Console | 기존 service.io.kr 도메인 속성, 사이트맵 제출 성공 유지 |
+| AdSense | ca-pub-4493633870090510 연결 유지, 최초 확인 당시 심사 중 |
 
-기존 DNS 11개는 그대로 두고 space CNAME 하나를 추가했습니다. 기존 다른 Supabase 프로젝트도 변경하지 않았습니다.
+## 보류한 항목
 
-## 이어서 할 일
+사용자의 요청에 따라 추가 승인과 새 정보가 필요한 작업은 보류했습니다.
 
-1. GPT 계정의 Supabase `space` 조직에서 프로젝트 생성과 DB 비밀번호 설정을 완료합니다.
-2. 동봉한 마이그레이션을 해당 새 프로젝트에 적용하고 URL·publishable key·secret key를 Netlify에 설정합니다.
-3. 비공개 S3 버킷과 IAM 자격증명을 준비하고 환경변수를 설정합니다. S3 설정 없이도 텍스트 글은 작성할 수 있습니다.
-4. 재배포 후 관리자 비밀번호로 실제 글 작성·수정·공개/비공개·삭제와 첨부파일 접근 권한을 확인합니다.
-5. 실제 경제 글을 게시합니다. 사이트맵은 자동 갱신됩니다. AdSense의 사이트 승인과 광고 설정은 계정에서 확인합니다.
-
-세부 설정은 프로젝트 루트의 README.md에 있습니다. 운영 비밀번호는 소스 압축 파일 밖에 별도 전달합니다.
+1. Supabase 인증 Redirect URLs 두 개를 추가하는 화면을 준비했습니다. 브라우저 보안 규칙의 새 인증 접근 허용에 해당하므로 Save URLs는 사용자 확인 후 실행합니다. 주소는 README에 있습니다.
+2. 일반 회원에게 인증 메일을 보내려면 SMTP 발송 계정과 발신 도메인 인증이 필요합니다. 새 계정 가입·약관 동의·발송 비밀 키 입력은 진행하지 않았습니다. Supabase 이메일 인증은 계속 활성화되어 있습니다.
+3. 위 설정이 끝나면 AUTH_EMAIL_READY=true로 바꾸고 재배포합니다. 실제 가입 메일 수신, 인증 링크, 재설정 메일 수신을 확인합니다.
+4. S3 환경변수를 제공하면 이미지·문서 업로드를 활성화합니다. 이는 처음부터 환경변수만 준비해 두기로 한 범위입니다.
 
 ## 검증
 
-- TypeScript 검사와 프로덕션 빌드 통과
-- 자동 테스트 5개 통과: 비밀번호, 파일 제한, 입력 검증, 실제 마이그레이션과 권한/글 생명주기, Markdown 정화
-- 데스크톱 브라우저에서 운영 주소와 관리 준비 화면 확인
-- 브라우저의 화면 크기 변경 기능이 실제 화면에 적용되지 않아 모바일 실화면 검증은 완료하지 못함. 반응형 스타일은 구현되어 있음
-- 실제 Supabase와 S3의 글 저장·업로드 시험은 연결 설정 전이라 미실행
-- 공개 페이지·검색 메타데이터·사이트맵·RSS·광고 인증·미인증 차단 확인은 `node scripts/smoke.mjs`로 재실행 가능
+- TypeScript 및 프로덕션 빌드 통과
+- 자동 테스트 5개: 원래 데이터 구조의 회귀 검사와 두 회원의 데이터 분리 검사 포함
+- 실제 Supabase + 앱 HTTP 요청 43개: 두 계정 로그인, 공간 생성, 글 생명주기, 타 회원의 수정/삭제 차단, 비공개 글·태그·첨부 접근 차단, DB 직접 접근 차단, 비밀번호 변경
+- 임시 테스트 계정과 공간은 검사 후 삭제
+- Supabase 보안 검사 오류 0건. 기본 Auth의 유출 비밀번호 검사 비활성 경고는 설정 변경 없이 유지
+- Chrome에서 로그인 → 개인 공간 생성 → Markdown 비공개 글 저장 → 미리보기 확인
+- 393px 모바일 화면의 가로 넘침 수정 및 실제 화면 확인
+- 런타임 의존성 보안 검사 취약점 0건
+- SMTP 메일 수신과 실제 S3 객체 업로드는 미검증
+- 배포 후 결과는 live-checks.json 및 production-checks.json 참조
 
-## 검색과 광고의 남은 상태
+기존 DNS, 다른 Supabase 프로젝트, Google 광고·검색 연결은 변경하지 않았습니다. 현재 프로젝트의 모든 서비스 키는 서버 환경변수에만 저장하며 GitHub에 포함하지 않습니다.
 
-Search Console의 사이트맵 성공은 수집 요청 접수 및 사이트맵 읽기 성공을 뜻합니다. 현재 2개 페이지가 발견됐으며 모든 글의 색인 완료를 뜻하지는 않습니다.
+## 변경된 이용 방식
 
-AdSense `service.io.kr`의 사이트 소유권은 확인됐고 심사 요청이 접수돼 있습니다. `https://service.io.kr/ads.txt`와 space의 ads.txt는 올바른 게시자 행을 반환합니다. 계정 화면의 ads.txt 상태는 재수집 전까지 과거 결과가 남을 수 있습니다. 승인 여부와 광고 노출 시점은 Google에서 결정합니다.
-
-## 배포 정보
-
-- Netlify 팀: awesomehuman
-- Site ID: `4321a8b0-9509-4377-af54-d9cc0f64ede3`
-- 프로젝트 관리: https://app.netlify.com/projects/space-service-io-kr
-- Supabase 조직: `space` (`mbezxnyynbhojjbiqjrr`)
-
-백업 자동화나 S3 미사용 파일 정리 작업은 별도로 생성하지 않았습니다. README의 데이터 보존 안내를 기준으로 운영 정책을 정하세요.
-
-GitHub 연결 전 CLI 배포 ID: `6ad0d49180368b5cb3a4250e`
-
-운영 점검 15개를 모두 통과했습니다. 로컬 네트워크의 새 도메인 DNS 캐시가 갱신되지 않아 HTTP 자동 검사는 동일한 운영 배포의 Netlify 기본 주소에서 수행했습니다. 전용 도메인의 HTTPS 화면은 Chrome에서, 사이트맵 수집은 Google Search Console에서 확인했습니다. 개별 결과는 `production-checks.json`에 있습니다.
-
-## GitHub 자동 배포
-
-기존 Netlify 프로젝트에 `gimminjae/space-app` 저장소의 `master` 브랜치를 연결했습니다. 빌드 명령은 저장소의 `netlify.toml`에 정의한 `npm test && npm run build`, 게시 디렉터리는 `.next`, Node.js 버전은 22입니다. 실제 배포 결과와 커밋 ID는 Netlify Deploys에서 확인할 수 있습니다.
-
-`.env.local`, 관리자 비밀번호, Netlify 인증 파일, node_modules, 빌드 결과물, Supabase 임시 파일은 Git에서 제외했습니다. 기존 Netlify 환경변수와 도메인 설정을 그대로 사용합니다.
+공통 관리 비밀번호를 폐기하고 회원 로그인으로 전환했습니다. `/admin`에서 자기 공간과 글을 관리하고, 공개 공간은 `/s/공간주소`, 공개 글은 `/s/공간주소/posts/글주소`입니다. 공개 글만 사이트맵·RSS에 포함됩니다. 삭제는 비공개 처리와 deleted_at 기록으로 수행합니다.

@@ -10,6 +10,7 @@ export function db(admin = false) {
 }
 export function dbError(error: {message:string; code?:string} | null) {
   if (!error) return;
+  if(error.message.includes('forbidden')) throw new Error('이 항목을 변경할 권한이 없습니다.');
   if(error.code === '23505') throw new Error('이미 사용 중인 글 주소 또는 이름입니다.');
   if(error.message.includes('version_conflict')) throw new Error('다른 창에서 글이 수정되었습니다. 새로고침 후 다시 시도해 주세요.');
   if(error.message.includes('invalid_asset')) throw new Error('이 글에 업로드한 이미지를 선택해 주세요.');

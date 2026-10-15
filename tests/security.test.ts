@@ -2,12 +2,10 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {PGlite} from '@electric-sql/pglite';
-import {hashPassword,checkPassword,credentialVersion} from '../src/lib/password';
 import {postSchema,validateFile,MAX_UPLOAD_SIZE} from '../src/lib/validation';
 import {slugify,xmlEscape} from '../src/lib/site';
 import {randomUUID} from 'node:crypto';
 
-test('passwords are hashed, invalid inputs fail, and rotation changes session version',async()=>{const a=await hashPassword('a-strong-password!');const b=await hashPassword('a-strong-password!');assert.notEqual(a,b);assert.equal(await checkPassword('a-strong-password!',a),true);for(const v of ['wrong','',null,42,'x'.repeat(513)])assert.equal(await checkPassword(v,a),false);assert.equal(await checkPassword('test','scrypt:bad:bad'),false);assert.notEqual(credentialVersion(a),credentialVersion(b));});
 test('file policy excludes executable and active content and caps size',()=>{assert.equal(validateFile('plot.png','image/png',1024),true);assert.equal(validateFile('data.pdf','application/pdf',1024),true);for(const [name,mime,size] of [['bad.svg','image/svg+xml',100],['bad.html','text/html',100],['bad.exe','image/png',100],['big.png','image/png',MAX_UPLOAD_SIZE+1],['zero.png','image/png',0]] as const)assert.equal(validateFile(name,mime,size),false);});
 test('publication validation and Korean URL helpers',()=>{assert.equal(slugify('금리와 경제: 첫 번째 이야기'),'금리와-경제-첫-번째-이야기');assert.equal(xmlEscape('<script>&"'),'&lt;script&gt;&amp;&quot;');assert.equal(postSchema.safeParse({}).success,false);});
 test('database isolation, publication lifecycle, atomic writes, and rate limiting',async()=>{
