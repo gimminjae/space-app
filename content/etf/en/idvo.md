@@ -1,8 +1,36 @@
 # IDVO: Buying Companies Outside America in Dollars
 
-When American stocks dominate an account, even a search for diversification can lead back to the same familiar companies. Another ETF may contain much the same portfolio. IDVO offers a way to examine dividend-paying businesses outside the United States, but its dollar quotation can obscure what that actually means.
+How much income could a fund investing beyond the United States provide? Before exploring IDVO’s geographic mix, translate its distribution rate into a familiar investment amount. Dollar trading and international company exposure are separate features of this fund.
 
-A security traded in dollars is not necessarily an investment in an American business. Keeping the trading venue, corporate exposure and spending currency separate helps explain this fund.
+<!-- income-example:start -->
+
+## What could $10,000 pay each month?
+
+On the assumptions below, **$10,000.00 represents $51.17 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+The input is the issuer’s **6.14% annualized recent distribution rate, dated 2026-09-30** ([official source](https://amplifyetfs.com/idvo/)). The table applies that percentage directly to each investment amount to illustrate the scale of cash income.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| $1,000.00 | $5.12 | $61.40 |
+| $10,000.00 | $51.17 | $614.00 |
+| $50,000.00 | $255.83 | $3,070.00 |
+| $100,000.00 | $511.67 | $6,140.00 |
+
+These are **before-tax illustrations**. The full budget is assumed invested, allowing fractional shares. Annual cash is divided by twelve to produce a monthly equivalent; actual monthly payments vary. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from $500 or $1,000 a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| $500.00 | about $97,800 |
+| $1,000.00 | about $195,500 |
+
+The formula is monthly target × 12 ÷ annual distribution rate. Required capital is rounded up to the next $100. A 20% payment cut turns a $500.00 monthly target into $400.00 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## International businesses on a US exchange
 

@@ -1,8 +1,36 @@
 # DIVO: Adding Selective Options to Dividend Stocks
 
-Wanting dividends now and room for share-price growth later is reasonable. Wanting the maximum of both without a trade-off is a different proposition. DIVO approaches the trade-off selectively: it chooses stocks and decides where to add covered calls rather than treating every holding in exactly the same way.
+DIVO appeals to investors who want cash distributions while retaining some room for stock-price growth. What might that mean for a $10,000 or $50,000 investment? Begin with the cash arithmetic, then consider how selective option writing supplements company dividends.
 
-The Amplify CWP Enhanced Dividend Income ETF combines company dividends with an additional source of cash from options. How much exposure is covered, and which stocks are involved, matters as much as the monthly payment schedule.
+<!-- income-example:start -->
+
+## What could $10,000 pay each month?
+
+On the assumptions below, **$10,000.00 represents $40.67 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+The input is the issuer’s **4.88% annualized recent distribution rate, dated 2026-09-30** ([official source](https://amplifyetfs.com/divo/)). The table applies that percentage directly to each investment amount to illustrate the scale of cash income.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| $1,000.00 | $4.07 | $48.80 |
+| $10,000.00 | $40.67 | $488.00 |
+| $50,000.00 | $203.33 | $2,440.00 |
+| $100,000.00 | $406.67 | $4,880.00 |
+
+These are **before-tax illustrations**. The full budget is assumed invested, allowing fractional shares. Annual cash is divided by twelve to produce a monthly equivalent; actual monthly payments vary. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from $500 or $1,000 a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| $500.00 | about $123,000 |
+| $1,000.00 | about $246,000 |
+
+The formula is monthly target × 12 ÷ annual distribution rate. Required capital is rounded up to the next $100. A 20% payment cut turns a $500.00 monthly target into $400.00 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Two investment decisions in one fund
 

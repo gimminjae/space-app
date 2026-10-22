@@ -1,8 +1,36 @@
 # JEPI: Monthly Income and the Limits of Lower Volatility
 
-Monthly money arriving in an account can sound like bank interest. Add the phrase “lower volatility,” and the investment may feel safer still. JEPI is easier to understand if we pause that association. Its cash comes from a different set of assets and contracts.
+A natural first question about JEPI is simple: how much monthly cash could $10,000 represent? If distributions might help with household bills, start with the amount. Then follow the money back to the stocks and contracts that produce it.
 
-The fund carries equity and derivative exposure. It seeks income and lower volatility, but an investment objective is not a guarantee of the outcome. Understanding the mechanism helps explain what each payment does—and does not—represent.
+<!-- income-example:start -->
+
+## What could $10,000 pay each month?
+
+On the assumptions below, **$10,000.00 represents $67.00 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+The input is the issuer’s **8.04% 12-month rolling dividend yield, dated 2026-09-30** ([official source](https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPI.pdf)). The issuer adds twelve distribution yields measured against NAV at their respective ex-dividend dates. Treat that measure as an input assumption here, rather than a locked-in cash yield at today’s purchase price.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| $1,000.00 | $6.70 | $80.40 |
+| $10,000.00 | $67.00 | $804.00 |
+| $50,000.00 | $335.00 | $4,020.00 |
+| $100,000.00 | $670.00 | $8,040.00 |
+
+These are **before-tax illustrations**. The full budget is assumed invested, allowing fractional shares. Annual cash is divided by twelve to produce a monthly equivalent; actual monthly payments vary. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from $500 or $1,000 a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| $500.00 | about $74,700 |
+| $1,000.00 | about $149,300 |
+
+The formula is monthly target × 12 ÷ annual distribution rate. Required capital is rounded up to the next $100. A 20% payment cut turns a $500.00 monthly target into $400.00 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Stocks and equity-linked notes
 

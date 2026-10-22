@@ -1,8 +1,36 @@
 # SPYI, JEPI, DIVO, and GPIX: Same Schedule, Different Investments
 
-If four ETFs all pay monthly, a comparison may appear simple: find the largest payment and the lowest expense ratio. But a payment schedule is the surface of an investment. Restaurants opening at the same hour can serve very different meals. Funds sharing a distribution calendar can hold different assets and contracts.
+If the same $10,000 went into SPYI, JEPI, DIVO or GPIX, how would the illustrated monthly cash differ? Start with that comparison. Then examine the stock selection and option structures that help explain the gap.
 
-Putting SPYI, JEPI, DIVO and GPIX into one box labeled “S&P 500 covered calls” erases meaningful differences. They share a US large-cap income theme, but they do not all mechanically track the S&P 500. Begin the comparison with what each fund owns and how it generates income.
+<!-- income-example:start -->
+
+## The same $10,000: how much monthly cash?
+
+Apply each reported distribution measure to the same investment. These are gross monthly equivalents; the last column works backward from a $500 monthly target.
+
+| ETF | Monthly equivalent from $10,000 | Capital for $500/month |
+|---|---:|---:|
+| SPYI | $101.75 | about $49,200 |
+| JEPI | $67.00 | about $74,700 |
+| DIVO | $40.67 | about $123,000 |
+| GPIX | $68.08 | about $73,500 |
+
+All inputs below are dated 2026-09-30, but their definitions differ.
+
+- [SPYI](https://neosfunds.com/spyi/): 12.21%, annualized recent distribution rate
+- [JEPI](https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPI.pdf): 8.04%, 12-month rolling dividend yield
+- [DIVO](https://amplifyetfs.com/divo/): 4.88%, annualized recent distribution rate
+- [GPIX](https://am.gs.com/en-us/individual/funds/detail/PV105258/38149W622/goldman-sachs-s-p-500-premium-income-etf): 8.17%, trailing 12-month distribution yield
+
+The inputs mix annualizations of a recent payment, trailing distribution measures, and a sum of yields based on NAV at each ex-dividend date. This illustrates cash scale; it is not a like-for-like performance ranking. Part of the gap reflects measurement as well as investment strategy.
+
+Monthly equivalent = investment × annual rate ÷ 12. Required capital = monthly target × 12 ÷ annual rate, rounded up to the next $100. The full budget is assumed invested with fractional shares; taxes, trading costs and reinvestment are excluded. Actual payments depend on shares owned and the distribution per share in each month.
+
+Keep a reduced-payment case beside the table: a 20% cut turns $500 into $400 at the same investment size. Asset prices can fall while cash is being distributed. With the cash scale established, the next step is to compare the structures behind it.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Four sets of ingredients
 

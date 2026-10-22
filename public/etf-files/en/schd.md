@@ -1,8 +1,36 @@
 # SCHD: What Dividend Growth Really Means
 
-A dividend arriving in an account feels different from a price moving on a screen. A business has paid out part of its resources, and some of that cash now belongs to you. It is an understandable reason to become interested in dividend investing. It is not, however, a promise that next year's payment will be larger.
+How much income could $10,000 in SCHD represent? Dividend growth becomes easier to grasp when it starts with a cash amount. First translate its quarterly distributions into a monthly average, then look at the companies behind those payments.
 
-SCHD begins with a selection problem: which dividend-paying companies should a fund own? Its full name, Schwab U.S. Dividend Equity ETF, also contains an important reminder. This is equity investing. Receiving cash along the way does not remove the possibility of a substantial fall in capital.
+<!-- income-example:start -->
+
+## What would $10,000 mean in quarterly cash?
+
+On the assumptions below, **$10,000.00 represents $27.00 per month before tax, as a monthly average**. That is $81.00 per quarter on average. SCHD pays quarterly; the monthly figure is not a payment scheduled every month.
+
+The input is the issuer’s **3.24% trailing 12-month distribution yield, dated 2026-09-30** ([official source](https://www.schwabassetmanagement.com/products/schd)). The table applies that percentage directly to each investment amount to illustrate the scale of cash income.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| $1,000.00 | $2.70 | $32.40 |
+| $10,000.00 | $27.00 | $324.00 |
+| $50,000.00 | $135.00 | $1,620.00 |
+| $100,000.00 | $270.00 | $3,240.00 |
+
+These are **before-tax illustrations**. The full budget is assumed invested, allowing fractional shares. Annual cash is divided by twelve to produce a monthly average, although payments are quarterly. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from $500 or $1,000 a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| $500.00 (monthly average) | about $185,200 |
+| $1,000.00 (monthly average) | about $370,400 |
+
+The formula is monthly target × 12 ÷ annual distribution rate. Required capital is rounded up to the next $100. A $500 monthly SCHD target means $6,000 a year paid across four quarters; individual quarterly payments can differ. A 20% payment cut turns a $500.00 monthly target into $400.00 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Looking for the capacity to keep paying
 

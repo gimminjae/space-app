@@ -1,0 +1,24 @@
+{
+  "checkedOn": "2026-10-23",
+  "funds": [
+    { "slug": "schd", "name": "SCHD", "method": "rate", "annualBps": 324, "basis": "ttm", "asOf": "2026-09-30", "frequency": "quarterly", "currency": "USD", "source": "https://www.schwabassetmanagement.com/products/schd" },
+    { "slug": "qdiv", "name": "QDIV", "method": "rate", "annualBps": 287, "basis": "ttm", "asOf": "2026-10-09", "frequency": "monthly", "currency": "USD", "source": "https://www.globalxetfs.com/funds/qdiv" },
+    { "slug": "divo", "name": "DIVO", "method": "rate", "annualBps": 488, "basis": "annualized", "asOf": "2026-09-30", "frequency": "monthly", "currency": "USD", "source": "https://amplifyetfs.com/divo/" },
+    { "slug": "qdvo", "name": "QDVO", "method": "rate", "annualBps": 1119, "basis": "annualized", "asOf": "2026-09-30", "frequency": "monthly", "currency": "USD", "source": "https://amplifyetfs.com/qdvo/" },
+    { "slug": "idvo", "name": "IDVO", "method": "rate", "annualBps": 614, "basis": "annualized", "asOf": "2026-09-30", "frequency": "monthly", "currency": "USD", "source": "https://amplifyetfs.com/idvo/" },
+    { "slug": "jepi", "name": "JEPI", "method": "rate", "annualBps": 804, "basis": "rolling", "asOf": "2026-09-30", "frequency": "monthly", "currency": "USD", "source": "https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPI.pdf" },
+    { "slug": "jepq", "name": "JEPQ", "method": "rate", "annualBps": 1156, "basis": "rolling", "asOf": "2026-09-30", "frequency": "monthly", "currency": "USD", "source": "https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPQ.PDF" },
+    { "slug": "gpix", "name": "GPIX", "method": "rate", "annualBps": 817, "basis": "ttm", "asOf": "2026-09-30", "frequency": "monthly", "currency": "USD", "source": "https://am.gs.com/en-us/individual/funds/detail/PV105258/38149W622/goldman-sachs-s-p-500-premium-income-etf" },
+    { "slug": "gpiq", "name": "GPIQ", "method": "rate", "annualBps": 986, "basis": "ttm", "asOf": "2026-09-30", "frequency": "monthly", "currency": "USD", "source": "https://am.gs.com/en-us/advisors/funds/detail/PV105259/38149W630/goldman-sachs-nasdaq-100-premium-income-etf" },
+    { "slug": "spyi", "name": "SPYI", "method": "rate", "annualBps": 1221, "basis": "annualized", "asOf": "2026-09-30", "frequency": "monthly", "currency": "USD", "source": "https://neosfunds.com/spyi/" },
+    { "slug": "qqqi", "name": "QQQI", "method": "rate", "annualBps": 1428, "basis": "annualized", "asOf": "2026-09-30", "frequency": "monthly", "currency": "USD", "source": "https://neosfunds.com/qqqi/" },
+    { "slug": "plus-high-dividend", "name": "PLUS 고배당주", "nameEn": "PLUS High Dividend", "method": "shares", "price": 23060, "payment": 103, "priceDate": "2026-10-21", "recordDate": "2026-09-30", "paymentDate": "2026-10-02", "frequency": "monthly", "currency": "KRW", "source": "https://www.plusetf.co.kr/product/detail?n=006273" },
+    { "slug": "plus-fixed-covered-call", "name": "PLUS 고배당주위클리고정커버드콜", "nameEn": "PLUS High Dividend Weekly Fixed Covered Call", "method": "shares", "price": 9765, "payment": 127, "priceDate": "2026-10-21", "recordDate": "2026-10-15", "paymentDate": "2026-10-19", "frequency": "monthly", "currency": "KRW", "source": "https://www.plusetf.co.kr/product/detail?n=006382" },
+    { "slug": "rise-200-weekly-covered-call", "name": "RISE 200위클리커버드콜", "nameEn": "RISE 200 Weekly Covered Call", "method": "shares", "price": 10560, "payment": 240, "priceDate": "2026-10-21", "recordDate": "2026-09-30", "paymentDate": "2026-10-02", "frequency": "monthly", "currency": "KRW", "source": "https://kbam.co.kr/products/44G3" },
+    { "slug": "ace-global-income-top10", "name": "ACE 글로벌인컴TOP10", "nameEn": "ACE Global Income TOP10", "method": "rate", "annualBps": 744, "basis": "monthly-notice", "monthlyPercent": 0.62, "announcedPayment": 65, "asOf": "2026-09-28", "frequency": "monthly", "currency": "KRW", "source": "https://www.aceetf.co.kr/cs/notice/7002" }
+  ],
+  "comparisons": {
+    "spyi-jepi-divo-gpix": ["spyi", "jepi", "divo", "gpix"],
+    "jepq-gpiq-qqqi": ["jepq", "gpiq", "qqqi"]
+  }
+}

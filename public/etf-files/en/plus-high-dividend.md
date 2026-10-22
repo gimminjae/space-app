@@ -1,8 +1,36 @@
 # PLUS High Dividend: A Basket of Korean Company Dividends
 
-After reading about American dividend ETFs, a Korean investor may ask a practical question: can I use won to buy familiar domestic businesses and receive distributions in won? PLUS High Dividend is one answer to that question. Calling it a “Korean SCHD,” however, skips too much of the explanation.
+How much monthly cash might a ₩10 million investment in Korean dividend stocks provide? With PLUS High Dividend, a quoted price and a payment per share make the calculation tangible. Start by counting the whole shares the budget could buy.
 
-Dividend funds can use different selection rules and invest in different economies. Translating a nickname does not translate the portfolio. The useful starting point is the actual rule used to select Korean companies.
+<!-- income-example:start -->
+
+## What could ₩10 million pay each month?
+
+On the assumptions below, **₩10,000,000 represents ₩44,599 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+Use the **2026-10-21 closing market price of ₩23,060** and the **₩103 per share paid on 2026-10-02**, with a record date of 2026-09-30 ([official price and payment history](https://www.plusetf.co.kr/product/detail?n=006273)). A ₩10 million budget buys 433 whole shares in this illustration: 433 × ₩103 = ₩44,599. The remaining ₩15,020 stays uninvested.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| ₩10,000,000 | ₩44,599 | ₩535,188 |
+| ₩30,000,000 | ₩133,900 | ₩1,606,800 |
+| ₩50,000,000 | ₩223,304 | ₩2,679,648 |
+| ₩100,000,000 | ₩446,608 | ₩5,359,296 |
+
+These are **before-tax illustrations**. Shares are rounded down to whole units. The recent payment is assumed to repeat monthly, and the annual figure is twelve times that amount. Buying now does not create an entitlement to a payment whose record date has passed. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from ₩500,000 or ₩1 million a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| ₩500,000 | about ₩111,960,000 |
+| ₩1,000,000 | about ₩223,890,000 |
+
+Divide the income target by the payment per share, round the share count up, and multiply by the quoted price. Required capital is rounded up to the next ₩10,000. A 20% payment cut turns a ₩500,000 monthly target into ₩400,000 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Thirty companies, selected with an estimate
 

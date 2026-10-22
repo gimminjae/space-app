@@ -1,7 +1,7 @@
 {
   "publishedAt": "2026-10-22T13:00:41.919496+00:00",
-  "updatedAt": "2026-10-22T13:00:41.919969+00:00",
-  "checkedOn": "2026-10-22",
+  "updatedAt": "2026-10-22T15:53:18.715Z",
+  "checkedOn": "2026-10-23",
   "sourceCategory": "https://money-study-with-ai.tistory.com/category/ETF",
   "sourceCount": 17,
   "articles": [
@@ -15,29 +15,29 @@
       ],
       "ko": {
         "title": "SCHD: 배당이 자란다는 말의 뜻",
-        "seoTitle": "SCHD: 배당이 자란다는 말의 뜻",
-        "summary": "배당의 지속성을 고르는 기준과 주식 분할, 분기 분배를 읽습니다.",
+        "seoTitle": "SCHD: 배당이 자란다는 말의 뜻 | 투자금별 배당금 계산",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. 배당의 지속성을 고르는 기준과 주식 분할, 분기 분배를 읽습니다.",
         "tags": [
           "ETF",
           "배당 성장"
         ],
         "ogImage": "/etf-assets/schd.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 604,
-        "characterCount": 2445
+        "readingMinutes": 8,
+        "wordCount": 787,
+        "characterCount": 3329
       },
       "en": {
         "title": "SCHD: What Dividend Growth Really Means",
-        "seoTitle": "SCHD: What Dividend Growth Really Means",
-        "summary": "Read dividend selection, quarterly payments, and the effect of a share split.",
+        "seoTitle": "SCHD: What Dividend Growth Really Means | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Read dividend selection, quarterly payments, and the effect of a share split.",
         "tags": [
           "ETF",
           "Dividend growth"
         ],
         "ogImage": "/etf-assets/schd.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 781,
-        "characterCount": 5107
+        "readingMinutes": 7,
+        "wordCount": 973,
+        "characterCount": 6514
       }
     },
     {
@@ -51,29 +51,29 @@
       ],
       "ko": {
         "title": "QDIV: 높은 배당에 재무의 질을 더하면",
-        "seoTitle": "QDIV: 높은 배당에 재무의 질을 더하면",
-        "summary": "배당수익률과 재무 지표를 함께 보는 미국 월분배 ETF입니다.",
+        "seoTitle": "QDIV: 높은 배당에 재무의 질을 더하면 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. 배당수익률과 재무 지표를 함께 보는 미국 월분배 ETF입니다.",
         "tags": [
           "ETF",
           "퀄리티 배당"
         ],
         "ogImage": "/etf-assets/qdiv.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 544,
-        "characterCount": 2202
+        "readingMinutes": 7,
+        "wordCount": 714,
+        "characterCount": 3024
       },
       "en": {
         "title": "QDIV: Adding Financial Quality to Dividend Yield",
-        "seoTitle": "QDIV: Adding Financial Quality to Dividend Yield",
-        "summary": "A monthly distribution fund that screens both dividend yield and financial quality.",
+        "seoTitle": "QDIV: Adding Financial Quality to Dividend Yield | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. A monthly distribution fund that screens both dividend yield and financial quality.",
         "tags": [
           "ETF",
           "Quality dividends"
         ],
         "ogImage": "/etf-assets/qdiv.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 724,
-        "characterCount": 4602
+        "readingMinutes": 7,
+        "wordCount": 904,
+        "characterCount": 5890
       }
     },
     {
@@ -86,29 +86,29 @@
       ],
       "ko": {
         "title": "PLUS 고배당주: 한국 기업의 배당을 모으는 방법",
-        "seoTitle": "PLUS 고배당주: 한국 기업의 배당을 모으는 방법",
-        "summary": "161510의 종목 선정 방식과 월분배, 국내 주식 편중을 살펴봅니다.",
+        "seoTitle": "PLUS 고배당주: 한국 기업의 배당을 모으는 방법 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. 161510의 종목 선정 방식과 월분배, 국내 주식 편중을 살펴봅니다.",
         "tags": [
           "ETF",
           "국내 배당"
         ],
         "ogImage": "/etf-assets/plus-high-dividend.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 554,
-        "characterCount": 2335
+        "readingMinutes": 7,
+        "wordCount": 734,
+        "characterCount": 3198
       },
       "en": {
         "title": "PLUS High Dividend: A Basket of Korean Company Dividends",
-        "seoTitle": "PLUS High Dividend: A Basket of Korean Company Dividends",
-        "summary": "Understand selection rules, monthly distributions, and Korean equity exposure in 161510.",
+        "seoTitle": "PLUS High Dividend: A Basket of Korean Company Dividends | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Understand selection rules, monthly distributions, and Korean equity exposure in 161510.",
         "tags": [
           "ETF",
           "Korean dividends"
         ],
         "ogImage": "/etf-assets/plus-high-dividend.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 732,
-        "characterCount": 4818
+        "readingMinutes": 7,
+        "wordCount": 963,
+        "characterCount": 6367
       }
     },
     {
@@ -118,33 +118,34 @@
       "originalUrl": "https://money-study-with-ai.tistory.com/entry/%EC%9B%94%EB%B0%B0%EB%8B%B9%EC%9C%BC%EB%A1%9C-%EA%B8%80%EB%A1%9C%EB%B2%8C-ETF-10%EA%B0%9C%EC%97%90-%ED%95%9C-%EB%B2%88%EC%97%90-%ED%88%AC%EC%9E%90%ED%95%9C%EB%8B%A4%EB%A9%B4-ACE-%EA%B8%80%EB%A1%9C%EB%B2%8C%EC%9D%B8%EC%BB%B4TOP10-ETF",
       "sources": [
         "https://www.aceetf.co.kr/fund/K55101E30004",
-        "https://kind.krx.co.kr/disclosure/etfisudetail.do?method=searchEtfIsuSummary&strIsurCd=46096"
+        "https://kind.krx.co.kr/disclosure/etfisudetail.do?method=searchEtfIsuSummary&strIsurCd=46096",
+        "https://www.aceetf.co.kr/cs/notice/7002"
       ],
       "ko": {
         "title": "ACE 글로벌인컴TOP10: ETF 열 개를 담은 ETF",
-        "seoTitle": "ACE 글로벌인컴TOP10: ETF 열 개를 담은 ETF",
-        "summary": "460960의 주식·채권 ETF 구성과 재간접 비용, 환율 위험을 읽습니다.",
+        "seoTitle": "ACE 글로벌인컴TOP10: ETF 열 개를 담은 ETF | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. 460960의 주식·채권 ETF 구성과 재간접 비용, 환율 위험을 읽습니다.",
         "tags": [
           "ETF",
           "자산 배분"
         ],
         "ogImage": "/etf-assets/ace-global-income-top10.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 546,
-        "characterCount": 2297
+        "readingMinutes": 7,
+        "wordCount": 716,
+        "characterCount": 3141
       },
       "en": {
         "title": "ACE Global Income TOP10: An ETF That Owns Ten ETFs",
-        "seoTitle": "ACE Global Income TOP10: An ETF That Owns Ten ETFs",
-        "summary": "Read the stock/bond ETF mix, layered expenses, and currency risk of 460960.",
+        "seoTitle": "ACE Global Income TOP10: An ETF That Owns Ten ETFs | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Read the stock/bond ETF mix, layered expenses, and currency risk of 460960.",
         "tags": [
           "ETF",
           "Asset allocation"
         ],
         "ogImage": "/etf-assets/ace-global-income-top10.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 750,
-        "characterCount": 4810
+        "readingMinutes": 7,
+        "wordCount": 968,
+        "characterCount": 6391
       }
     },
     {
@@ -157,29 +158,29 @@
       ],
       "ko": {
         "title": "DIVO: 배당주에 옵션을 조금 얹는다는 것",
-        "seoTitle": "DIVO: 배당주에 옵션을 조금 얹는다는 것",
-        "summary": "개별 종목에 선택적으로 옵션을 매도하는 구조와 집중 투자 위험을 살펴봅니다.",
+        "seoTitle": "DIVO: 배당주에 옵션을 조금 얹는다는 것 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. 개별 종목에 선택적으로 옵션을 매도하는 구조와 집중 투자 위험을 살펴봅니다.",
         "tags": [
           "ETF",
           "선별 커버드콜"
         ],
         "ogImage": "/etf-assets/divo.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 542,
-        "characterCount": 2279
+        "readingMinutes": 7,
+        "wordCount": 708,
+        "characterCount": 3071
       },
       "en": {
         "title": "DIVO: Adding Selective Options to Dividend Stocks",
-        "seoTitle": "DIVO: Adding Selective Options to Dividend Stocks",
-        "summary": "Explore selective single-stock calls and the trade-off of a concentrated dividend portfolio.",
+        "seoTitle": "DIVO: Adding Selective Options to Dividend Stocks | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Explore selective single-stock calls and the trade-off of a concentrated dividend portfolio.",
         "tags": [
           "ETF",
           "Selective covered calls"
         ],
         "ogImage": "/etf-assets/divo.en.og.png",
-        "readingMinutes": 5,
-        "wordCount": 692,
-        "characterCount": 4448
+        "readingMinutes": 6,
+        "wordCount": 877,
+        "characterCount": 5765
       }
     },
     {
@@ -192,29 +193,29 @@
       ],
       "ko": {
         "title": "QDVO: 성장주와 월분배 사이의 선택",
-        "seoTitle": "QDVO: 성장주와 월분배 사이의 선택",
-        "summary": "성장주 포트폴리오와 전술적 옵션 운용, 짧은 운용 이력의 의미를 읽습니다.",
+        "seoTitle": "QDVO: 성장주와 월분배 사이의 선택 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. 성장주 포트폴리오와 전술적 옵션 운용, 짧은 운용 이력의 의미를 읽습니다.",
         "tags": [
           "ETF",
           "성장주 인컴"
         ],
         "ogImage": "/etf-assets/qdvo.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 550,
-        "characterCount": 2263
+        "readingMinutes": 7,
+        "wordCount": 721,
+        "characterCount": 3096
       },
       "en": {
         "title": "QDVO: The Trade-Off Between Growth and Monthly Income",
-        "seoTitle": "QDVO: The Trade-Off Between Growth and Monthly Income",
-        "summary": "Examine growth stocks, tactical options, and the limits of a short track record.",
+        "seoTitle": "QDVO: The Trade-Off Between Growth and Monthly Income | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Examine growth stocks, tactical options, and the limits of a short track record.",
         "tags": [
           "ETF",
           "Growth and income"
         ],
         "ogImage": "/etf-assets/qdvo.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 728,
-        "characterCount": 4842
+        "readingMinutes": 7,
+        "wordCount": 913,
+        "characterCount": 6139
       }
     },
     {
@@ -228,29 +229,29 @@
       ],
       "ko": {
         "title": "IDVO: 미국 밖 기업을 달러로 산다는 것",
-        "seoTitle": "IDVO: 미국 밖 기업을 달러로 산다는 것",
-        "summary": "ADR을 통한 해외 배당주 투자와 옵션, 여러 겹의 환율 영향을 정리합니다.",
+        "seoTitle": "IDVO: 미국 밖 기업을 달러로 산다는 것 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. ADR을 통한 해외 배당주 투자와 옵션, 여러 겹의 환율 영향을 정리합니다.",
         "tags": [
           "ETF",
           "해외 배당"
         ],
         "ogImage": "/etf-assets/idvo.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 565,
-        "characterCount": 2277
+        "readingMinutes": 7,
+        "wordCount": 738,
+        "characterCount": 3136
       },
       "en": {
         "title": "IDVO: Buying Companies Outside America in Dollars",
-        "seoTitle": "IDVO: Buying Companies Outside America in Dollars",
-        "summary": "Understand international dividend ADRs, options, and multiple layers of currency exposure.",
+        "seoTitle": "IDVO: Buying Companies Outside America in Dollars | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Understand international dividend ADRs, options, and multiple layers of currency exposure.",
         "tags": [
           "ETF",
           "International dividends"
         ],
         "ogImage": "/etf-assets/idvo.en.og.png",
-        "readingMinutes": 5,
-        "wordCount": 720,
-        "characterCount": 4839
+        "readingMinutes": 7,
+        "wordCount": 911,
+        "characterCount": 6188
       }
     },
     {
@@ -264,29 +265,29 @@
       ],
       "ko": {
         "title": "JEPI: 월분배의 재원과 낮은 변동성의 한계",
-        "seoTitle": "JEPI: 월분배의 재원과 낮은 변동성의 한계",
-        "summary": "미국 대형주와 ELN을 결합하는 구조를 예금 이자와 구분합니다.",
+        "seoTitle": "JEPI: 월분배의 재원과 낮은 변동성의 한계 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. 미국 대형주와 ELN을 결합하는 구조를 예금 이자와 구분합니다.",
         "tags": [
           "ETF",
           "ELN"
         ],
         "ogImage": "/etf-assets/jepi.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 562,
-        "characterCount": 2348
+        "readingMinutes": 7,
+        "wordCount": 751,
+        "characterCount": 3254
       },
       "en": {
         "title": "JEPI: Monthly Income and the Limits of Lower Volatility",
-        "seoTitle": "JEPI: Monthly Income and the Limits of Lower Volatility",
-        "summary": "Separate the economics of US stocks and equity-linked notes from bank interest.",
+        "seoTitle": "JEPI: Monthly Income and the Limits of Lower Volatility | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Separate the economics of US stocks and equity-linked notes from bank interest.",
         "tags": [
           "ETF",
           "Equity-linked notes"
         ],
         "ogImage": "/etf-assets/jepi.en.og.png",
-        "readingMinutes": 5,
-        "wordCount": 705,
-        "characterCount": 4655
+        "readingMinutes": 7,
+        "wordCount": 910,
+        "characterCount": 6081
       }
     },
     {
@@ -300,29 +301,29 @@
       ],
       "ko": {
         "title": "JEPQ: 나스닥의 성장과 현금흐름을 나누는 법",
-        "seoTitle": "JEPQ: 나스닥의 성장과 현금흐름을 나누는 법",
-        "summary": "성장주 노출과 ELN 수익, JEPI와의 차이를 같은 기준으로 살펴봅니다.",
+        "seoTitle": "JEPQ: 나스닥의 성장과 현금흐름을 나누는 법 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. 성장주 노출과 ELN 수익, JEPI와의 차이를 같은 기준으로 살펴봅니다.",
         "tags": [
           "ETF",
           "나스닥 인컴"
         ],
         "ogImage": "/etf-assets/jepq.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 566,
-        "characterCount": 2331
+        "readingMinutes": 7,
+        "wordCount": 760,
+        "characterCount": 3257
       },
       "en": {
         "title": "JEPQ: Sharing Nasdaq Growth with Current Income",
-        "seoTitle": "JEPQ: Sharing Nasdaq Growth with Current Income",
-        "summary": "Read growth-stock exposure, ELN income, and the differences from JEPI.",
+        "seoTitle": "JEPQ: Sharing Nasdaq Growth with Current Income | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Read growth-stock exposure, ELN income, and the differences from JEPI.",
         "tags": [
           "ETF",
           "Nasdaq income"
         ],
         "ogImage": "/etf-assets/jepq.en.og.png",
-        "readingMinutes": 5,
-        "wordCount": 712,
-        "characterCount": 4864
+        "readingMinutes": 7,
+        "wordCount": 921,
+        "characterCount": 6318
       }
     },
     {
@@ -333,33 +334,34 @@
       "sources": [
         "https://am.gs.com/en-us/advisors/campaign/premium-income-etfs",
         "https://am.gs.com/public-assets/documents/98b8b681-2695-11f0-82e6-0f718a813dfb?view=true",
-        "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/evergreen/managing-risk-amidst-uncertainty.pdf"
+        "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/evergreen/managing-risk-amidst-uncertainty.pdf",
+        "https://am.gs.com/en-us/individual/funds/detail/PV105258/38149W622/goldman-sachs-s-p-500-premium-income-etf"
       ],
       "ko": {
         "title": "GPIX: 옵션 비중을 조절하는 S&P 500 인컴",
-        "seoTitle": "GPIX: 옵션 비중을 조절하는 S&P 500 인컴",
-        "summary": "현재 상품명과 보수 할인, 옵션 매도 비중을 조절하는 의미를 읽습니다.",
+        "seoTitle": "GPIX: 옵션 비중을 조절하는 S&P 500 인컴 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. 현재 상품명과 보수 할인, 옵션 매도 비중을 조절하는 의미를 읽습니다.",
         "tags": [
           "ETF",
           "S&P 500 인컴"
         ],
         "ogImage": "/etf-assets/gpix.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 559,
-        "characterCount": 2308
+        "readingMinutes": 7,
+        "wordCount": 724,
+        "characterCount": 3099
       },
       "en": {
         "title": "GPIX: Adjusting the Option Overlay on US Large-Cap Stocks",
-        "seoTitle": "GPIX: Adjusting the Option Overlay on US Large-Cap Stocks",
-        "summary": "Understand the current name, fee waiver, and an adjustable option overlay.",
+        "seoTitle": "GPIX: Adjusting the Option Overlay on US Large-Cap Stocks | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Understand the current name, fee waiver, and an adjustable option overlay.",
         "tags": [
           "ETF",
           "S&P 500 income"
         ],
         "ogImage": "/etf-assets/gpix.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 781,
-        "characterCount": 4985
+        "readingMinutes": 7,
+        "wordCount": 962,
+        "characterCount": 6284
       }
     },
     {
@@ -370,33 +372,34 @@
       "sources": [
         "https://am.gs.com/ja-jp/individual/products/etf/gpiq",
         "https://am.gs.com/en-us/advisors/campaign/premium-income-etfs",
-        "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/evergreen/managing-risk-amidst-uncertainty.pdf"
+        "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/evergreen/managing-risk-amidst-uncertainty.pdf",
+        "https://am.gs.com/en-us/advisors/funds/detail/PV105259/38149W630/goldman-sachs-nasdaq-100-premium-income-etf"
       ],
       "ko": {
         "title": "GPIQ: 나스닥에 옵션을 얼마나 덮을 것인가",
-        "seoTitle": "GPIQ: 나스닥에 옵션을 얼마나 덮을 것인가",
-        "summary": "나스닥 집중도와 동적 옵션 전략, 순보수와 총보수의 차이를 확인합니다.",
+        "seoTitle": "GPIQ: 나스닥에 옵션을 얼마나 덮을 것인가 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. 나스닥 집중도와 동적 옵션 전략, 순보수와 총보수의 차이를 확인합니다.",
         "tags": [
           "ETF",
           "나스닥 인컴"
         ],
         "ogImage": "/etf-assets/gpiq.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 578,
-        "characterCount": 2370
+        "readingMinutes": 7,
+        "wordCount": 723,
+        "characterCount": 3079
       },
       "en": {
         "title": "GPIQ: How Much Nasdaq Exposure Should Be Covered?",
-        "seoTitle": "GPIQ: How Much Nasdaq Exposure Should Be Covered?",
-        "summary": "Examine Nasdaq concentration, a dynamic option strategy, and net versus gross expenses.",
+        "seoTitle": "GPIQ: How Much Nasdaq Exposure Should Be Covered? | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Examine Nasdaq concentration, a dynamic option strategy, and net versus gross expenses.",
         "tags": [
           "ETF",
           "Nasdaq income"
         ],
         "ogImage": "/etf-assets/gpiq.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 762,
-        "characterCount": 5072
+        "readingMinutes": 7,
+        "wordCount": 928,
+        "characterCount": 6278
       }
     },
     {
@@ -409,29 +412,29 @@
       ],
       "ko": {
         "title": "SPYI: 높은 분배율보다 먼저 볼 것",
-        "seoTitle": "SPYI: 높은 분배율보다 먼저 볼 것",
-        "summary": "SPX 옵션과 분배금 구성, 미국 세제 설명을 읽는 범위를 정리합니다.",
+        "seoTitle": "SPYI: 높은 분배율보다 먼저 볼 것 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. SPX 옵션과 분배금 구성, 미국 세제 설명을 읽는 범위를 정리합니다.",
         "tags": [
           "ETF",
           "지수 옵션"
         ],
         "ogImage": "/etf-assets/spyi.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 565,
-        "characterCount": 2337
+        "readingMinutes": 7,
+        "wordCount": 731,
+        "characterCount": 3154
       },
       "en": {
         "title": "SPYI: What to Read Before the Distribution Rate",
-        "seoTitle": "SPYI: What to Read Before the Distribution Rate",
-        "summary": "Explore SPX options, distribution composition, and the limits of US tax descriptions.",
+        "seoTitle": "SPYI: What to Read Before the Distribution Rate | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Explore SPX options, distribution composition, and the limits of US tax descriptions.",
         "tags": [
           "ETF",
           "Index options"
         ],
         "ogImage": "/etf-assets/spyi.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 756,
-        "characterCount": 4995
+        "readingMinutes": 7,
+        "wordCount": 936,
+        "characterCount": 6277
       }
     },
     {
@@ -444,29 +447,29 @@
       ],
       "ko": {
         "title": "QQQI: 14%라는 숫자 옆에 놓아야 할 질문",
-        "seoTitle": "QQQI: 14%라는 숫자 옆에 놓아야 할 질문",
-        "summary": "NDX 옵션과 분배율·SEC 수익률·총수익률의 차이를 분리해 읽습니다.",
+        "seoTitle": "QQQI: 14%라는 숫자 옆에 놓아야 할 질문 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. NDX 옵션과 분배율·SEC 수익률·총수익률의 차이를 분리해 읽습니다.",
         "tags": [
           "ETF",
           "지수 옵션"
         ],
         "ogImage": "/etf-assets/qqqi.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 564,
-        "characterCount": 2317
+        "readingMinutes": 7,
+        "wordCount": 726,
+        "characterCount": 3104
       },
       "en": {
         "title": "QQQI: The Questions Beside a 14% Distribution Rate",
-        "seoTitle": "QQQI: The Questions Beside a 14% Distribution Rate",
-        "summary": "Distinguish NDX options, distribution rates, SEC yield, and total return.",
+        "seoTitle": "QQQI: The Questions Beside a 14% Distribution Rate | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Distinguish NDX options, distribution rates, SEC yield, and total return.",
         "tags": [
           "ETF",
           "Index options"
         ],
         "ogImage": "/etf-assets/qqqi.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 771,
-        "characterCount": 5130
+        "readingMinutes": 7,
+        "wordCount": 941,
+        "characterCount": 6344
       }
     },
     {
@@ -476,33 +479,34 @@
       "originalUrl": "https://money-study-with-ai.tistory.com/entry/%EC%BD%94%EC%8A%A4%ED%94%BC200%EC%9C%BC%EB%A1%9C-%EC%9B%94%EB%B0%B0%EB%8B%B9%EC%9D%84-%EB%A7%8C%EB%93%A0%EB%8B%A4%EB%A9%B4-RISE-200%EC%9C%84%ED%81%B4%EB%A6%AC%EC%BB%A4%EB%B2%84%EB%93%9C%EC%BD%9C-ETF",
       "sources": [
         "https://www.riseetf.co.kr/prod/finderDetail/44G3?searchFlag=viewtab2",
-        "https://www.riseetf.co.kr/upload/cdn/2026/03/03/2026030315089bce9c994b2.pdf"
+        "https://www.riseetf.co.kr/upload/cdn/2026/03/03/2026030315089bce9c994b2.pdf",
+        "https://kbam.co.kr/products/44G3"
       ],
       "ko": {
         "title": "RISE 200위클리커버드콜: 매주 옵션을 파는 이유",
-        "seoTitle": "RISE 200위클리커버드콜: 매주 옵션을 파는 이유",
-        "summary": "475720의 ATM 옵션과 코스피200 노출, 상승 제한을 이해합니다.",
+        "seoTitle": "RISE 200위클리커버드콜: 매주 옵션을 파는 이유 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. 475720의 ATM 옵션과 코스피200 노출, 상승 제한을 이해합니다.",
         "tags": [
           "ETF",
           "국내 커버드콜"
         ],
         "ogImage": "/etf-assets/rise-200-weekly-covered-call.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 551,
-        "characterCount": 2242
+        "readingMinutes": 7,
+        "wordCount": 767,
+        "characterCount": 3275
       },
       "en": {
         "title": "RISE 200 Weekly Covered Call: Why Sell Options Each Week?",
-        "seoTitle": "RISE 200 Weekly Covered Call: Why Sell Options Each Week?",
-        "summary": "Understand at-the-money options, KOSPI 200 exposure, and limited upside in 475720.",
+        "seoTitle": "RISE 200 Weekly Covered Call: Why Sell Options Each Week? | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Understand at-the-money options, KOSPI 200 exposure, and limited upside in 475720.",
         "tags": [
           "ETF",
           "Korean covered calls"
         ],
         "ogImage": "/etf-assets/rise-200-weekly-covered-call.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 766,
-        "characterCount": 5033
+        "readingMinutes": 7,
+        "wordCount": 1034,
+        "characterCount": 6851
       }
     },
     {
@@ -516,29 +520,29 @@
       ],
       "ko": {
         "title": "PLUS 고배당주위클리고정커버드콜: 고정되는 것은 무엇일까",
-        "seoTitle": "PLUS 고배당주위클리고정커버드콜: 고정되는 것은 무엇일까",
-        "summary": "0018C0의 옵션 30% 구조와 기초자산 불일치, 분배 한도의 의미를 읽습니다.",
+        "seoTitle": "PLUS 고배당주위클리고정커버드콜: 고정되는 것은 무엇일까 | 투자금별 월분배금",
+        "summary": "1천만·3천만·5천만·1억 원의 분배금과 월 50만·100만 원에 필요한 투자금을 계산합니다. 0018C0의 옵션 30% 구조와 기초자산 불일치, 분배 한도의 의미를 읽습니다.",
         "tags": [
           "ETF",
           "국내 커버드콜"
         ],
         "ogImage": "/etf-assets/plus-fixed-covered-call.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 577,
-        "characterCount": 2378
+        "readingMinutes": 7,
+        "wordCount": 753,
+        "characterCount": 3259
       },
       "en": {
         "title": "PLUS High Dividend Weekly Fixed Covered Call: What Is Fixed?",
-        "seoTitle": "PLUS High Dividend Weekly Fixed Covered Call: What Is Fixed?",
-        "summary": "Read the 30% option structure, underlying mismatch, and the meaning of distribution targets.",
+        "seoTitle": "PLUS High Dividend Weekly Fixed Covered Call: What Is Fixed? | Income by Investment Amount",
+        "summary": "Calculate cash income at different investment sizes and the capital needed for a monthly income target. Read the 30% option structure, underlying mismatch, and the meaning of distribution targets.",
         "tags": [
           "ETF",
           "Korean covered calls"
         ],
         "ogImage": "/etf-assets/plus-fixed-covered-call.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 788,
-        "characterCount": 5185
+        "readingMinutes": 7,
+        "wordCount": 1019,
+        "characterCount": 6743
       }
     },
     {
@@ -550,33 +554,35 @@
         "https://neosfunds.com/spyi/",
         "https://am.jpmorgan.com/us/en/asset-management/adv/products/jpmorgan-equity-premium-income-etf-46641q332",
         "https://amplifyetfs.com/divo/",
-        "https://am.gs.com/en-us/advisors/campaign/premium-income-etfs"
+        "https://am.gs.com/en-us/advisors/campaign/premium-income-etfs",
+        "https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPI.pdf",
+        "https://am.gs.com/en-us/individual/funds/detail/PV105258/38149W622/goldman-sachs-s-p-500-premium-income-etf"
       ],
       "ko": {
         "title": "SPYI·JEPI·DIVO·GPIX: 같은 월분배, 다른 투자",
-        "seoTitle": "SPYI·JEPI·DIVO·GPIX: 같은 월분배, 다른 투자",
-        "summary": "미국 대형주 인컴 ETF 네 개를 주식 구성과 옵션 방식, 비용으로 비교합니다.",
+        "seoTitle": "SPYI·JEPI·DIVO·GPIX: 같은 월분배, 다른 투자 | 투자금별 월분배금",
+        "summary": "같은 1천만 원의 월분배금과 월 50만 원에 필요한 투자금을 ETF별로 비교합니다. 미국 대형주 인컴 ETF 네 개를 주식 구성과 옵션 방식, 비용으로 비교합니다.",
         "tags": [
           "ETF",
           "ETF 비교"
         ],
         "ogImage": "/etf-assets/spyi-jepi-divo-gpix.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 649,
-        "characterCount": 2601
+        "readingMinutes": 8,
+        "wordCount": 849,
+        "characterCount": 3476
       },
       "en": {
         "title": "SPYI, JEPI, DIVO, and GPIX: Same Schedule, Different Investments",
-        "seoTitle": "SPYI, JEPI, DIVO, and GPIX: Same Schedule, Different Investments",
-        "summary": "Compare four US large-cap income ETFs by equity selection, option structure, and expenses.",
+        "seoTitle": "SPYI, JEPI, DIVO, and GPIX: Same Schedule, Different Investments | Income by Investment Amount",
+        "summary": "Compare monthly cash from $10,000 and the capital needed for $500 a month across these ETFs. Compare four US large-cap income ETFs by equity selection, option structure, and expenses.",
         "tags": [
           "ETF",
           "ETF comparison"
         ],
         "ogImage": "/etf-assets/spyi-jepi-divo-gpix.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 823,
-        "characterCount": 5524
+        "readingMinutes": 7,
+        "wordCount": 1007,
+        "characterCount": 6794
       }
     },
     {
@@ -587,33 +593,34 @@
       "sources": [
         "https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPQ.PDF",
         "https://am.gs.com/ja-jp/individual/products/etf/gpiq",
-        "https://neosfunds.com/qqqi/"
+        "https://neosfunds.com/qqqi/",
+        "https://am.gs.com/en-us/advisors/funds/detail/PV105259/38149W630/goldman-sachs-nasdaq-100-premium-income-etf"
       ],
       "ko": {
         "title": "JEPQ·GPIQ·QQQI: 나스닥 월분배 ETF를 고르는 기준",
-        "seoTitle": "JEPQ·GPIQ·QQQI: 나스닥 월분배 ETF를 고르는 기준",
-        "summary": "분배율 순위 대신 ELN과 지수 옵션, 비용과 중복 노출을 비교합니다.",
+        "seoTitle": "JEPQ·GPIQ·QQQI: 나스닥 월분배 ETF를 고르는 기준 | 투자금별 월분배금",
+        "summary": "같은 1천만 원의 월분배금과 월 50만 원에 필요한 투자금을 ETF별로 비교합니다. 분배율 순위 대신 ELN과 지수 옵션, 비용과 중복 노출을 비교합니다.",
         "tags": [
           "ETF",
           "ETF 비교"
         ],
         "ogImage": "/etf-assets/jepq-gpiq-qqqi.ko.og.png",
-        "readingMinutes": 6,
-        "wordCount": 661,
-        "characterCount": 2679
+        "readingMinutes": 8,
+        "wordCount": 854,
+        "characterCount": 3524
       },
       "en": {
         "title": "JEPQ, GPIQ, and QQQI: Comparing Nasdaq Income Strategies",
-        "seoTitle": "JEPQ, GPIQ, and QQQI: Comparing Nasdaq Income Strategies",
-        "summary": "Compare ELNs, index options, expenses, and overlapping exposure beyond yield rankings.",
+        "seoTitle": "JEPQ, GPIQ, and QQQI: Comparing Nasdaq Income Strategies | Income by Investment Amount",
+        "summary": "Compare monthly cash from $10,000 and the capital needed for $500 a month across these ETFs. Compare ELNs, index options, expenses, and overlapping exposure beyond yield rankings.",
         "tags": [
           "ETF",
           "ETF comparison"
         ],
         "ogImage": "/etf-assets/jepq-gpiq-qqqi.en.og.png",
-        "readingMinutes": 6,
-        "wordCount": 839,
-        "characterCount": 5710
+        "readingMinutes": 7,
+        "wordCount": 1023,
+        "characterCount": 6918
       }
     }
   ]

@@ -1,8 +1,36 @@
 # JEPQ: Sharing Nasdaq Growth with Current Income
 
-An investor can admire growing technology businesses and still wish they paid more cash. A fund promising a monthly distribution alongside growth-stock exposure is therefore easy to notice. JEPQ deserves a closer reading: it does not add a free interest payment on top of unrestricted equity returns.
+Many familiar technology companies pay little in dividends. That helps explain the appeal of JEPQ’s monthly distributions. Put the cash from $10,000 beside the capital required for $500 a month, then examine the equity exposure that remains.
 
-Separate the stocks from the income mechanism. Large distributions can coexist with substantial growth-stock risk, and a shared manager does not make JEPQ and JEPI interchangeable.
+<!-- income-example:start -->
+
+## What could $10,000 pay each month?
+
+On the assumptions below, **$10,000.00 represents $96.33 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+The input is the issuer’s **11.56% 12-month rolling dividend yield, dated 2026-09-30** ([official source](https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPQ.PDF)). The issuer adds twelve distribution yields measured against NAV at their respective ex-dividend dates. Treat that measure as an input assumption here, rather than a locked-in cash yield at today’s purchase price.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| $1,000.00 | $9.63 | $115.60 |
+| $10,000.00 | $96.33 | $1,156.00 |
+| $50,000.00 | $481.67 | $5,780.00 |
+| $100,000.00 | $963.33 | $11,560.00 |
+
+These are **before-tax illustrations**. The full budget is assumed invested, allowing fractional shares. Annual cash is divided by twelve to produce a monthly equivalent; actual monthly payments vary. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from $500 or $1,000 a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| $500.00 | about $52,000 |
+| $1,000.00 | about $103,900 |
+
+The formula is monthly target × 12 ÷ annual distribution rate. Required capital is rounded up to the next $100. A 20% payment cut turns a $500.00 monthly target into $400.00 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Nasdaq-related is not a perfect replica
 

@@ -1,8 +1,38 @@
 # RISE 200 Weekly Covered Call: Why Sell Options Each Week?
 
-A Korean equity fund that pays monthly can feel familiar to a Korean investor: recognizable companies, won trading and no currency conversion at purchase. That familiarity makes it tempting to skim the long phrase at the end of the name. In RISE 200 Weekly Covered Call, that phrase changes the economics of the investment.
+What monthly won payment could ₩10 million in RISE 200 Weekly Covered Call represent? Multiply a recent per-share payment by the whole shares the budget could buy. After doing that calculation, examine the relationship between the stocks and weekly options.
 
-“200” points toward KOSPI 200 equity exposure. “Weekly” identifies the short-dated options used by the strategy. “Covered call” describes an exchange of some potential appreciation for option premium. Reading the pieces separately explains where the monthly cash flow can come from.
+<!-- income-example:start -->
+
+## What could ₩10 million pay each month?
+
+On the assumptions below, **₩10,000,000 represents ₩227,040 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+Use the **2026-10-21 closing market price of ₩10,560** and the **₩240 per share paid on 2026-10-02**, with a record date of 2026-09-30 ([official price and payment history](https://kbam.co.kr/products/44G3)). A ₩10 million budget buys 946 whole shares in this illustration: 946 × ₩240 = ₩227,040. The remaining ₩10,240 stays uninvested.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| ₩10,000,000 | ₩227,040 | ₩2,724,480 |
+| ₩30,000,000 | ₩681,600 | ₩8,179,200 |
+| ₩50,000,000 | ₩1,136,160 | ₩13,633,920 |
+| ₩100,000,000 | ₩2,272,560 | ₩27,270,720 |
+
+These are **before-tax illustrations**. Shares are rounded down to whole units. The recent payment is assumed to repeat monthly, and the annual figure is twelve times that amount. Buying now does not create an entitlement to a payment whose record date has passed. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from ₩500,000 or ₩1 million a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| ₩500,000 | about ₩22,010,000 |
+| ₩1,000,000 | about ₩44,010,000 |
+
+Divide the income target by the payment per share, round the share count up, and multiply by the quoted price. Required capital is rounded up to the next ₩10,000. A 20% payment cut turns a ₩500,000 monthly target into ₩400,000 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+This RISE example produces an especially large figure because it applies September’s ₩240 payment to a lower October share price. Those are two different observation dates, and repetition is uncertain. Large cash payments can coexist with a falling share price; follow subsequent payments and changes in net asset value together.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Selling rights near the current price
 

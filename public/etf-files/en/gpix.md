@@ -1,8 +1,36 @@
 # GPIX: Adjusting the Option Overlay on US Large-Cap Stocks
 
-An umbrella can be useful without predicting the weather. An option overlay works in much the same way. Receiving a premium is one mechanism; deciding when and how much exposure to cover is another. A flexible tool still requires choices, and those choices can disappoint.
+Could an investment in US large-cap stocks help fund monthly spending? GPIX approaches that question with an option overlay. Start with cash illustrations for different investment amounts; the choice of how much option exposure to sell then becomes more concrete.
 
-GPIX combines US large-cap stocks with an adjustable option-writing strategy. “Premium Income” describes a source of cash rather than a promise of interest. An option buyer pays for a contractual right. The seller receives cash while giving up part of a possible favorable outcome.
+<!-- income-example:start -->
+
+## What could $10,000 pay each month?
+
+On the assumptions below, **$10,000.00 represents $68.08 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+The input is the issuer’s **8.17% trailing 12-month distribution yield, dated 2026-09-30** ([official source](https://am.gs.com/en-us/individual/funds/detail/PV105258/38149W622/goldman-sachs-s-p-500-premium-income-etf)). The table applies that percentage directly to each investment amount to illustrate the scale of cash income.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| $1,000.00 | $6.81 | $81.70 |
+| $10,000.00 | $68.08 | $817.00 |
+| $50,000.00 | $340.42 | $4,085.00 |
+| $100,000.00 | $680.83 | $8,170.00 |
+
+These are **before-tax illustrations**. The full budget is assumed invested, allowing fractional shares. Annual cash is divided by twelve to produce a monthly equivalent; actual monthly payments vary. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from $500 or $1,000 a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| $500.00 | about $73,500 |
+| $1,000.00 | about $146,900 |
+
+The formula is monthly target × 12 ÷ annual distribution rate. Required capital is rounded up to the next $100. A 20% payment cut turns a $500.00 monthly target into $400.00 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Start with the current name
 

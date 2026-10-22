@@ -1,8 +1,36 @@
 # QQQI: The Questions Beside a 14% Distribution Rate
 
-A figure near 14% invites quick arithmetic. It is easy to multiply a savings balance by that rate and imagine a monthly payment. With QQQI, however, the first task is classification: does the percentage describe a distribution, an observed total return, or a promise about the future?
+QQQI’s distribution rate in the 14% range naturally raises a cash question. What does it mean for $10,000, and how much capital would a $1,000 monthly target require? Begin there, then examine the Nasdaq stocks and options behind the payments.
 
-QQQI is the NEOS Nasdaq-100 High Income ETF. It combines Nasdaq-100-related equities with NDX index options to seek high monthly income. A ticker resembling QQQ can suggest the same investment with extra payments attached. The option strategy changes that picture: cash is generated through a different return path, not added from outside it.
+<!-- income-example:start -->
+
+## What could $10,000 pay each month?
+
+On the assumptions below, **$10,000.00 represents $119.00 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+The input is the issuer’s **14.28% annualized recent distribution rate, dated 2026-09-30** ([official source](https://neosfunds.com/qqqi/)). The table applies that percentage directly to each investment amount to illustrate the scale of cash income.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| $1,000.00 | $11.90 | $142.80 |
+| $10,000.00 | $119.00 | $1,428.00 |
+| $50,000.00 | $595.00 | $7,140.00 |
+| $100,000.00 | $1,190.00 | $14,280.00 |
+
+These are **before-tax illustrations**. The full budget is assumed invested, allowing fractional shares. Annual cash is divided by twelve to produce a monthly equivalent; actual monthly payments vary. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from $500 or $1,000 a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| $500.00 | about $42,100 |
+| $1,000.00 | about $84,100 |
+
+The formula is monthly target × 12 ÷ annual distribution rate. Required capital is rounded up to the next $100. A 20% payment cut turns a $500.00 monthly target into $400.00 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## The market does not pause on payment day
 

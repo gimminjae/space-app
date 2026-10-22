@@ -1,8 +1,36 @@
 # PLUS High Dividend Weekly Fixed Covered Call: What Is Fixed?
 
-The word “fixed” can be reassuring. It may suggest fixed interest, stable payments or capital that moves less. In PLUS High Dividend Weekly Fixed Covered Call, it refers to the option-writing structure. It does not promise an unchanging distribution or protect the principal.
+How much monthly cash might ₩10 million in PLUS High Dividend Weekly Fixed Covered Call provide? That question is easier to approach than the long name. Calculate with the recent payment, then examine why “fixed” describes the option structure rather than a promised distribution.
 
-The fund combines Korean high-dividend stocks with a specified amount of KOSPI 200 call writing. Corporate dividends are therefore only one part of the story. Read the stocks and the underlying index of the options separately before combining them into an investment explanation.
+<!-- income-example:start -->
+
+## What could ₩10 million pay each month?
+
+On the assumptions below, **₩10,000,000 represents ₩130,048 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+Use the **2026-10-21 closing market price of ₩9,765** and the **₩127 per share paid on 2026-10-19**, with a record date of 2026-10-15 ([official price and payment history](https://www.plusetf.co.kr/product/detail?n=006382)). A ₩10 million budget buys 1,024 whole shares in this illustration: 1,024 × ₩127 = ₩130,048. The remaining ₩640 stays uninvested.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| ₩10,000,000 | ₩130,048 | ₩1,560,576 |
+| ₩30,000,000 | ₩390,144 | ₩4,681,728 |
+| ₩50,000,000 | ₩650,240 | ₩7,802,880 |
+| ₩100,000,000 | ₩1,300,480 | ₩15,605,760 |
+
+These are **before-tax illustrations**. Shares are rounded down to whole units. The recent payment is assumed to repeat monthly, and the annual figure is twelve times that amount. Buying now does not create an entitlement to a payment whose record date has passed. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from ₩500,000 or ₩1 million a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| ₩500,000 | about ₩38,460,000 |
+| ₩1,000,000 | about ₩76,900,000 |
+
+Divide the income target by the payment per share, round the share count up, and multiply by the quoted price. Required capital is rounded up to the next ₩10,000. A 20% payment cut turns a ₩500,000 monthly target into ₩400,000 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Identify the actual product
 

@@ -1,8 +1,36 @@
 # QDVO: The Trade-Off Between Growth and Monthly Income
 
-An investor can want to own growing businesses for a long time and still need cash today. Selling shares feels uncomfortable when those businesses might rise further. Switching entirely to mature dividend payers changes the investment. QDVO addresses that tension by combining a growth-stock portfolio with options.
+Holding growth stocks and receiving monthly cash are both appealing. QDVO brings those aims into one portfolio. Working backward from a $500 monthly target turns a large-looking distribution rate into a concrete capital requirement.
 
-It does not make the tension disappear. Cash received from selling options has an economic counterpart. Understanding that exchange is more useful than beginning with the highest distribution number on the screen.
+<!-- income-example:start -->
+
+## What could $10,000 pay each month?
+
+On the assumptions below, **$10,000.00 represents $93.25 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+The input is the issuer’s **11.19% annualized recent distribution rate, dated 2026-09-30** ([official source](https://amplifyetfs.com/qdvo/)). The table applies that percentage directly to each investment amount to illustrate the scale of cash income.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| $1,000.00 | $9.33 | $111.90 |
+| $10,000.00 | $93.25 | $1,119.00 |
+| $50,000.00 | $466.25 | $5,595.00 |
+| $100,000.00 | $932.50 | $11,190.00 |
+
+These are **before-tax illustrations**. The full budget is assumed invested, allowing fractional shares. Annual cash is divided by twelve to produce a monthly equivalent; actual monthly payments vary. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from $500 or $1,000 a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| $500.00 | about $53,700 |
+| $1,000.00 | about $107,300 |
+
+The formula is monthly target × 12 ÷ annual distribution rate. Required capital is rounded up to the next $100. A 20% payment cut turns a $500.00 monthly target into $400.00 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Start with the objective
 

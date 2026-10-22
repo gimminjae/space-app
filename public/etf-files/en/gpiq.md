@@ -1,8 +1,36 @@
 # GPIQ: How Much Nasdaq Exposure Should Be Covered?
 
-A payment arriving once a month can look orderly. The stocks and options producing it move on a much less orderly schedule. GPIQ makes more sense when these two clocks are kept separate: a distribution calendar tells us when cash may arrive, not how stable the underlying investment will be.
+When a Nasdaq income ETF promises a monthly schedule, the next question is how much. Apply GPIQ’s reported distribution measure to several investment sizes. Once the cash scale is clear, examine the choices the fund makes to generate it.
 
-The current name is Goldman Sachs Nasdaq-100 Premium Income ETF. Older material may include “Core,” so use the ticker and current documents to identify the fund. The Nasdaq-100 is an index, not an ETF, and represents large nonfinancial companies listed on Nasdaq. It is not a collection of one hundred pure technology businesses.
+<!-- income-example:start -->
+
+## What could $10,000 pay each month?
+
+On the assumptions below, **$10,000.00 represents $82.17 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+The input is the issuer’s **9.86% trailing 12-month distribution yield, dated 2026-09-30** ([official source](https://am.gs.com/en-us/advisors/funds/detail/PV105259/38149W630/goldman-sachs-nasdaq-100-premium-income-etf)). The table applies that percentage directly to each investment amount to illustrate the scale of cash income.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| $1,000.00 | $8.22 | $98.60 |
+| $10,000.00 | $82.17 | $986.00 |
+| $50,000.00 | $410.83 | $4,930.00 |
+| $100,000.00 | $821.67 | $9,860.00 |
+
+These are **before-tax illustrations**. The full budget is assumed invested, allowing fractional shares. Annual cash is divided by twelve to produce a monthly equivalent; actual monthly payments vary. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from $500 or $1,000 a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| $500.00 | about $60,900 |
+| $1,000.00 | about $121,800 |
+
+The formula is monthly target × 12 ÷ annual distribution rate. Required capital is rounded up to the next $100. A 20% payment cut turns a $500.00 monthly target into $400.00 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Choosing assets and choosing coverage
 

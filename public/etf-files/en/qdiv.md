@@ -1,8 +1,36 @@
 # QDIV: Adding Financial Quality to Dividend Yield
 
-A high dividend yield can tell two very different stories. A healthy business may be returning abundant cash to its owners. Or a troubled business may have suffered a falling share price, making yesterday's dividend look unusually large relative to today's price. The number alone does not tell you which story you are buying.
+Would a monthly QDIV payment cover a coffee habit or contribute to a utility bill? Put a cash figure beside the investment first. Then examine how this monthly distribution ETF combines dividend yield with a screen for financial quality.
 
-QDIV adds a second question: what does the company's financial quality look like? “Quality” is not a guarantee, but in this fund it points to a defined screening process rather than simply an attractive adjective.
+<!-- income-example:start -->
+
+## What could $10,000 pay each month?
+
+On the assumptions below, **$10,000.00 represents $23.92 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+The input is the issuer’s **2.87% trailing 12-month distribution yield, dated 2026-10-09** ([official source](https://www.globalxetfs.com/funds/qdiv)). The table applies that percentage directly to each investment amount to illustrate the scale of cash income.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| $1,000.00 | $2.39 | $28.70 |
+| $10,000.00 | $23.92 | $287.00 |
+| $50,000.00 | $119.58 | $1,435.00 |
+| $100,000.00 | $239.17 | $2,870.00 |
+
+These are **before-tax illustrations**. The full budget is assumed invested, allowing fractional shares. Annual cash is divided by twelve to produce a monthly equivalent; actual monthly payments vary. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from $500 or $1,000 a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| $500.00 | about $209,100 |
+| $1,000.00 | about $418,200 |
+
+The formula is monthly target × 12 ÷ annual distribution rate. Required capital is rounded up to the next $100. A 20% payment cut turns a $500.00 monthly target into $400.00 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Passing two screens
 

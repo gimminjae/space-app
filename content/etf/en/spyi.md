@@ -1,8 +1,36 @@
 # SPYI: What to Read Before the Distribution Rate
 
-A large number naturally draws the eye. A distribution rate around 12% becomes even more striking beside the familiar S&P 500 name. But translating those two facts into “own leading American companies and earn 12% every year” combines information that does not make that promise.
+A distribution rate around 12% invites a quick calculation: might $10,000 translate into roughly $100 a month? That is a useful starting point for SPYI. Work through the reported number, then distinguish cash received from the return on the whole investment.
 
-SPYI is the NEOS S&P 500 High Income ETF. It uses equities and index options to pursue monthly cash flow. To understand the payments, separate company dividends, gains and losses from option transactions, and cash distributed to shareholders. They are related, but they are not interchangeable.
+<!-- income-example:start -->
+
+## What could $10,000 pay each month?
+
+On the assumptions below, **$10,000.00 represents $101.75 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+The input is the issuer’s **12.21% annualized recent distribution rate, dated 2026-09-30** ([official source](https://neosfunds.com/spyi/)). The table applies that percentage directly to each investment amount to illustrate the scale of cash income.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| $1,000.00 | $10.17 | $122.10 |
+| $10,000.00 | $101.75 | $1,221.00 |
+| $50,000.00 | $508.75 | $6,105.00 |
+| $100,000.00 | $1,017.50 | $12,210.00 |
+
+These are **before-tax illustrations**. The full budget is assumed invested, allowing fractional shares. Annual cash is divided by twelve to produce a monthly equivalent; actual monthly payments vary. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from $500 or $1,000 a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| $500.00 | about $49,200 |
+| $1,000.00 | about $98,300 |
+
+The formula is monthly target × 12 ÷ annual distribution rate. Required capital is rounded up to the next $100. A 20% payment cut turns a $500.00 monthly target into $400.00 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## The options beside the stock portfolio
 

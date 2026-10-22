@@ -1,8 +1,34 @@
 # JEPQ, GPIQ, and QQQI: Comparing Nasdaq Income Strategies
 
-Three funds discuss Nasdaq exposure, yet their distribution figures, expenses and explanations differ. When first comparing JEPQ, GPIQ and QQQI, the largest number can look like the obvious answer. Monthly cash flow, however, reflects both investment activity and distribution policy. Read the contracts behind the cash before ranking the payments.
+How much monthly cash might the same investment represent in JEPQ, GPIQ or QQQI? Translating the reported distribution measures into money makes the differences tangible. Compare income and required capital first, then examine the trade-offs in each approach.
 
-All three sit where interest in growth companies meets demand for current income. They are not identical Nasdaq-100 investments with monthly interest attached. Stock selection and access to options differ, and those differences can become visible in both rallies and declines.
+<!-- income-example:start -->
+
+## The same $10,000: how much monthly cash?
+
+Apply each reported distribution measure to the same investment. These are gross monthly equivalents; the last column works backward from a $500 monthly target.
+
+| ETF | Monthly equivalent from $10,000 | Capital for $500/month |
+|---|---:|---:|
+| JEPQ | $96.33 | about $52,000 |
+| GPIQ | $82.17 | about $60,900 |
+| QQQI | $119.00 | about $42,100 |
+
+All inputs below are dated 2026-09-30, but their definitions differ.
+
+- [JEPQ](https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPQ.PDF): 11.56%, 12-month rolling dividend yield
+- [GPIQ](https://am.gs.com/en-us/advisors/funds/detail/PV105259/38149W630/goldman-sachs-nasdaq-100-premium-income-etf): 9.86%, trailing 12-month distribution yield
+- [QQQI](https://neosfunds.com/qqqi/): 14.28%, annualized recent distribution rate
+
+The inputs mix annualizations of a recent payment, trailing distribution measures, and a sum of yields based on NAV at each ex-dividend date. This illustrates cash scale; it is not a like-for-like performance ranking. Part of the gap reflects measurement as well as investment strategy.
+
+Monthly equivalent = investment × annual rate ÷ 12. Required capital = monthly target × 12 ÷ annual rate, rounded up to the next $100. The full budget is assumed invested with fractional shares; taxes, trading costs and reinvestment are excluded. Actual payments depend on shares owned and the distribution per share in each month.
+
+Keep a reduced-payment case beside the table: a 20% cut turns $500 into $400 at the same investment size. Asset prices can fall while cash is being distributed. With the cash scale established, the next step is to compare the structures behind it.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Separate common ground from different structures
 

@@ -1,8 +1,36 @@
 # ACE Global Income TOP10: An ETF That Owns Ten ETFs
 
-If choosing ten income ETFs feels difficult, could you buy one ETF that chooses the ten for you? ACE Global Income TOP10 makes sense from that starting point. But adding another wrapper does not remove the risks inside it. It adds another layer to inspect.
+What could a basket of ten income ETFs put into an account each month? For ACE Global Income TOP10, that simple question offers a useful starting point. Translate the issuer’s distribution notice into won, then open the wrapper and examine the underlying funds.
 
-“Global” and “income” are useful labels only after we ask separate questions: where are the underlying funds listed, what do they own, and where does their cash come from? Those answers need not be identical.
+<!-- income-example:start -->
+
+## What could ₩10 million pay each month?
+
+On the assumptions below, **₩10,000,000 represents ₩62,000 per month before tax**. This gives the percentage a practical scale: a contribution toward a bill, or a larger part of a spending budget.
+
+The [issuer’s 2026-09-28 notice](https://www.aceetf.co.kr/cs/notice/7002) announced an **expected September monthly distribution rate of 0.62%** and an expected payment of ₩65 per share. This illustration uses the announced percentage without inventing a purchase price. The annualized 7.44% is simply 0.62% times twelve, not a current-market yield or a confirmed payment.
+
+| Investment budget | Gross monthly equivalent | Gross annual equivalent |
+|---|---:|---:|
+| ₩10,000,000 | ₩62,000 | ₩744,000 |
+| ₩30,000,000 | ₩186,000 | ₩2,232,000 |
+| ₩50,000,000 | ₩310,000 | ₩3,720,000 |
+| ₩100,000,000 | ₩620,000 | ₩7,440,000 |
+
+These are **before-tax illustrations**. They assume the announced expected monthly rate repeats and the full budget is invested. Actual cash must be recalculated from the shares purchased and the subsequently confirmed payment per share. Investor taxes and trading costs are excluded, and distributions are not reinvested. Fund expenses already reflected in the reported cash measure are not deducted a second time.
+
+### Working backward from ₩500,000 or ₩1 million a month
+
+| Gross monthly cash target | Capital at the same assumptions |
+|---|---:|
+| ₩500,000 | about ₩80,650,000 |
+| ₩1,000,000 | about ₩161,300,000 |
+
+The formula is monthly target × 12 ÷ annual distribution rate. Required capital is rounded up to the next ₩10,000. A 20% payment cut turns a ₩500,000 monthly target into ₩400,000 at the same holding size. Use these numbers to size a cash-flow plan, not as a promise of future payments.
+
+Income inputs additionally reviewed: 2026-10-23.
+
+<!-- income-example:end -->
 
 ## Five equity funds and five bond funds
 
