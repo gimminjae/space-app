@@ -1,0 +1,392 @@
+{
+  "origin": "http://127.0.0.1:3180",
+  "checkedAt": "2026-10-22T11:33:45.050Z",
+  "javascriptDisabled": "passed",
+  "languageSwitch": "passed",
+  "results": [
+    {
+      "path": "/",
+      "width": 390,
+      "language": "ko",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "language": "ko",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn",
+      "width": 390,
+      "language": "ko",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn",
+      "width": 1440,
+      "language": "ko",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/a-map-of-your-money",
+      "width": 390,
+      "language": "ko",
+      "headings": 5,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/a-map-of-your-money",
+      "width": 1440,
+      "language": "ko",
+      "headings": 5,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/interest-and-time",
+      "width": 1440,
+      "language": "ko",
+      "headings": 6,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/prices-and-purchasing-power",
+      "width": 1440,
+      "language": "ko",
+      "headings": 5,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/interest-and-time",
+      "width": 390,
+      "language": "ko",
+      "headings": 6,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/interest-rates-and-bonds",
+      "width": 1440,
+      "language": "ko",
+      "headings": 5,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/prices-and-purchasing-power",
+      "width": 390,
+      "language": "ko",
+      "headings": 5,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/exchange-rates-and-economic-news",
+      "width": 1440,
+      "language": "ko",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/interest-rates-and-bonds",
+      "width": 390,
+      "language": "ko",
+      "headings": 5,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/what-a-share-means",
+      "width": 1440,
+      "language": "ko",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/exchange-rates-and-economic-news",
+      "width": 390,
+      "language": "ko",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/profit-is-not-cash",
+      "width": 1440,
+      "language": "ko",
+      "headings": 5,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/what-a-share-means",
+      "width": 390,
+      "language": "ko",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/a-good-company-at-what-price",
+      "width": 1440,
+      "language": "ko",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/profit-is-not-cash",
+      "width": 390,
+      "language": "ko",
+      "headings": 5,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/inside-an-etf",
+      "width": 1440,
+      "language": "ko",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/a-good-company-at-what-price",
+      "width": 390,
+      "language": "ko",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/a-plan-for-uncertain-days",
+      "width": 1440,
+      "language": "ko",
+      "headings": 5,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/inside-an-etf",
+      "width": 390,
+      "language": "ko",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/a-plan-for-uncertain-days",
+      "width": 390,
+      "language": "ko",
+      "headings": 5,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/",
+      "width": 1440,
+      "language": "en",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn",
+      "width": 1440,
+      "language": "en",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/",
+      "width": 390,
+      "language": "en",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/a-map-of-your-money",
+      "width": 1440,
+      "language": "en",
+      "headings": 5,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn",
+      "width": 390,
+      "language": "en",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/interest-and-time",
+      "width": 1440,
+      "language": "en",
+      "headings": 6,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/a-map-of-your-money",
+      "width": 390,
+      "language": "en",
+      "headings": 5,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/prices-and-purchasing-power",
+      "width": 1440,
+      "language": "en",
+      "headings": 5,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/interest-and-time",
+      "width": 390,
+      "language": "en",
+      "headings": 6,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/interest-rates-and-bonds",
+      "width": 1440,
+      "language": "en",
+      "headings": 5,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/prices-and-purchasing-power",
+      "width": 390,
+      "language": "en",
+      "headings": 5,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/exchange-rates-and-economic-news",
+      "width": 1440,
+      "language": "en",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/interest-rates-and-bonds",
+      "width": 390,
+      "language": "en",
+      "headings": 5,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/what-a-share-means",
+      "width": 1440,
+      "language": "en",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/exchange-rates-and-economic-news",
+      "width": 390,
+      "language": "en",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/profit-is-not-cash",
+      "width": 1440,
+      "language": "en",
+      "headings": 5,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/what-a-share-means",
+      "width": 390,
+      "language": "en",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/a-good-company-at-what-price",
+      "width": 1440,
+      "language": "en",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/profit-is-not-cash",
+      "width": 390,
+      "language": "en",
+      "headings": 5,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/inside-an-etf",
+      "width": 1440,
+      "language": "en",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/a-good-company-at-what-price",
+      "width": 390,
+      "language": "en",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/a-plan-for-uncertain-days",
+      "width": 1440,
+      "language": "en",
+      "headings": 5,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/inside-an-etf",
+      "width": 390,
+      "language": "en",
+      "headings": 6,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/a-plan-for-uncertain-days",
+      "width": 390,
+      "language": "en",
+      "headings": 5,
+      "figures": 1,
+      "result": "passed"
+    }
+  ]
+}
