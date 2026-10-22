@@ -1,7 +1,8 @@
+import { absolute as siteAbsolute } from '@/lib/site';
 import Link from '@/components/I18n';
 import { LessonList } from '@/components/learn/LessonList';
 import styles from '@/components/learn/learn.module.css';
-import { courseText, lessons, lessonPath, updatedAt } from '@/lib/learn';
+import { courseText, courseFeedPath, lessons, lessonPath, updatedAt } from '@/lib/learn';
 import { getI18n, localizedMetadata } from '@/lib/i18n/server';
 
 export async function generateMetadata() {
@@ -9,7 +10,7 @@ export async function generateMetadata() {
   const text = courseText[locale];
   return localizedMetadata({
     title: text.title, description: text.summary,
-    alternates: { canonical: absolute('/learn'), types: { 'application/rss+xml': absolute(`/learn/feed.xml${locale==='en'?'?lang=en':''}`) } },
+    alternates: { canonical: absolute('/learn'), types: { 'application/rss+xml': siteAbsolute(courseFeedPath(locale)) } },
     openGraph: { type: 'website', title: text.name, description: text.summary, url: absolute('/learn'), images: [{ url: absolute(`/learn-assets/series.${locale}.og.png`), width: 1200, height: 630, alt: text.name }] },
     twitter: { card: 'summary_large_image', title: text.name, description: text.summary, images: [absolute(`/learn-assets/series.${locale}.og.png`)] },
   }, locale);

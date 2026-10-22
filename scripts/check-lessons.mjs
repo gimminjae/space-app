@@ -27,6 +27,8 @@ for (let offset = 0; offset < requests.length; offset += 4) {
     assert.ok(decode(html).includes(lesson[locale].seoTitle), path);
     assert.ok(decode(tag(html, 'meta', 'name', 'description')).includes(lesson[locale].summary), path);
     assert.ok(tag(html, 'link', 'rel', 'canonical')?.includes(`href="${canonicalOrigin}${path}"`), path);
+    const rss = [...html.matchAll(/<link\b[^>]*>/g)].find(match => match[0].includes('type="application/rss+xml"'))?.[0];
+    assert.ok(rss?.includes(`href="${canonicalOrigin}${locale === 'en' ? '/en' : ''}/learn/feed.xml"`), path);
     for (const other of ['ko', 'en']) {
       const expected = `${canonicalOrigin}${other === 'en' ? '/en' : ''}/learn/${lesson.slug}`;
       assert.ok(tag(html, 'link', 'hreflang', other)?.includes(`href="${expected}"`), path);
@@ -56,9 +58,14 @@ for (const locale of ['ko', 'en']) {
   for (const lesson of manifest.chapters) assert.ok(html.includes(`href="${path}/${lesson.slug}"`));
   assert.ok(tag(html, 'link', 'rel', 'canonical')?.includes(`href="${canonicalOrigin}${path}"`));
   images.add(`/learn-assets/series.${locale}.og.png`);
-  const feed = await (await get(`/learn/feed.xml${locale === 'en' ? '?lang=en' : ''}`)).text();
+  const feedResponse = await get(`${locale === 'en' ? '/en' : ''}/learn/feed.xml`);
+  assert.equal(feedResponse.headers.get('content-language'), locale);
+  const feed = await feedResponse.text();
   assert.equal((feed.match(/<item>/g) || []).length, 10);
   assert.ok(feed.includes(`<language>${locale}</language>`));
+  const oppositeCookie = await fetch(origin + `${locale === 'en' ? '/en' : ''}/learn/feed.xml`, { headers: { Cookie: `space_locale=${locale === 'en' ? 'ko' : 'en'}` } });
+  assert.equal(oppositeCookie.headers.get('content-language'), locale);
+  assert.ok((await oppositeCookie.text()).includes(`<language>${locale}</language>`));
   const home = await (await get(locale === 'en' ? '/en' : '/')).text();
   assert.ok(home.includes(`href="${path}"`));
   const query = locale === 'en' ? 'compound interest' : '현금흐름';

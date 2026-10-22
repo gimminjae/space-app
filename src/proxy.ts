@@ -5,7 +5,7 @@ export async function proxy(request:NextRequest){
  const path=request.nextUrl.pathname,shared=isSharedPath(path);
  if(path==='/ko'||path.startsWith('/ko/')){const url=new URL(request.url);url.pathname=unlocalizePath(path);return NextResponse.redirect(url,308);}
  const preferred=request.headers.get('x-space-language')||request.cookies.get(localeCookie)?.value;
- const locale:Locale=shared?(isLocale(preferred)?preferred:'ko'):(path==='/en'||path.startsWith('/en/')?'en':'ko');
+ const locale:Locale=path==='/en'||path.startsWith('/en/')?'en':shared&&!path.endsWith('.xml')&&isLocale(preferred)?preferred:'ko';
  // Overwrite public request headers: the URL alone determines the rendered language.
  request.headers.set('x-space-locale',locale);
  const visibleUrl=new URL(request.url);visibleUrl.searchParams.delete('_rsc');

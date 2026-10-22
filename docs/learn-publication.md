@@ -6,7 +6,7 @@
 - 영어 목차: https://space.service.io.kr/en/learn
 - 한국어 본문: `/learn/{slug}`
 - 영어 본문: `/en/learn/{slug}`
-- 시리즈 RSS: `/learn/feed.xml`, `/learn/feed.xml?lang=en`
+- 시리즈 RSS: `/learn/feed.xml`, `/en/learn/feed.xml`
 - 기본 RSS `/feed.xml`에도 한국어 강의 10편을 포함합니다.
 
 2026-10-22에 작성한 한국어 10편과 영어 10편을 기본 공개 연재로 구성했습니다. 홈의 추천 강의, 공통 메뉴, 사이트 내 검색, 목차, 이전·다음 편 이동으로 접근합니다. 계정이 없어도 전문을 읽습니다.
@@ -39,3 +39,5 @@
 운영 기반은 `master`의 `07c3e3f`였습니다. 기존 `feat/economy-reader-tools`의 별도 경제 기능·DB 마이그레이션은 이 배포에 포함하지 않았습니다. 해당 브랜치를 이어갈 때 최신 master의 강의·검색·사이트맵·Markdown 변경을 병합해야 합니다.
 
 배포 후의 검증 결과는 `learn-production-checks.json`에 기록합니다. Google Search Console의 실제 색인 상태와 검색 순위는 별도 확인 대상입니다.
+
+언어별 RSS는 서로 다른 경로를 사용합니다. 운영 CDN이 쿼리 매개변수만 다른 RSS 응답을 공유하는 현상을 확인하여, 영어판에 `/en/learn/feed.xml`을 별도로 배정했습니다.

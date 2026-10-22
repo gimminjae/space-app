@@ -2,7 +2,7 @@ import Link from '@/components/I18n';
 import Markdown from '@/components/Markdown';
 import styles from '@/components/site.module.css';
 import learnStyles from '@/components/learn/learn.module.css';
-import { courseText, getLesson, lessonContent, lessons, lessonPath, publishedAt, updatedAt, readingTime } from '@/lib/learn';
+import { courseText, courseFeedPath, getLesson, lessonContent, lessons, lessonPath, publishedAt, updatedAt, readingTime } from '@/lib/learn';
 import { localizePath } from '@/lib/i18n/routing';
 import { getI18n, localizedMetadata } from '@/lib/i18n/server';
 import { slugify, absolute as siteAbsolute } from '@/lib/site';
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = absolute(lessonPath(lesson.slug));
   return localizedMetadata({
     title: edition.seoTitle, description: edition.summary,
-    alternates: { canonical: url, types: { 'application/rss+xml': absolute(`/learn/feed.xml${locale==='en'?'?lang=en':''}`) } },
+    alternates: { canonical: url, types: { 'application/rss+xml': siteAbsolute(courseFeedPath(locale)) } },
     authors: [{ name: 'space', url: absolute('/about') }],
     openGraph: { type: 'article', title: edition.title, description: edition.summary, url, siteName: 'space', publishedTime: publishedAt, modifiedTime: updatedAt, authors: [absolute('/about')], section: courseText[locale].title, tags: edition.tags, images: [{ url: absolute(edition.ogImage), width: 1200, height: 630, alt: edition.title }] },
     twitter: { card: 'summary_large_image', title: edition.title, description: edition.summary, images: [absolute(edition.ogImage)] },
@@ -61,7 +61,7 @@ export default async function LessonPage({ params }: Props) {
           {next && <Link href={lessonPath(next.slug)}><span>{text.next}</span>{next[locale].title}</Link>}
           <Link href="/learn" className={learnStyles.fullWidth}>{text.contents} <span>{text.name}</span></Link>
         </nav>
-        <footer className={learnStyles.editorial}><strong><Link href="/about">space</Link></strong><p>{text.notice}</p><p>{t('최종 수정')} <time dateTime={updatedAt}>{date(updatedAt)}</time> · <a href={siteAbsolute(`/learn/feed.xml${locale==='en'?'?lang=en':''}`)}>RSS</a></p></footer>
+        <footer className={learnStyles.editorial}><strong><Link href="/about">space</Link></strong><p>{text.notice}</p><p>{t('최종 수정')} <time dateTime={updatedAt}>{date(updatedAt)}</time> · <a href={siteAbsolute(courseFeedPath(locale))}>RSS</a></p></footer>
       </div>
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, '\\u003c') }} />

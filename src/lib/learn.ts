@@ -34,6 +34,9 @@ export const courseText = {
 export function lessonPath(slug: string, locale: Locale = 'ko') {
   return localizePath(`/learn/${slug}`, locale);
 }
+export function courseFeedPath(locale: Locale) {
+  return locale === 'en' ? '/en/learn/feed.xml' : '/learn/feed.xml';
+}
 export function getLesson(slug: string) {
   return lessons.find(lesson => lesson.slug === slug);
 }

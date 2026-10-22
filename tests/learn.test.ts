@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { lessons, lessonContent, lessonImages, lessonPath, searchLessons } from '../src/lib/learn';
+import { lessons, lessonContent, lessonImages, lessonPath, searchLessons, courseFeedPath } from '../src/lib/learn';
 import { courseFeed } from '../src/lib/learn-feed';
 
 test('every published lesson has a complete pair of editions and real assets', () => {
@@ -30,6 +30,8 @@ test('every published lesson has a complete pair of editions and real assets', (
 });
 
 test('lesson paths and search keep the actual language of the manuscript', () => {
+  assert.equal(courseFeedPath('en'), '/en/learn/feed.xml');
+  assert.equal(courseFeedPath('ko'), '/learn/feed.xml');
   assert.equal(lessonPath('inside-an-etf'), '/learn/inside-an-etf');
   assert.equal(lessonPath('inside-an-etf', 'en'), '/en/learn/inside-an-etf');
   assert.ok(searchLessons('현금흐름', 'ko').some(lesson => lesson.order === 1));
