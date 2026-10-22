@@ -13,7 +13,7 @@ export default async function sitemap():Promise<MetadataRoute.Sitemap>{
  const categories=[...new Set(posts.flatMap(p=>p.category?[p.category.slug]:[]))];
  const tags=[...new Set(posts.flatMap(p=>(p.tags||[]).map(tag=>tag.slug)))];
  const pages=[{path:'/category/etf',lastModified:etfUpdatedAt},...etfArticles.map(article=>({path:`/etf/${article.slug}`,lastModified:etfUpdatedAt})),{path:'/learn',lastModified:updatedAt},...lessons.map(lesson=>({path:`/learn/${lesson.slug}`,lastModified:updatedAt})),
-  {path:'/'},{path:'/about'},{path:'/privacy'},...(spaces.length?[{path:'/spaces'}]:[]),
+  {path:'/'},{path:'/about',lastModified:'2026-10-22'},{path:'/privacy',lastModified:'2026-10-22'},...(spaces.length?[{path:'/spaces'}]:[]),
   ...spaces.map(s=>({path:`/s/${s.slug}`,lastModified:s.updated_at})),...categories.map(slug=>({path:`/category/${slug}`})),...tags.map(slug=>({path:`/tag/${slug}`}))];
  const translated=pages.flatMap(({path,...rest})=>locales.map(locale=>({url:absolute(localizePath(path,locale)),...rest,
   ...(path.startsWith('/learn/')?{images:lessonImages(path.split('/').pop()!,locale).map(image=>absolute(image))}:{}),

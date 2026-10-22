@@ -4,6 +4,8 @@ export const site = {
   description: '복잡한 경제를 차분하게 읽습니다. 경제 기초부터 금리, 금융, 기업과 일상의 변화까지, 나의 시야를 넓히는 경제 블로그 space.',
   url: process.env.SITE_URL || 'https://space.service.io.kr',
   author: process.env.SITE_AUTHOR || 'space 에디터',
+  // The operator's existing public contact on service.io.kr.
+  contactEmail: process.env.CONTACT_EMAIL || 'min356812@naver.com',
 };
 export function absolute(path = '/') { return new URL(path, site.url).toString(); }
 export function dateLabel(value: string | null) { return value ? new Intl.DateTimeFormat('ko-KR', {year:'numeric',month:'2-digit',day:'2-digit',timeZone:'Asia/Seoul'}).format(new Date(value)) : '미발행'; }
