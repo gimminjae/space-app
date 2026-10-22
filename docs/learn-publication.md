@@ -41,3 +41,15 @@
 배포 후의 검증 결과는 `learn-production-checks.json`에 기록합니다. Google Search Console의 실제 색인 상태와 검색 순위는 별도 확인 대상입니다.
 
 언어별 RSS는 서로 다른 경로를 사용합니다. 운영 CDN이 쿼리 매개변수만 다른 RSS 응답을 공유하는 현상을 확인하여, 영어판에 `/en/learn/feed.xml`을 별도로 배정했습니다.
+
+## 운영 확인 완료
+
+- 확인 시각: 2026-10-22T11:50:51.273Z.
+- 운영 코드 커밋: `9694f543a7ee49550cd4c25cb3207f62fa304ad4`.
+- Netlify 배포: `6ad9f82a98a38cbe802df214`, 2026-10-22 11:49:41 UTC에 공개 완료.
+- 공개 본문 20편, 목차 2개, 이미지 30개, 검색·한영 RSS·canonical·hreflang·JSON-LD·사이트맵·404 점검 통과.
+- 브라우저에서 로컬 48개 화면과 운영 12개 화면을 390px·1440px로 확인. 언어 전환과 JavaScript 비활성화 상태의 본문 표시 통과.
+- 기존 사이트 HTTP 18개 점검, 단위·권한 테스트 11개 및 프로덕션 빌드 통과.
+- Google Search Console의 색인 현황·검색 순위는 확인하지 않았습니다.
+
+증거 파일: `learn-production-checks.json`, `learn-production-browser-checks.json`, `learn-production-smoke.json`. 이 운영 기록만 추가하는 커밋은 `[skip netlify]`로 불필요한 재배포를 생략합니다.

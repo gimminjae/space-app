@@ -1,0 +1,104 @@
+{
+  "origin": "https://space.service.io.kr",
+  "checkedAt": "2026-10-22T11:44:42.098Z",
+  "javascriptDisabled": "passed",
+  "languageSwitch": "passed",
+  "results": [
+    {
+      "path": "/",
+      "width": 1440,
+      "language": "ko",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "language": "ko",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn",
+      "width": 1440,
+      "language": "ko",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn",
+      "width": 390,
+      "language": "ko",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/interest-and-time",
+      "width": 1440,
+      "language": "ko",
+      "headings": 6,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/interest-and-time",
+      "width": 390,
+      "language": "ko",
+      "headings": 6,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/",
+      "width": 1440,
+      "language": "en",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/",
+      "width": 390,
+      "language": "en",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn",
+      "width": 1440,
+      "language": "en",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn",
+      "width": 390,
+      "language": "en",
+      "headings": 1,
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/interest-and-time",
+      "width": 1440,
+      "language": "en",
+      "headings": 6,
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/interest-and-time",
+      "width": 390,
+      "language": "en",
+      "headings": 6,
+      "figures": 1,
+      "result": "passed"
+    }
+  ]
+}

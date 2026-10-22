@@ -1,0 +1,175 @@
+{
+  "origin": "https://space.service.io.kr",
+  "checkedAt": "2026-10-22T11:50:51.273Z",
+  "lessons": 20,
+  "hubPages": 2,
+  "imageFiles": 30,
+  "sitemap": "passed",
+  "robots": "passed",
+  "globalRSS": "passed",
+  "missingPage": 404,
+  "results": [
+    {
+      "path": "/en/learn",
+      "result": "passed",
+      "checks": [
+        "ten lessons",
+        "canonical",
+        "RSS",
+        "home link",
+        "search"
+      ]
+    },
+    {
+      "path": "/en/learn/a-good-company-at-what-price",
+      "status": 200,
+      "locale": "en",
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/a-map-of-your-money",
+      "status": 200,
+      "locale": "en",
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/a-plan-for-uncertain-days",
+      "status": 200,
+      "locale": "en",
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/exchange-rates-and-economic-news",
+      "status": 200,
+      "locale": "en",
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/inside-an-etf",
+      "status": 200,
+      "locale": "en",
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/interest-and-time",
+      "status": 200,
+      "locale": "en",
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/interest-rates-and-bonds",
+      "status": 200,
+      "locale": "en",
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/prices-and-purchasing-power",
+      "status": 200,
+      "locale": "en",
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/profit-is-not-cash",
+      "status": 200,
+      "locale": "en",
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/what-a-share-means",
+      "status": 200,
+      "locale": "en",
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn",
+      "result": "passed",
+      "checks": [
+        "ten lessons",
+        "canonical",
+        "RSS",
+        "home link",
+        "search"
+      ]
+    },
+    {
+      "path": "/learn/a-good-company-at-what-price",
+      "status": 200,
+      "locale": "ko",
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/a-map-of-your-money",
+      "status": 200,
+      "locale": "ko",
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/a-plan-for-uncertain-days",
+      "status": 200,
+      "locale": "ko",
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/exchange-rates-and-economic-news",
+      "status": 200,
+      "locale": "ko",
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/inside-an-etf",
+      "status": 200,
+      "locale": "ko",
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/interest-and-time",
+      "status": 200,
+      "locale": "ko",
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/interest-rates-and-bonds",
+      "status": 200,
+      "locale": "ko",
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/prices-and-purchasing-power",
+      "status": 200,
+      "locale": "ko",
+      "figures": 1,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/profit-is-not-cash",
+      "status": 200,
+      "locale": "ko",
+      "figures": 0,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/what-a-share-means",
+      "status": 200,
+      "locale": "ko",
+      "figures": 0,
+      "result": "passed"
+    }
+  ]
+}
