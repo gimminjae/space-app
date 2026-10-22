@@ -11,24 +11,30 @@ Checked on 2026-10-22. Production origin: https://space.service.io.kr
 - Member article bodies are not translated by changing the interface language. Both interfaces point to the original article URL as canonical; the sitemap contains that URL once. The authored bilingual lessons retain separate canonicals and language alternates.
 - Home exposes WebSite and Organization data. Lessons expose Article and BreadcrumbList; member articles expose BlogPosting and BreadcrumbList.
 - Sitemap: https://space.service.io.kr/sitemap.xml
-- The Space URL-prefix Search Console property was verified through the existing parent-domain ownership. Final sitemap submission/production checks are recorded separately after deployment.
+- The Space URL-prefix Search Console property was verified through existing parent-domain ownership. The sitemap was resubmitted on October 22 and Google confirmed submission. Google subsequently re-read it on October 22 and showed **Success / 28 discovered pages**. Discovery is not a claim that all 28 are indexed. The lesson hub was not yet known to Google; its manual indexing request failed with a reCAPTCHA connection error.
 
 ## Advertising state and activation
 
-The AdSense account currently displays “계정이 승인되지 않았습니다.” The October 20 notification confirms non-approval but does not identify a precise page-level cause. Site/ad-unit management redirects to onboarding. Do not describe this as approved or as live ad serving.
+The AdSense account initially displayed “계정이 승인되지 않았습니다.” The October 20 notification confirmed non-approval without a precise page-level cause. After explicit user approval of the policy-compliance declaration, it was resubmitted and management menus became available.
 
-Google manages ordinary subdomains under the registrable parent domain (`service.io.kr`), not as independent Sites entries. The publisher ID is `ca-pub-4493633870090510`. Both Space's ads.txt and the parent-domain ads.txt returned the matching publisher entry. The parent site is a separate product; no parent-site content or advertising settings were changed.
+The existing `service.io.kr` entry was confirmed in Sites. Its review was requested using the matching ads.txt declaration. Google now displays **“준비 중 / 사이트의 광고 게재 가능 여부 검토 중 / 리뷰가 요청됨”**. This is a submitted review, not approval. Google manages ordinary subdomains under the parent domain; an independent `space.service.io.kr` Sites entry is not supported.
 
-A single responsive display-unit position is prepared at the end of article content, clearly labeled Advertisement/광고. No ad loader is installed in login, signup, search, navigation, empty archives, or admin pages. Unfilled units collapse. No placeholder ad or empty box renders while disabled. Actual ad dimensions/serving cannot be tested until the account and site are approved.
+The publisher ID is `ca-pub-4493633870090510`. Space and parent-domain ads.txt both returned the matching publisher entry over HTTPS. The AdSense table had not yet refreshed its previous “찾을 수 없음” ads.txt status, so Google verification remains pending. The parent root is a separate product; its content was not changed.
 
-Production `ADSENSE_ENABLED` is set to false while approval is unresolved. Before activation:
+Created a responsive display unit **Space · article footer · responsive**, ID **7049280531**, and configured `ADSENSE_ARTICLE_SLOT` in Space's production environment. The provided Google snippet matches the implemented unit. The parent site's Auto ads setting was already **사용 안 함** and was left unchanged. Other sites' advertising settings were not changed.
 
-1. The account owner confirms the policy-compliance declaration required by AdSense's resubmission screen. Submit for review and wait for the actual approval status.
-2. Confirm `service.io.kr` is approved in Sites and Space is eligible under that parent. Do not create a second AdSense account or an unsupported subdomain entry.
-3. Create a responsive display ad unit for the Space article footer; set its real 10-digit ID as `ADSENSE_ARTICLE_SLOT` in the Space hosting environment.
-4. Publish a Google-certified CMP message covering the required regions and Space host. Verify consent choices in the browser. Set `ADSENSE_CONSENT_READY=true` only after verification.
-5. Disable Auto ads for Space before activation so overlays, anchors or extra in-page placements do not bypass the single-footer design. If the setting affects other parent-domain products, coordinate that scope first.
-6. Set `ADSENSE_ENABLED=true`, redeploy, inspect one real page without clicking ads, and confirm no ad script on account/search/admin pages. Never manufacture ad traffic or clicks for testing.
+A single display-unit position is prepared at the end of article content, clearly labeled Advertisement/광고. No ad loader is installed in login, signup, search, navigation, empty archives, or admin pages. Unfilled units collapse. No placeholder or empty box renders while disabled.
+
+**Remaining blocker:** the Google Privacy & messaging European-regulations editor and settings screen remain blank/loading, including after reloading and navigating through both official menu routes. Browser console reports `Could not find event bus in current window context` in Google's user-messaging script. No consent message was created or published, and no browser security settings/extensions were altered to work around it.
+
+Production `ADSENSE_ENABLED=false` and `ADSENSE_CONSENT_READY=false` are explicit. Before activation:
+
+1. Wait for the `service.io.kr` Sites status to become Ready, and confirm ads.txt is recognized. Do not resubmit repeatedly or create another account.
+2. Once Google's message editor loads, publish a certified consent message for Space, with an equally accessible reject choice, and verify geographic coverage, policy URL, language and consent withdrawal. Confirm scope if Google's site-level configuration also affects other products under the parent domain. Complete applicable US-state choices as well.
+3. Verify the actual consent flow and set `ADSENSE_CONSENT_READY=true`; the ad unit ID is already configured.
+4. Confirm Auto ads remains off. Set `ADSENSE_ENABLED=true` and redeploy only after approval and consent readiness. Inspect one page without clicking ads; confirm no ad script on account/search/admin pages. Never manufacture ad traffic or clicks.
+
+No ads are currently served by Space. Real serving and regional consent cannot be claimed as verified before these steps.
 
 Search indexing and AdSense approval are external decisions; sitemap acceptance alone is not indexing, and source integration is not live ad delivery.
 
@@ -38,6 +44,8 @@ Search indexing and AdSense approval are external decisions; sitemap acceptance 
 - `npm run typecheck` and `npm run build`: passed.
 - `node scripts/check-seo.mjs http://127.0.0.1:3102 docs/seo-local-checks.json`: 28 sitemap pages and 56 routes passed. This snapshot expects the current database's empty public member archives; update its fixture assumptions once member posts are published.
 - `node scripts/check-lessons.mjs http://127.0.0.1:3102`: all 20 editions, 2 hubs, 30 assets, feeds, search, language pairs and metadata passed.
+- Production deployment `6ad9fdd6e47c4efc8b222a8b`, commit `2fb89a5e2ea08f14971665c0e68f8e0103c1dd23`, was published at 2026-10-22T12:13:55Z. Production SEO checks passed for 28 sitemap pages / 56 routes; all 20 editions, 2 hubs and 30 images passed again. Browser language switching and article rendering were checked.
+- `docs/seo-production-checks.json` contains the deployed HTTP results.
 - The expanded public-post relationship query was checked against the actual database with the anonymous key. No production data or schema was modified.
 
 ## Official references

@@ -1,0 +1,299 @@
+{
+  "origin": "https://space.service.io.kr",
+  "checkedAt": "2026-10-22T12:16:04.488Z",
+  "indexablePages": 28,
+  "results": [
+    {
+      "path": "/learn",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/a-map-of-your-money",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/a-map-of-your-money",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/prices-and-purchasing-power",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/prices-and-purchasing-power",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/interest-and-time",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/interest-and-time",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/interest-rates-and-bonds",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/exchange-rates-and-economic-news",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/exchange-rates-and-economic-news",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/interest-rates-and-bonds",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/what-a-share-means",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/profit-is-not-cash",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/what-a-share-means",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/profit-is-not-cash",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/inside-an-etf",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/a-good-company-at-what-price",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/inside-an-etf",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/a-good-company-at-what-price",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/a-plan-for-uncertain-days",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/a-plan-for-uncertain-days",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/privacy",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/privacy",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/en/about",
+      "status": 200,
+      "result": "passed"
+    },
+    {
+      "path": "/login",
+      "status": 200,
+      "robots": "noindex",
+      "result": "passed"
+    },
+    {
+      "path": "/signup",
+      "status": 200,
+      "robots": "noindex",
+      "result": "passed"
+    },
+    {
+      "path": "/forgot-password",
+      "status": 200,
+      "robots": "noindex",
+      "result": "passed"
+    },
+    {
+      "path": "/search",
+      "status": 200,
+      "robots": "noindex",
+      "result": "passed"
+    },
+    {
+      "path": "/spaces",
+      "status": 200,
+      "robots": "noindex",
+      "result": "passed"
+    },
+    {
+      "path": "/category/basics",
+      "status": 200,
+      "robots": "noindex",
+      "result": "passed"
+    },
+    {
+      "path": "/?page=1.5",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/?page=Infinity",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/?page=9999",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/category/basics?page=2",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/category/missing",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/tag/missing",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/s/missing",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/learn/missing",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/en/login",
+      "status": 200,
+      "robots": "noindex",
+      "result": "passed"
+    },
+    {
+      "path": "/en/signup",
+      "status": 200,
+      "robots": "noindex",
+      "result": "passed"
+    },
+    {
+      "path": "/en/forgot-password",
+      "status": 200,
+      "robots": "noindex",
+      "result": "passed"
+    },
+    {
+      "path": "/en/search",
+      "status": 200,
+      "robots": "noindex",
+      "result": "passed"
+    },
+    {
+      "path": "/en/spaces",
+      "status": 200,
+      "robots": "noindex",
+      "result": "passed"
+    },
+    {
+      "path": "/en/category/basics",
+      "status": 200,
+      "robots": "noindex",
+      "result": "passed"
+    },
+    {
+      "path": "/en/?page=1.5",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/en/?page=Infinity",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/en/?page=9999",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/en/category/basics?page=2",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/en/category/missing",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/en/tag/missing",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/en/s/missing",
+      "status": 404,
+      "result": "passed"
+    },
+    {
+      "path": "/en/learn/missing",
+      "status": 404,
+      "result": "passed"
+    }
+  ]
+}
