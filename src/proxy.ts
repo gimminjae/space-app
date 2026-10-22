@@ -1,8 +1,10 @@
 import { isLocale,isSharedPath,localeCookie,unlocalizePath,type Locale } from '@/lib/i18n/routing';
 import { createServerClient } from '@supabase/ssr';
 import { NextResponse,type NextRequest } from 'next/server';
+import { contentOnly,isPersonalServicePath } from '@/lib/platform-mode';
 export async function proxy(request:NextRequest){
  const path=request.nextUrl.pathname,shared=isSharedPath(path);
+ if(contentOnly&&isPersonalServicePath(path))return new NextResponse(null,{status:404,headers:{'X-Robots-Tag':'noindex, nofollow','Cache-Control':'no-store'}});
  if(path==='/ko'||path.startsWith('/ko/')){const url=new URL(request.url);url.pathname=unlocalizePath(path);return NextResponse.redirect(url,308);}
  const preferred=request.headers.get('x-space-language')||request.cookies.get(localeCookie)?.value;
  const locale:Locale=path==='/en'||path.startsWith('/en/')?'en':shared&&!path.endsWith('.xml')&&isLocale(preferred)?preferred:'ko';
@@ -14,7 +16,7 @@ export async function proxy(request:NextRequest){
  if(!shared&&locale==='ko')destination.pathname=`/ko${path==='/'?'':path}`;
  const makeResponse=()=>!shared&&locale==='ko'?NextResponse.rewrite(destination,{request:{headers:request.headers}}):NextResponse.next({request:{headers:request.headers}});
  let response=makeResponse();
- if(process.env.SUPABASE_URL&&process.env.SUPABASE_PUBLISHABLE_KEY){
+ if(!contentOnly&&process.env.SUPABASE_URL&&process.env.SUPABASE_PUBLISHABLE_KEY){
   const client=createServerClient(process.env.SUPABASE_URL,process.env.SUPABASE_PUBLISHABLE_KEY,{
    cookieOptions:{httpOnly:true,secure:process.env.NODE_ENV==='production',sameSite:'lax',path:'/'},
    cookies:{getAll:()=>request.cookies.getAll(),setAll(values,headers){

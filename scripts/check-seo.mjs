@@ -10,7 +10,7 @@ const canonical=html=>attr(tags(html,'link').find(t=>attr(t,'rel')==='canonical'
 async function get(path){path=path.replace(/^\/en\/\?/, '/en?');const r=await fetch(origin+path,{headers:{'User-Agent':'Googlebot'},redirect:'manual',signal:AbortSignal.timeout(40000)});return {status:r.status,html:await r.text(),headers:r.headers};}
 const sitemap=await get('/sitemap.xml');assert.equal(sitemap.status,200);
 const paths=[...sitemap.html.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>decode(m[1]).replace(canonicalOrigin,''));
-assert.ok(paths.length>=28);assert.equal(new Set(paths).size,paths.length);
+assert.equal(paths.length,64);assert.equal(new Set(paths).size,paths.length);
 assert.ok(paths.includes('/privacy')&&paths.includes('/en/privacy'));
 assert.ok(paths.every(p=>!/(?:admin|search|login|signup|mypage|onboarding|password)/.test(p)));
 const titles=new Set();
@@ -30,18 +30,23 @@ for(let i=0;i<paths.length;i+=4)await Promise.all(paths.slice(i,i+4).map(async p
  results.push({path,status,result:'passed'});
 }));
 for(const prefix of ['','/en']){
- for(const path of ['/login','/signup','/forgot-password','/search','/spaces','/category/basics']){
+ for(const path of ['/search']){
   const {status,html}=await get(prefix+path);assert.equal(status,200,prefix+path);assert.match(meta(html,'robots'),/noindex/,prefix+path);
   if(path==='/category/basics'||path==='/spaces')assert.ok(!paths.includes(prefix+path),'Empty archive in sitemap');
   results.push({path:prefix+path,status,robots:'noindex',result:'passed'});
  }
- for(const path of ['/?page=1.5','/?page=Infinity','/?page=9999','/category/basics?page=2','/category/missing','/tag/missing','/s/missing','/learn/missing']){
+ for(const path of ['/?page=1.5','/?page=Infinity','/?page=9999','/category/basics?page=2','/category/missing','/tag/missing','/learn/missing','/etf/missing']){
   const {status,html}=await get(prefix+path);assert.equal(status,404,prefix+path);assert.match(meta(html,'robots'),/noindex/,prefix+path);
   results.push({path:prefix+path,status,result:'passed'});
  }
  const first=await get(prefix+'/?page=1');assert.equal(new URL(canonical(first.html)).href,new URL(canonicalOrigin+(prefix||'/')).href);
  const home=await get(prefix||'/');assert.ok(home.html.includes('"@type":"WebSite"'));assert.ok(home.html.includes('"@type":"Organization"'));
 }
+for(const prefix of ['','/en','/ko'])for(const path of ['/login','/%6cogin','/signup','/forgot-password','/onboarding','/mypage','/account','/admin','/spaces','/s/missing','/auth/callback?code=invalid','/auth/confirm?token_hash=invalid','/api/auth','/api/admin/posts']){
+ const {status,headers}=await get(prefix+path);assert.equal(status,404,prefix+path);assert.match(headers.get('x-robots-tag'),/noindex/);
+ results.push({path:prefix+path,status,result:'blocked'});
+}
+const mutation=await fetch(origin+'/api/auth',{method:'POST',headers:{'Content-Type':'application/json',Origin:canonicalOrigin},body:JSON.stringify({action:'signup',email:'content-only-test@example.invalid'})});assert.equal(mutation.status,404);
 const ads=await get('/ads.txt');assert.equal(ads.status,200);assert.equal(ads.html.trim(),'google.com, pub-4493633870090510, DIRECT, f08c47fec0942fa0');
 const report={origin,checkedAt:new Date().toISOString(),indexablePages:paths.length,results};
 if(process.argv[3])await writeFile(process.argv[3],JSON.stringify(report,null,2)+'\n');

@@ -1,0 +1,620 @@
+{
+  "publishedAt": "2026-10-22T13:00:41.919496+00:00",
+  "updatedAt": "2026-10-22T13:00:41.919969+00:00",
+  "checkedOn": "2026-10-22",
+  "sourceCategory": "https://money-study-with-ai.tistory.com/category/ETF",
+  "sourceCount": 17,
+  "articles": [
+    {
+      "order": 1,
+      "slug": "schd",
+      "originalTitle": "시간이 지날수록 배당금이 쑥쑥 자라는 마법, SCHD ETF",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/%EC%8B%9C%EA%B0%84%EC%9D%B4-%EC%A7%80%EB%82%A0%EC%88%98%EB%A1%9D-%EB%B0%B0%EB%8B%B9%EA%B8%88%EC%9D%B4-%EC%91%A5%EC%91%A5-%EC%9E%90%EB%9D%BC%EB%8A%94-%EB%A7%88%EB%B2%95-SCHD-ETF",
+      "sources": [
+        "https://www.schwabassetmanagement.com/products/schd"
+      ],
+      "ko": {
+        "title": "SCHD: 배당이 자란다는 말의 뜻",
+        "seoTitle": "SCHD: 배당이 자란다는 말의 뜻",
+        "summary": "배당의 지속성을 고르는 기준과 주식 분할, 분기 분배를 읽습니다.",
+        "tags": [
+          "ETF",
+          "배당 성장"
+        ],
+        "ogImage": "/etf-assets/schd.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 604,
+        "characterCount": 2445
+      },
+      "en": {
+        "title": "SCHD: What Dividend Growth Really Means",
+        "seoTitle": "SCHD: What Dividend Growth Really Means",
+        "summary": "Read dividend selection, quarterly payments, and the effect of a share split.",
+        "tags": [
+          "ETF",
+          "Dividend growth"
+        ],
+        "ogImage": "/etf-assets/schd.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 781,
+        "characterCount": 5107
+      }
+    },
+    {
+      "order": 2,
+      "slug": "qdiv",
+      "originalTitle": "고배당만이 아니라 ‘질 좋은 배당주’에 투자한다면? QDIV ETF",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/%EA%B3%A0%EB%B0%B0%EB%8B%B9%EB%A7%8C%EC%9D%B4-%EC%95%84%EB%8B%88%EB%9D%BC-%E2%80%98%EC%A7%88-%EC%A2%8B%EC%9D%80-%EB%B0%B0%EB%8B%B9%EC%A3%BC%E2%80%99%EC%97%90-%ED%88%AC%EC%9E%90%ED%95%9C%EB%8B%A4%EB%A9%B4-QDIV-ETF",
+      "sources": [
+        "https://www.globalxetfs.com/funds/qdiv",
+        "https://www.sec.gov/Archives/edgar/data/1432353/000143235326000311/ck0001432353-20260327.htm"
+      ],
+      "ko": {
+        "title": "QDIV: 높은 배당에 재무의 질을 더하면",
+        "seoTitle": "QDIV: 높은 배당에 재무의 질을 더하면",
+        "summary": "배당수익률과 재무 지표를 함께 보는 미국 월분배 ETF입니다.",
+        "tags": [
+          "ETF",
+          "퀄리티 배당"
+        ],
+        "ogImage": "/etf-assets/qdiv.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 544,
+        "characterCount": 2202
+      },
+      "en": {
+        "title": "QDIV: Adding Financial Quality to Dividend Yield",
+        "seoTitle": "QDIV: Adding Financial Quality to Dividend Yield",
+        "summary": "A monthly distribution fund that screens both dividend yield and financial quality.",
+        "tags": [
+          "ETF",
+          "Quality dividends"
+        ],
+        "ogImage": "/etf-assets/qdiv.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 724,
+        "characterCount": 4602
+      }
+    },
+    {
+      "order": 3,
+      "slug": "plus-high-dividend",
+      "originalTitle": "국내판 SCHD를 찾는다면? PLUS 고배당주 ETF",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/%EA%B5%AD%EB%82%B4%ED%8C%90-SCHD%EB%A5%BC-%EC%B0%BE%EB%8A%94%EB%8B%A4%EB%A9%B4-PLUS-%EA%B3%A0%EB%B0%B0%EB%8B%B9%EC%A3%BC-ETF",
+      "sources": [
+        "https://www.plusetf.co.kr/product/detail?n=006273"
+      ],
+      "ko": {
+        "title": "PLUS 고배당주: 한국 기업의 배당을 모으는 방법",
+        "seoTitle": "PLUS 고배당주: 한국 기업의 배당을 모으는 방법",
+        "summary": "161510의 종목 선정 방식과 월분배, 국내 주식 편중을 살펴봅니다.",
+        "tags": [
+          "ETF",
+          "국내 배당"
+        ],
+        "ogImage": "/etf-assets/plus-high-dividend.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 554,
+        "characterCount": 2335
+      },
+      "en": {
+        "title": "PLUS High Dividend: A Basket of Korean Company Dividends",
+        "seoTitle": "PLUS High Dividend: A Basket of Korean Company Dividends",
+        "summary": "Understand selection rules, monthly distributions, and Korean equity exposure in 161510.",
+        "tags": [
+          "ETF",
+          "Korean dividends"
+        ],
+        "ogImage": "/etf-assets/plus-high-dividend.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 732,
+        "characterCount": 4818
+      }
+    },
+    {
+      "order": 4,
+      "slug": "ace-global-income-top10",
+      "originalTitle": "월배당으로 글로벌 ETF 10개에 한 번에 투자한다면? ACE 글로벌인컴TOP10 ETF",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/%EC%9B%94%EB%B0%B0%EB%8B%B9%EC%9C%BC%EB%A1%9C-%EA%B8%80%EB%A1%9C%EB%B2%8C-ETF-10%EA%B0%9C%EC%97%90-%ED%95%9C-%EB%B2%88%EC%97%90-%ED%88%AC%EC%9E%90%ED%95%9C%EB%8B%A4%EB%A9%B4-ACE-%EA%B8%80%EB%A1%9C%EB%B2%8C%EC%9D%B8%EC%BB%B4TOP10-ETF",
+      "sources": [
+        "https://www.aceetf.co.kr/fund/K55101E30004",
+        "https://kind.krx.co.kr/disclosure/etfisudetail.do?method=searchEtfIsuSummary&strIsurCd=46096"
+      ],
+      "ko": {
+        "title": "ACE 글로벌인컴TOP10: ETF 열 개를 담은 ETF",
+        "seoTitle": "ACE 글로벌인컴TOP10: ETF 열 개를 담은 ETF",
+        "summary": "460960의 주식·채권 ETF 구성과 재간접 비용, 환율 위험을 읽습니다.",
+        "tags": [
+          "ETF",
+          "자산 배분"
+        ],
+        "ogImage": "/etf-assets/ace-global-income-top10.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 546,
+        "characterCount": 2297
+      },
+      "en": {
+        "title": "ACE Global Income TOP10: An ETF That Owns Ten ETFs",
+        "seoTitle": "ACE Global Income TOP10: An ETF That Owns Ten ETFs",
+        "summary": "Read the stock/bond ETF mix, layered expenses, and currency risk of 460960.",
+        "tags": [
+          "ETF",
+          "Asset allocation"
+        ],
+        "ogImage": "/etf-assets/ace-global-income-top10.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 750,
+        "characterCount": 4810
+      }
+    },
+    {
+      "order": 5,
+      "slug": "divo",
+      "originalTitle": "DIVO ETF: 배당과 성장을 동시에 잡는 완벽한 밸런스",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/DIVO",
+      "sources": [
+        "https://amplifyetfs.com/divo/"
+      ],
+      "ko": {
+        "title": "DIVO: 배당주에 옵션을 조금 얹는다는 것",
+        "seoTitle": "DIVO: 배당주에 옵션을 조금 얹는다는 것",
+        "summary": "개별 종목에 선택적으로 옵션을 매도하는 구조와 집중 투자 위험을 살펴봅니다.",
+        "tags": [
+          "ETF",
+          "선별 커버드콜"
+        ],
+        "ogImage": "/etf-assets/divo.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 542,
+        "characterCount": 2279
+      },
+      "en": {
+        "title": "DIVO: Adding Selective Options to Dividend Stocks",
+        "seoTitle": "DIVO: Adding Selective Options to Dividend Stocks",
+        "summary": "Explore selective single-stock calls and the trade-off of a concentrated dividend portfolio.",
+        "tags": [
+          "ETF",
+          "Selective covered calls"
+        ],
+        "ogImage": "/etf-assets/divo.en.og.png",
+        "readingMinutes": 5,
+        "wordCount": 692,
+        "characterCount": 4448
+      }
+    },
+    {
+      "order": 6,
+      "slug": "qdvo",
+      "originalTitle": "QDVO ETF 빅테크의 폭발적 성장'과 '두 자릿수 배당'의 완벽한 콜라보",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/QDVO-ETF-%EB%B9%85%ED%85%8C%ED%81%AC%EC%9D%98-%ED%8F%AD%EB%B0%9C%EC%A0%81-%EC%84%B1%EC%9E%A5%EA%B3%BC-%EB%91%90-%EC%9E%90%EB%A6%BF%EC%88%98-%EB%B0%B0%EB%8B%B9%EC%9D%98-%EC%99%84%EB%B2%BD%ED%95%9C-%EC%BD%9C%EB%9D%BC%EB%B3%B4",
+      "sources": [
+        "https://amplifyetfs.com/qdvo/"
+      ],
+      "ko": {
+        "title": "QDVO: 성장주와 월분배 사이의 선택",
+        "seoTitle": "QDVO: 성장주와 월분배 사이의 선택",
+        "summary": "성장주 포트폴리오와 전술적 옵션 운용, 짧은 운용 이력의 의미를 읽습니다.",
+        "tags": [
+          "ETF",
+          "성장주 인컴"
+        ],
+        "ogImage": "/etf-assets/qdvo.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 550,
+        "characterCount": 2263
+      },
+      "en": {
+        "title": "QDVO: The Trade-Off Between Growth and Monthly Income",
+        "seoTitle": "QDVO: The Trade-Off Between Growth and Monthly Income",
+        "summary": "Examine growth stocks, tactical options, and the limits of a short track record.",
+        "tags": [
+          "ETF",
+          "Growth and income"
+        ],
+        "ogImage": "/etf-assets/qdvo.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 728,
+        "characterCount": 4842
+      }
+    },
+    {
+      "order": 7,
+      "slug": "idvo",
+      "originalTitle": "미국 편중이 부담스럽다면? 월배당으로 글로벌 배당주에 투자하는 IDVO ETF",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/%EB%AF%B8%EA%B5%AD-%ED%8E%B8%EC%A4%91%EC%9D%B4-%EB%B6%80%EB%8B%B4%EC%8A%A4%EB%9F%BD%EB%8B%A4%EB%A9%B4-%EC%9B%94%EB%B0%B0%EB%8B%B9%EC%9C%BC%EB%A1%9C-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EB%B0%B0%EB%8B%B9%EC%A3%BC%EC%97%90-%ED%88%AC%EC%9E%90%ED%95%98%EB%8A%94-IDVO-ETF",
+      "sources": [
+        "https://amplifyetfs.com/idvo/",
+        "https://amplifyetfs.com/wp-content/uploads/files/Amplify_IDVO_Summary_Prospectus.pdf"
+      ],
+      "ko": {
+        "title": "IDVO: 미국 밖 기업을 달러로 산다는 것",
+        "seoTitle": "IDVO: 미국 밖 기업을 달러로 산다는 것",
+        "summary": "ADR을 통한 해외 배당주 투자와 옵션, 여러 겹의 환율 영향을 정리합니다.",
+        "tags": [
+          "ETF",
+          "해외 배당"
+        ],
+        "ogImage": "/etf-assets/idvo.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 565,
+        "characterCount": 2277
+      },
+      "en": {
+        "title": "IDVO: Buying Companies Outside America in Dollars",
+        "seoTitle": "IDVO: Buying Companies Outside America in Dollars",
+        "summary": "Understand international dividend ADRs, options, and multiple layers of currency exposure.",
+        "tags": [
+          "ETF",
+          "International dividends"
+        ],
+        "ogImage": "/etf-assets/idvo.en.og.png",
+        "readingMinutes": 5,
+        "wordCount": 720,
+        "characterCount": 4839
+      }
+    },
+    {
+      "order": 8,
+      "slug": "jepi",
+      "originalTitle": "하락장 철통 방어와 안정적인 월배당의 대명사, JEPI ETF",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/%ED%95%98%EB%9D%BD%EC%9E%A5-%EC%B2%A0%ED%86%B5-%EB%B0%A9%EC%96%B4%EC%99%80-%EC%95%88%EC%A0%95%EC%A0%81%EC%9D%B8-%EC%9B%94%EB%B0%B0%EB%8B%B9%EC%9D%98-%EB%8C%80%EB%AA%85%EC%82%AC-JEPI-ETF",
+      "sources": [
+        "https://am.jpmorgan.com/us/en/asset-management/adv/products/jpmorgan-equity-premium-income-etf-46641q332",
+        "https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPI.pdf"
+      ],
+      "ko": {
+        "title": "JEPI: 월분배의 재원과 낮은 변동성의 한계",
+        "seoTitle": "JEPI: 월분배의 재원과 낮은 변동성의 한계",
+        "summary": "미국 대형주와 ELN을 결합하는 구조를 예금 이자와 구분합니다.",
+        "tags": [
+          "ETF",
+          "ELN"
+        ],
+        "ogImage": "/etf-assets/jepi.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 562,
+        "characterCount": 2348
+      },
+      "en": {
+        "title": "JEPI: Monthly Income and the Limits of Lower Volatility",
+        "seoTitle": "JEPI: Monthly Income and the Limits of Lower Volatility",
+        "summary": "Separate the economics of US stocks and equity-linked notes from bank interest.",
+        "tags": [
+          "ETF",
+          "Equity-linked notes"
+        ],
+        "ogImage": "/etf-assets/jepi.en.og.png",
+        "readingMinutes": 5,
+        "wordCount": 705,
+        "characterCount": 4655
+      }
+    },
+    {
+      "order": 9,
+      "slug": "jepq",
+      "originalTitle": "빅테크의 성장에 올라타 연 9% 월배당을 챙기다! JEPQ ETF",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/%EB%B9%85%ED%85%8C%ED%81%AC%EC%9D%98-%EC%84%B1%EC%9E%A5%EC%97%90-%EC%98%AC%EB%9D%BC%ED%83%80-%EC%97%B0-9-%EC%9B%94%EB%B0%B0%EB%8B%B9%EC%9D%84-%EC%B1%99%EA%B8%B0%EB%8B%A4-JEPQ-ETF",
+      "sources": [
+        "https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPQ.PDF",
+        "https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fund-story/STO-JEPQ.pdf"
+      ],
+      "ko": {
+        "title": "JEPQ: 나스닥의 성장과 현금흐름을 나누는 법",
+        "seoTitle": "JEPQ: 나스닥의 성장과 현금흐름을 나누는 법",
+        "summary": "성장주 노출과 ELN 수익, JEPI와의 차이를 같은 기준으로 살펴봅니다.",
+        "tags": [
+          "ETF",
+          "나스닥 인컴"
+        ],
+        "ogImage": "/etf-assets/jepq.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 566,
+        "characterCount": 2331
+      },
+      "en": {
+        "title": "JEPQ: Sharing Nasdaq Growth with Current Income",
+        "seoTitle": "JEPQ: Sharing Nasdaq Growth with Current Income",
+        "summary": "Read growth-stock exposure, ELN income, and the differences from JEPI.",
+        "tags": [
+          "ETF",
+          "Nasdaq income"
+        ],
+        "ogImage": "/etf-assets/jepq.en.og.png",
+        "readingMinutes": 5,
+        "wordCount": 712,
+        "characterCount": 4864
+      }
+    },
+    {
+      "order": 10,
+      "slug": "gpix",
+      "originalTitle": "골드만삭스의 노하우가 담긴 S&P 500 프리미엄 월배당, GPIX ETF",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/%EA%B3%A8%EB%93%9C%EB%A7%8C%EC%82%AD%EC%8A%A4%EC%9D%98-%EB%85%B8%ED%95%98%EC%9A%B0%EA%B0%80-%EB%8B%B4%EA%B8%B4-SP-500-%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EC%9B%94%EB%B0%B0%EB%8B%B9-GPIX-ETF",
+      "sources": [
+        "https://am.gs.com/en-us/advisors/campaign/premium-income-etfs",
+        "https://am.gs.com/public-assets/documents/98b8b681-2695-11f0-82e6-0f718a813dfb?view=true",
+        "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/evergreen/managing-risk-amidst-uncertainty.pdf"
+      ],
+      "ko": {
+        "title": "GPIX: 옵션 비중을 조절하는 S&P 500 인컴",
+        "seoTitle": "GPIX: 옵션 비중을 조절하는 S&P 500 인컴",
+        "summary": "현재 상품명과 보수 할인, 옵션 매도 비중을 조절하는 의미를 읽습니다.",
+        "tags": [
+          "ETF",
+          "S&P 500 인컴"
+        ],
+        "ogImage": "/etf-assets/gpix.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 559,
+        "characterCount": 2308
+      },
+      "en": {
+        "title": "GPIX: Adjusting the Option Overlay on US Large-Cap Stocks",
+        "seoTitle": "GPIX: Adjusting the Option Overlay on US Large-Cap Stocks",
+        "summary": "Understand the current name, fee waiver, and an adjustable option overlay.",
+        "tags": [
+          "ETF",
+          "S&P 500 income"
+        ],
+        "ogImage": "/etf-assets/gpix.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 781,
+        "characterCount": 4985
+      }
+    },
+    {
+      "order": 11,
+      "slug": "gpiq",
+      "originalTitle": "골드만삭스가 설계한 나스닥 10% 프리미엄 월배당, GPIQ ETF",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/%EA%B3%A8%EB%93%9C%EB%A7%8C%EC%82%AD%EC%8A%A4%EA%B0%80-%EC%84%A4%EA%B3%84%ED%95%9C-%EB%82%98%EC%8A%A4%EB%8B%A5-10-%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EC%9B%94%EB%B0%B0%EB%8B%B9-GPIQ-ETF",
+      "sources": [
+        "https://am.gs.com/ja-jp/individual/products/etf/gpiq",
+        "https://am.gs.com/en-us/advisors/campaign/premium-income-etfs",
+        "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/evergreen/managing-risk-amidst-uncertainty.pdf"
+      ],
+      "ko": {
+        "title": "GPIQ: 나스닥에 옵션을 얼마나 덮을 것인가",
+        "seoTitle": "GPIQ: 나스닥에 옵션을 얼마나 덮을 것인가",
+        "summary": "나스닥 집중도와 동적 옵션 전략, 순보수와 총보수의 차이를 확인합니다.",
+        "tags": [
+          "ETF",
+          "나스닥 인컴"
+        ],
+        "ogImage": "/etf-assets/gpiq.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 578,
+        "characterCount": 2370
+      },
+      "en": {
+        "title": "GPIQ: How Much Nasdaq Exposure Should Be Covered?",
+        "seoTitle": "GPIQ: How Much Nasdaq Exposure Should Be Covered?",
+        "summary": "Examine Nasdaq concentration, a dynamic option strategy, and net versus gross expenses.",
+        "tags": [
+          "ETF",
+          "Nasdaq income"
+        ],
+        "ogImage": "/etf-assets/gpiq.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 762,
+        "characterCount": 5072
+      }
+    },
+    {
+      "order": 12,
+      "slug": "spyi",
+      "originalTitle": "SPYI ETF: S&P 500의 안정성과 연 11% 초고배당의 만남",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/SPYI-ETF-SP-500%EC%9D%98-%EC%95%88%EC%A0%95%EC%84%B1%EA%B3%BC-%EC%97%B0-11-%EC%B4%88%EA%B3%A0%EB%B0%B0%EB%8B%B9%EC%9D%98-%EB%A7%8C%EB%82%A8",
+      "sources": [
+        "https://neosfunds.com/spyi/"
+      ],
+      "ko": {
+        "title": "SPYI: 높은 분배율보다 먼저 볼 것",
+        "seoTitle": "SPYI: 높은 분배율보다 먼저 볼 것",
+        "summary": "SPX 옵션과 분배금 구성, 미국 세제 설명을 읽는 범위를 정리합니다.",
+        "tags": [
+          "ETF",
+          "지수 옵션"
+        ],
+        "ogImage": "/etf-assets/spyi.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 565,
+        "characterCount": 2337
+      },
+      "en": {
+        "title": "SPYI: What to Read Before the Distribution Rate",
+        "seoTitle": "SPYI: What to Read Before the Distribution Rate",
+        "summary": "Explore SPX options, distribution composition, and the limits of US tax descriptions.",
+        "tags": [
+          "ETF",
+          "Index options"
+        ],
+        "ogImage": "/etf-assets/spyi.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 756,
+        "characterCount": 4995
+      }
+    },
+    {
+      "order": 13,
+      "slug": "qqqi",
+      "originalTitle": "QQQI ETF 나스닥의 성장성과 연 14% 압도적 월배당의 만남",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/QQQI-ETF-%EB%82%98%EC%8A%A4%EB%8B%A5%EC%9D%98-%EC%84%B1%EC%9E%A5%EC%84%B1%EA%B3%BC-%EC%97%B0-14-%EC%95%95%EB%8F%84%EC%A0%81-%EC%9B%94%EB%B0%B0%EB%8B%B9%EC%9D%98-%EB%A7%8C%EB%82%A8",
+      "sources": [
+        "https://neosfunds.com/qqqi/"
+      ],
+      "ko": {
+        "title": "QQQI: 14%라는 숫자 옆에 놓아야 할 질문",
+        "seoTitle": "QQQI: 14%라는 숫자 옆에 놓아야 할 질문",
+        "summary": "NDX 옵션과 분배율·SEC 수익률·총수익률의 차이를 분리해 읽습니다.",
+        "tags": [
+          "ETF",
+          "지수 옵션"
+        ],
+        "ogImage": "/etf-assets/qqqi.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 564,
+        "characterCount": 2317
+      },
+      "en": {
+        "title": "QQQI: The Questions Beside a 14% Distribution Rate",
+        "seoTitle": "QQQI: The Questions Beside a 14% Distribution Rate",
+        "summary": "Distinguish NDX options, distribution rates, SEC yield, and total return.",
+        "tags": [
+          "ETF",
+          "Index options"
+        ],
+        "ogImage": "/etf-assets/qqqi.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 771,
+        "characterCount": 5130
+      }
+    },
+    {
+      "order": 14,
+      "slug": "rise-200-weekly-covered-call",
+      "originalTitle": "코스피200으로 월배당을 만든다면? RISE 200위클리커버드콜 ETF",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/%EC%BD%94%EC%8A%A4%ED%94%BC200%EC%9C%BC%EB%A1%9C-%EC%9B%94%EB%B0%B0%EB%8B%B9%EC%9D%84-%EB%A7%8C%EB%93%A0%EB%8B%A4%EB%A9%B4-RISE-200%EC%9C%84%ED%81%B4%EB%A6%AC%EC%BB%A4%EB%B2%84%EB%93%9C%EC%BD%9C-ETF",
+      "sources": [
+        "https://www.riseetf.co.kr/prod/finderDetail/44G3?searchFlag=viewtab2",
+        "https://www.riseetf.co.kr/upload/cdn/2026/03/03/2026030315089bce9c994b2.pdf"
+      ],
+      "ko": {
+        "title": "RISE 200위클리커버드콜: 매주 옵션을 파는 이유",
+        "seoTitle": "RISE 200위클리커버드콜: 매주 옵션을 파는 이유",
+        "summary": "475720의 ATM 옵션과 코스피200 노출, 상승 제한을 이해합니다.",
+        "tags": [
+          "ETF",
+          "국내 커버드콜"
+        ],
+        "ogImage": "/etf-assets/rise-200-weekly-covered-call.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 551,
+        "characterCount": 2242
+      },
+      "en": {
+        "title": "RISE 200 Weekly Covered Call: Why Sell Options Each Week?",
+        "seoTitle": "RISE 200 Weekly Covered Call: Why Sell Options Each Week?",
+        "summary": "Understand at-the-money options, KOSPI 200 exposure, and limited upside in 475720.",
+        "tags": [
+          "ETF",
+          "Korean covered calls"
+        ],
+        "ogImage": "/etf-assets/rise-200-weekly-covered-call.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 766,
+        "characterCount": 5033
+      }
+    },
+    {
+      "order": 15,
+      "slug": "plus-fixed-covered-call",
+      "originalTitle": "월 1%대 인컴을 노린다면? PLUS 고배당주위클리고정커버드콜 ETF 완벽 분석",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/%EC%9B%94-1%EB%8C%80-%EC%9D%B8%EC%BB%B4%EC%9D%84-%EB%85%B8%EB%A6%B0%EB%8B%A4%EB%A9%B4-PLUS-%EA%B3%A0%EB%B0%B0%EB%8B%B9%EC%A3%BC%EC%9C%84%ED%81%B4%EB%A6%AC%EA%B3%A0%EC%A0%95%EC%BB%A4%EB%B2%84%EB%93%9C%EC%BD%9C-ETF-%EC%99%84%EB%B2%BD-%EB%B6%84%EC%84%9D",
+      "sources": [
+        "https://www.plusetf.co.kr/product/detail?n=006382",
+        "https://www.plusetf.co.kr/insight/report/detail?n=522"
+      ],
+      "ko": {
+        "title": "PLUS 고배당주위클리고정커버드콜: 고정되는 것은 무엇일까",
+        "seoTitle": "PLUS 고배당주위클리고정커버드콜: 고정되는 것은 무엇일까",
+        "summary": "0018C0의 옵션 30% 구조와 기초자산 불일치, 분배 한도의 의미를 읽습니다.",
+        "tags": [
+          "ETF",
+          "국내 커버드콜"
+        ],
+        "ogImage": "/etf-assets/plus-fixed-covered-call.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 577,
+        "characterCount": 2378
+      },
+      "en": {
+        "title": "PLUS High Dividend Weekly Fixed Covered Call: What Is Fixed?",
+        "seoTitle": "PLUS High Dividend Weekly Fixed Covered Call: What Is Fixed?",
+        "summary": "Read the 30% option structure, underlying mismatch, and the meaning of distribution targets.",
+        "tags": [
+          "ETF",
+          "Korean covered calls"
+        ],
+        "ogImage": "/etf-assets/plus-fixed-covered-call.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 788,
+        "characterCount": 5185
+      }
+    },
+    {
+      "order": 16,
+      "slug": "spyi-jepi-divo-gpix",
+      "originalTitle": "S&P 500 기반 커버드콜 미국 월배당 ETF 비교: SPYI vs JEPI vs DIVO vs GPIX",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/SP-500-%EA%B8%B0%EB%B0%98-%EC%BB%A4%EB%B2%84%EB%93%9C%EC%BD%9C-%EB%AF%B8%EA%B5%AD-%EC%9B%94%EB%B0%B0%EB%8B%B9-ETF-%EB%B9%84%EA%B5%90-SPYI-vs-JEPI-vs-DIVO-vs-GPIX",
+      "sources": [
+        "https://neosfunds.com/spyi/",
+        "https://am.jpmorgan.com/us/en/asset-management/adv/products/jpmorgan-equity-premium-income-etf-46641q332",
+        "https://amplifyetfs.com/divo/",
+        "https://am.gs.com/en-us/advisors/campaign/premium-income-etfs"
+      ],
+      "ko": {
+        "title": "SPYI·JEPI·DIVO·GPIX: 같은 월분배, 다른 투자",
+        "seoTitle": "SPYI·JEPI·DIVO·GPIX: 같은 월분배, 다른 투자",
+        "summary": "미국 대형주 인컴 ETF 네 개를 주식 구성과 옵션 방식, 비용으로 비교합니다.",
+        "tags": [
+          "ETF",
+          "ETF 비교"
+        ],
+        "ogImage": "/etf-assets/spyi-jepi-divo-gpix.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 649,
+        "characterCount": 2601
+      },
+      "en": {
+        "title": "SPYI, JEPI, DIVO, and GPIX: Same Schedule, Different Investments",
+        "seoTitle": "SPYI, JEPI, DIVO, and GPIX: Same Schedule, Different Investments",
+        "summary": "Compare four US large-cap income ETFs by equity selection, option structure, and expenses.",
+        "tags": [
+          "ETF",
+          "ETF comparison"
+        ],
+        "ogImage": "/etf-assets/spyi-jepi-divo-gpix.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 823,
+        "characterCount": 5524
+      }
+    },
+    {
+      "order": 17,
+      "slug": "jepq-gpiq-qqqi",
+      "originalTitle": "JEPQ vs GPIQ vs QQQI 요즘 뜨는 나스닥 월배당 ETF 3대장, 누가 강자일까?",
+      "originalUrl": "https://money-study-with-ai.tistory.com/entry/JEPQ-vs-GPIQ-vs-QQQI-%EB%82%98%EC%8A%A4%EB%8B%A5-%EC%9B%94%EB%B0%B0%EB%8B%B9-ETF-3%EB%8C%80%EC%9E%A5-%EB%88%84%EA%B0%80-%EC%A7%84%EC%A7%9C-%EA%B0%95%EC%9E%90%EC%9D%BC%EA%B9%8C",
+      "sources": [
+        "https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPQ.PDF",
+        "https://am.gs.com/ja-jp/individual/products/etf/gpiq",
+        "https://neosfunds.com/qqqi/"
+      ],
+      "ko": {
+        "title": "JEPQ·GPIQ·QQQI: 나스닥 월분배 ETF를 고르는 기준",
+        "seoTitle": "JEPQ·GPIQ·QQQI: 나스닥 월분배 ETF를 고르는 기준",
+        "summary": "분배율 순위 대신 ELN과 지수 옵션, 비용과 중복 노출을 비교합니다.",
+        "tags": [
+          "ETF",
+          "ETF 비교"
+        ],
+        "ogImage": "/etf-assets/jepq-gpiq-qqqi.ko.og.png",
+        "readingMinutes": 6,
+        "wordCount": 661,
+        "characterCount": 2679
+      },
+      "en": {
+        "title": "JEPQ, GPIQ, and QQQI: Comparing Nasdaq Income Strategies",
+        "seoTitle": "JEPQ, GPIQ, and QQQI: Comparing Nasdaq Income Strategies",
+        "summary": "Compare ELNs, index options, expenses, and overlapping exposure beyond yield rankings.",
+        "tags": [
+          "ETF",
+          "ETF comparison"
+        ],
+        "ogImage": "/etf-assets/jepq-gpiq-qqqi.en.og.png",
+        "readingMinutes": 6,
+        "wordCount": 839,
+        "characterCount": 5710
+      }
+    }
+  ]
+}

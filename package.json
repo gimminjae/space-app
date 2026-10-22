@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test tests/*.test.ts",
     "smoke": "node scripts/smoke.mjs",
-    "content:build": "node scripts/compile-lessons.mjs",
+    "content:build": "node scripts/compile-lessons.mjs && node scripts/compile-etf.mjs",
     "prebuild": "npm run content:build",
     "pretest": "npm run content:build"
   },

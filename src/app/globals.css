@@ -3,3 +3,5 @@
 
 .language-switcher{display:flex;align-items:center;gap:2px;border:1px solid var(--line);padding:3px;border-radius:6px;flex-shrink:0;font-size:11px;line-height:1.4;white-space:nowrap}.language-switcher a{padding:6px 8px;border-radius:3px}.language-switcher a[aria-current=true]{background:var(--green);color:#fff}.language-switcher a:focus-visible{outline:2px solid var(--green);outline-offset:2px}
 html[lang=en] h1,html[lang=en] h2,html[lang=en] h3{letter-spacing:-.025em}
+
+.prose .figure-link{display:block;margin:30px 0;text-decoration:none}.prose .figure-link img{margin:0 auto 8px}.prose .figure-link span{display:block;font-size:13px;text-align:right;text-decoration:underline;text-underline-offset:3px}

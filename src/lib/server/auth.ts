@@ -3,8 +3,9 @@ import { site } from '@/lib/site';
 import 'server-only';
 import { dbError } from './db';
 import { currentUser,userDb } from './session';
+import { contentOnly } from '../platform-mode';
 export class HttpError extends Error { constructor(public status:number,message:string){super(message);} }
-export async function requireUser(){const user=await currentUser();if(!user)throw new HttpError(401,'로그인 후 이용해 주세요.');return user;}
+export async function requireUser(){if(contentOnly)throw new HttpError(404,'서비스를 찾을 수 없습니다.');const user=await currentUser();if(!user)throw new HttpError(401,'로그인 후 이용해 주세요.');return user;}
 export async function requireSpace(){const user=await requireUser();const client=await userDb();const {data,error}=await client.from('space_spaces').select('*').eq('owner_id',user.id).maybeSingle();dbError(error);if(!data)throw new HttpError(409,'먼저 나의 공간을 만들어 주세요.');return {user,space:data,client};}
 export function assertOrigin(request: Request) {
   const origin = request.headers.get('origin');

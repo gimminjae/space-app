@@ -3,6 +3,7 @@ import {createServerClient} from '@supabase/ssr';
 import {cookies} from 'next/headers';
 import {cache} from 'react';
 import {databaseConfigured} from './db';
+import {contentOnly} from '../platform-mode';
 // Only our server talks to Supabase. Cookies stay HttpOnly, including during refresh.
 export const userDb=cache(async()=>{
  const jar=await cookies();
@@ -14,6 +15,7 @@ export const userDb=cache(async()=>{
  });
 });
 export const currentUser=cache(async()=>{
+ if(contentOnly)return null;
  if(!databaseConfigured())return null;
  const client=await userDb();const {data,error}=await client.auth.getUser();
  return error?null:data.user;
