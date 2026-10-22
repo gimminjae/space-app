@@ -1,3 +1,4 @@
+import { pagePath } from '@/lib/pagination';
 import Link from '@/components/I18n';
 import { getI18n } from '@/lib/i18n/server';
 import { postPath,readingMinutes } from '@/lib/site';
@@ -10,6 +11,6 @@ export async function PostList({posts}:{posts:Post[]}) {const {t,date,category}=
 }
 export async function Pagination({page,total,path,query={}}:{page:number;total:number;path:string;query?:Record<string,string>}) {const {t,number}=await getI18n();
   const last=Math.ceil(total/9); if(last<=1) return null;
-  const url=(n:number)=>`${path}?${new URLSearchParams({...query,page:String(n)})}`;
+  const url=(n:number)=>pagePath(path,n,query);
   return <nav className={styles.pagination} aria-label={t("페이지 이동")}>{page>1&&<Link href={url(page-1)}>{t("← 이전")}</Link>}<span>{number(page)} / {number(last)}</span>{page<last&&<Link href={url(page+1)}>{t("다음 →")}</Link>}</nav>;
 }

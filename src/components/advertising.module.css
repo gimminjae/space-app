@@ -1,0 +1,4 @@
+.advertisement { margin: 3rem auto; padding: 1.5rem 0; min-height: 330px; max-width: 760px; border-top: 1px solid var(--line, #e0e3dd); text-align: center; }
+.label { display: block; margin-bottom: 1rem; color: var(--muted, #6b726b); font-size: .7rem; letter-spacing: .08em; }
+.advertisement:has(ins[data-ad-status="unfilled"]) { display: none; }
+@media (max-width: 600px) { .advertisement { min-height: 300px; } }

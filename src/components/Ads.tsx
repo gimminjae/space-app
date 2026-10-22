@@ -1,2 +1,7 @@
-import Script from 'next/script';
-export default function Ads() {const id=process.env.ADSENSE_CLIENT_ID;if(process.env.ADSENSE_ENABLED!=='true'||!id||!/^ca-pub-\d{16}$/.test(id))return null;return <Script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${id}`} crossOrigin="anonymous" strategy="afterInteractive"/>;}
+import { getI18n } from '@/lib/i18n/server';
+import { adConfiguration } from '@/lib/advertising';
+import AdUnit from './AdUnit';
+export default async function Ads() {
+ const configuration=adConfiguration(process.env);if(!configuration)return null;
+ const {locale}=await getI18n();return <AdUnit {...configuration} label={locale==='ko'?'광고':'Advertisement'}/>;
+}

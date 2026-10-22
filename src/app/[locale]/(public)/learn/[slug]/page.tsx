@@ -1,3 +1,4 @@
+import Ads from '@/components/Ads';
 import Link from '@/components/I18n';
 import Markdown from '@/components/Markdown';
 import styles from '@/components/site.module.css';
@@ -62,6 +63,7 @@ export default async function LessonPage({ params }: Props) {
           <Link href="/learn" className={learnStyles.fullWidth}>{text.contents} <span>{text.name}</span></Link>
         </nav>
         <footer className={learnStyles.editorial}><strong><Link href="/about">space</Link></strong><p>{text.notice}</p><p>{t('최종 수정')} <time dateTime={updatedAt}>{date(updatedAt)}</time> · <a href={siteAbsolute(courseFeedPath(locale))}>RSS</a></p></footer>
+        <Ads/>
       </div>
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, '\\u003c') }} />

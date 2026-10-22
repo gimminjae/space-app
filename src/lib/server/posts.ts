@@ -17,6 +17,7 @@ export async function listPosts(options: {query?:string; category?:string; tag?:
   if(!databaseConfigured()) return {posts:[],total:0};
   const {data,error}=await (options.admin?await userDb():db()).rpc('space_list_posts', {p_query:(options.query||'').slice(0,100),p_category:options.category||'',p_tag:options.tag||'',p_page:Math.max(1,options.page||1),p_admin:!!options.admin,p_status:options.status||'',p_space:options.spaceId||null}); dbError(error); return data as {posts:Post[];total:number};
 }
+export const publicPostPage = cache((page:number,category?:string,tag?:string,spaceId?:string)=>listPosts({page,category,tag,spaceId}));
 export const getPost = cache(async (slug: string, spaceId?:string):Promise<Post|null> => {
   if(!databaseConfigured()) return null;
   let query=db().from('space_posts').select('*,category:space_categories!space_posts_category_id_fkey(*),space:space_spaces(id,slug,name,description,accent,created_at,updated_at)').eq('slug',slug).eq('status','public').is('deleted_at',null);if(spaceId)query=query.eq('space_id',spaceId);const result=await query.limit(2);dbError(result.error);if(result.data?.length!==1)return null;const data=result.data[0];
@@ -28,12 +29,12 @@ export async function getAdminPost(id:string):Promise<Post|null> {
   const tags=await client.from('space_post_tags').select('tag:space_tags!space_post_tags_tag_id_fkey(*)').eq('post_id',id); dbError(tags.error);
   return {...data,tags:tags.data?.map(t=>t.tag).filter(Boolean)||[]} as unknown as Post;
 }
-export async function allPublicPosts(): Promise<Post[]> {
+export const allPublicPosts = cache(async (): Promise<Post[]> => {
   if(!databaseConfigured()) return [];
   const posts:Post[]=[];
   for(let offset=0;;offset+=500) {
-    const {data,error}=await db().from('space_posts').select('*,space:space_spaces(id,slug,name,description,accent,created_at,updated_at)').eq('status','public').is('deleted_at',null).order('id').range(offset,offset+499); dbError(error);
-    posts.push(...(data||[]) as Post[]); if(!data || data.length<500) break;
+    const {data,error}=await db().from('space_posts').select('*,space:space_spaces(id,slug,name,description,accent,created_at,updated_at),category:space_categories!space_posts_category_id_fkey(*),post_tags:space_post_tags!space_post_tags_post_id_fkey(tag:space_tags!space_post_tags_tag_id_fkey(*))').eq('status','public').is('deleted_at',null).order('id').range(offset,offset+499); dbError(error);
+    posts.push(...(data||[]).map(({post_tags,...post})=>({...post,tags:(post_tags||[]).map((entry:{tag:unknown})=>entry.tag).filter(Boolean)})) as unknown as Post[]); if(!data || data.length<500) break;
   }
   return posts;
-}
+});
