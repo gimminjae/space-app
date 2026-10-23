@@ -11,7 +11,19 @@
 - 함수 리전: 서울 `icn1`
 - 설정 파일: `vercel.json`
 
-Netlify 자동 빌드는 중지합니다. 이전 Netlify 배포는 복구 참고용으로 남기며 새 배포를 진행하지 않습니다.
+Netlify 자동 빌드는 중지된 상태입니다. 이전 Netlify 배포는 복구 참고용으로 남기며 새 배포를 진행하지 않습니다.
+
+## GitHub 자동 배포
+
+`gimminjae/space-app`은 기존 Vercel 프로젝트 `space-service-io-kr`에 GitHub 연동으로 연결되어 있습니다. 운영 브랜치는 `master`입니다.
+
+1. 변경 사항을 GitHub의 `master`에 푸시하거나 PR을 병합합니다.
+2. Vercel이 해당 커밋을 자동으로 가져와 `npm ci`를 실행합니다.
+3. `npm test && npm run build`가 성공하면 `https://space.service.io.kr`에 새 버전이 반영됩니다. 빌드가 실패하면 이전 운영 버전이 유지됩니다.
+
+다른 브랜치는 운영 주소를 갱신하지 않습니다. Git 연동의 Preview 환경에는 운영 DB 비밀 키를 제공하지 않으므로, DB를 사용하는 전체 기능의 사전 검증에는 별도 테스트 환경이 필요합니다. 별도의 GitHub Actions 배포 토큰이나 수동 배포 명령은 필요하지 않습니다.
+
+Vercel의 Deployments에서 브랜치, 커밋, 상태가 `Ready`인지 확인할 수 있습니다. 운영 도메인이 새 배포에 연결됐는지도 함께 확인합니다. 글·카테고리·메뉴를 Supabase에서 수정하는 일은 Git 푸시나 재배포 없이 반영됩니다.
 
 ## 환경변수
 
