@@ -21,6 +21,8 @@
 
 ## 실행과 확인
 
+운영 호스팅 설정은 [Vercel 배포 안내](docs/hosting-vercel.md)를 따릅니다. 카테고리와 메뉴는 [DB 관리 안내](docs/category-management.md)에서 수정합니다.
+
 Node.js 22 이상을 사용합니다. `.env.example`을 참고해 `.env.local`을 설정합니다. Supabase URL, 공개 읽기 키, 서버 전용 비밀 키가 필요합니다. 비밀 키에 `NEXT_PUBLIC_` 접두사를 붙이지 않습니다.
 
 ```sh

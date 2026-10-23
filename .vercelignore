@@ -1,0 +1,7 @@
+.env*
+.netlify
+.secrets
+.next
+coverage
+supabase/.temp
+*.tsbuildinfo

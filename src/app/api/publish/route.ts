@@ -4,6 +4,7 @@ import {publicationSubmissionSchema,submissionEntries,publicationPath,type Publi
 import {absolute} from '@/lib/site';
 import {getPublicationCategories} from '@/lib/server/publication-categories';
 import {categorySubmissionError} from '@/lib/publication-categories';
+import {publishingClientIp} from '@/lib/publishing-client';
 export const dynamic='force-dynamic';
 const headers={'Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow'};
 const reply=(value:unknown,status=200,extra:Record<string,string>={})=>Response.json(value,{status,headers:{...headers,...extra}});
@@ -30,7 +31,7 @@ export async function POST(request:Request){
  const slug=category!.requires_session_date?`${category!.slug}-${value.sessionDate}`:value.slug||`post-${key}`,entries=submissionEntries(value,slug);
  if(entries.some(e=>e.content.length<80))return reply({error:'제목을 제외한 본문을 80자 이상 작성해 주세요.'},400);
  const fingerprint=createHash('sha256').update(JSON.stringify(entries)).digest('hex');
- const ip=request.headers.get('x-nf-client-connection-ip')||'shared';
+ const ip=publishingClientIp(request.headers,process.env);
  const secret=process.env.SUPABASE_SECRET_KEY||process.env.SUPABASE_SERVICE_ROLE_KEY!;
  const rateKey=createHmac('sha256',secret).update(ip).digest('hex');
  try{
