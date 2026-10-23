@@ -4,7 +4,7 @@ import { excerpt } from './site';
 
 export type PublicationKind = 'lesson' | 'etf' | 'article' | 'page';
 export type Publication = {
-  id: string; kind: PublicationKind; slug: string; locale: Locale; title: string;
+  category_slug?: string | null; id: string; kind: PublicationKind; slug: string; locale: Locale; title: string;
   seo_title: string; summary: string; content: string; author: string; tags: string[];
   sort_order: number; origin: 'editorial' | 'open'; status: 'draft' | 'published';
   published_at: string; updated_at: string; created_at: string;
@@ -13,8 +13,6 @@ export type Publication = {
 export const briefingCategories=['us-market-briefing','kr-market-briefing'] as const;
 export type BriefingCategory=typeof briefingCategories[number];
 export function isBriefingCategory(value:unknown):value is BriefingCategory{return typeof value==='string'&&briefingCategories.includes(value as BriefingCategory);}
-export function briefingLabel(category:BriefingCategory,locale:Locale){return category==='us-market-briefing'?(locale==='ko'?'미장 브리핑':'US Market Briefing'):(locale==='ko'?'한국장 브리핑':'Korea Market Briefing');}
-export function documentCollectionPath(doc:Pick<Publication,'kind'|'metadata'>){return isBriefingCategory(doc.metadata.category)?`/category/${doc.metadata.category}`:collectionPath(doc.kind);}
 export type CollectionText = Record<string,string>;
 export function publicationPath(doc: Pick<Publication,'kind'|'slug'|'locale'>) {
   const prefix = {lesson:'/learn',etf:'/etf',article:'/articles',page:''}[doc.kind];
@@ -44,14 +42,12 @@ export const publicationSubmissionSchema=z.object({
   kind:z.enum(['article','etf','lesson']).default('article'),
   slug:z.string().trim().min(1).max(120).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/,'Use lowercase English letters, numbers and hyphens.').optional(),
   idempotencyKey:z.uuid().optional(),
-  category:z.enum(briefingCategories).optional(),
+  category:z.string().max(80).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).optional(),
   sessionDate:z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(value=>{const date=new Date(`${value}T00:00:00Z`);return !isNaN(date.getTime())&&date.toISOString().startsWith(value);},'Use a valid trading date.').optional(),
   dataAsOf:z.iso.datetime({offset:true}).optional(),
   editions:z.array(editionSchema).min(1).max(2),
 }).strict().superRefine((value,ctx)=>{
-  if(value.category&&(value.kind!=='article'||!value.sessionDate))ctx.addIssue({code:'custom',path:['category'],message:'A market briefing must be an article with a sessionDate.'});
-  if(value.category&&value.slug&&value.slug!==`${value.category}-${value.sessionDate}`)ctx.addIssue({code:'custom',path:['slug'],message:'Briefing slugs must match the category and trading date.'});
-  if(!value.category&&(value.sessionDate||value.dataAsOf))ctx.addIssue({code:'custom',path:['category'],message:'Trading metadata requires a briefing category.'});
+  if(!value.category&&(value.sessionDate||value.dataAsOf))ctx.addIssue({code:'custom',path:['category'],message:'Trading metadata requires a category.'});
   if(new Set(value.editions.map(e=>e.locale)).size!==value.editions.length)ctx.addIssue({code:'custom',path:['editions'],message:'Only one edition per language is allowed.'});
 });
 export function submissionEntries(input:z.infer<typeof publicationSubmissionSchema>,slug:string) {
@@ -59,6 +55,6 @@ export function submissionEntries(input:z.infer<typeof publicationSubmissionSche
     const content=edition.content.replace(new RegExp(`^# [^\\n]+\\n+`),'').trim();
     return {kind:input.kind,slug,locale:edition.locale,title:edition.title,seo_title:edition.seoTitle||edition.title,
       summary:edition.summary||excerpt(content),content,author:edition.author,tags:edition.tags,
-      metadata:{sources:edition.sources,...(input.category?{category:input.category,sessionDate:input.sessionDate,...(input.dataAsOf?{dataAsOf:input.dataAsOf}:{})}:{}),...(edition.coverImage?{ogImage:edition.coverImage}:{})}};
+      metadata:{sources:edition.sources,...(input.category?{category:input.category}:{}),...(input.sessionDate?{sessionDate:input.sessionDate}:{}),...(input.dataAsOf?{dataAsOf:input.dataAsOf}:{}),...(edition.coverImage?{ogImage:edition.coverImage}:{})}};
   });
 }

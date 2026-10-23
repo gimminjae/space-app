@@ -1,14 +1,17 @@
 import Link from '@/components/I18n';
-import {publicationPath,publicationReadingMinutes,isBriefingCategory,briefingLabel,type Publication} from '@/lib/publication';
+import {publicationPath,publicationReadingMinutes,type Publication} from '@/lib/publication';
 import {collectionText,listPublications} from '@/lib/server/publications';
 import type {Locale} from '@/lib/i18n/routing';
+import {getPublicationCategories} from '@/lib/server/publication-categories';
+import {categoryForDocument,categoryName} from '@/lib/publication-categories';
 import styles from '@/components/learn/learn.module.css';
 
-export function PublicationList({items}:{items:Publication[]}){
+export async function PublicationList({items}:{items:Publication[]}){
+ const categories=await getPublicationCategories();
  return <ol className={styles.list}>{items.map((doc,index)=><li key={doc.id} value={index+1}>
   <Link href={publicationPath(doc)} className={styles.lesson}>
    <span className={styles.number} aria-hidden="true">{String(doc.sort_order||index+1).padStart(2,'0')}</span>
-   <div><p className={styles.meta}>{isBriefingCategory(doc.metadata.category)?briefingLabel(doc.metadata.category,doc.locale):doc.kind==='etf'?'ETF':doc.kind==='lesson'?(doc.locale==='ko'?'입문 강의':'Learn'):(doc.locale==='ko'?'아티클':'Article')} · {publicationReadingMinutes(doc)}{doc.locale==='ko'?'분 읽기':' min read'}</p><h3>{doc.title}</h3><p className={styles.summary}>{doc.summary}</p><span className={styles.topics}>{doc.tags.join(' · ')}</span></div>
+   <div><p className={styles.meta}>{(()=>{const category=categoryForDocument(doc,categories);return category?categoryName(category,doc.locale):doc.kind;})()} · {publicationReadingMinutes(doc)}{doc.locale==='ko'?'분 읽기':' min read'}</p><h3>{doc.title}</h3><p className={styles.summary}>{doc.summary}</p><span className={styles.topics}>{doc.tags.join(' · ')}</span></div>
    <span className={styles.arrow} aria-hidden="true">↗</span>
   </Link>
  </li>)}</ol>;

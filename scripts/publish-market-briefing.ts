@@ -2,7 +2,7 @@ import {readFile,writeFile} from 'node:fs/promises';
 import {resolve,dirname} from 'node:path';
 import {createHash} from 'node:crypto';
 import {createClient} from '@supabase/supabase-js';
-import {publicationSubmissionSchema,publicationReadingMinutes} from '../src/lib/publication';
+import {publicationSubmissionSchema,publicationReadingMinutes,isBriefingCategory} from '../src/lib/publication';
 import {briefingTarget} from './briefing-session.mjs';
 
 async function main(){
@@ -10,7 +10,7 @@ const filename=process.argv[2];if(!filename)throw new Error('Provide a briefing 
 const bundle=JSON.parse(await readFile(filename,'utf8')),check=process.argv.includes('--check');
 const {evidence,charts}=bundle;
 const parsed=publicationSubmissionSchema.parse(bundle.publication);
-if(!parsed.category||!parsed.sessionDate||!parsed.dataAsOf||parsed.editions.length!==2||new Set(parsed.editions.map(e=>e.locale)).size!==2)throw new Error('Briefings require a category, sessionDate, dataAsOf and both languages.');
+if(!isBriefingCategory(parsed.category)||!parsed.sessionDate||!parsed.dataAsOf||parsed.editions.length!==2||new Set(parsed.editions.map(e=>e.locale)).size!==2)throw new Error('Briefings require a category, sessionDate, dataAsOf and both languages.');
 if(evidence?.sessionStatus!=='open'||!evidence.calendarUrl?.startsWith('https://')||!evidence.closeUrl?.startsWith('https://')||evidence.sessionDate!==parsed.sessionDate)throw new Error('Verify the official calendar and dated closing report before publication.');
 const market=parsed.category==='us-market-briefing'?'us':'kr';
 const target=briefingTarget(market);

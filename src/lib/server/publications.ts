@@ -1,5 +1,7 @@
 import 'server-only';
 import {cache} from 'react';
+import {getPublicationCategories} from './publication-categories';
+import {categoryText} from '../publication-categories';
 import {db,dbError} from './db';
 import type {Locale} from '../i18n/routing';
 import type {Publication,PublicationKind,CollectionText} from '../publication';
@@ -24,12 +26,10 @@ export const getPublicationSettings=cache(async(key:string):Promise<{value:Recor
  const {data,error}=await db().from('space_publication_settings').select('value,updated_at').eq('key',key).single();dbError(error);if(!data)throw new Error('Publication settings are unavailable.');return data;
 });
 export async function collectionText(kind:'lesson'|'etf',locale:Locale):Promise<CollectionText>{
- const settings=await getPublicationSettings(kind==='lesson'?'learn':'etf');
- const value=settings.value[locale];if(!value||typeof value!=='object')throw new Error('Publication language settings are unavailable.');return value as CollectionText;
+ const category=(await getPublicationCategories()).find(c=>c.kind===kind&&c.is_default);
+ if(!category)throw new Error('Publication category is unavailable.');return categoryText(category,locale);
 }
 export async function searchPublications(query:string,locale:Locale){
  const terms=query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
  return(await allPublications(locale)).filter(doc=>doc.kind!=='page'&&terms.every(term=>`${doc.title} ${doc.summary} ${doc.tags.join(' ')} ${doc.content}`.toLocaleLowerCase().includes(term)));
 }
-
-export async function listBriefings(category:string,locale:Locale){return(await listPublications('article',locale)).filter(d=>d.metadata.category===category).sort((a,b)=>String(b.metadata.sessionDate||b.published_at).localeCompare(String(a.metadata.sessionDate||a.published_at)));}

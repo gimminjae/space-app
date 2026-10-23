@@ -2,3 +2,6 @@
 
 @media(max-width:700px){.header{flex-wrap:wrap;gap:16px}.header nav{order:3;width:100%;margin-left:0;justify-content:flex-start;gap:24px;flex-wrap:wrap}.header>:global(.language-switcher){margin-left:auto}.searchIcon{padding-left:14px}.hero h1{overflow-wrap:normal;font-size:clamp(30px,7.8vw,38px)}}
 .heroCta+.heroCta{margin-left:24px}
+/* Category menus grow from the database and must remain usable on small screens. */
+.header{flex-wrap:wrap}.header nav{flex-wrap:wrap;row-gap:12px}.footerLinks{flex-wrap:wrap}
+@media(max-width:900px){.header nav{order:4;width:100%;margin-left:0;column-gap:20px}.header .logo{margin-right:auto}}

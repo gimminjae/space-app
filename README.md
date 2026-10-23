@@ -11,7 +11,9 @@
 
 ## 콘텐츠 관리
 
-본문과 검색 메타데이터는 `space_publication_documents`, 홈·강의·ETF 소개는 `space_publication_settings`에 보관합니다. 원고를 Git에 넣거나 발행 때마다 빌드할 필요가 없습니다. 시각 자료는 비공개 Supabase Storage 버킷에서 서버가 제공하며 기존 이미지 주소를 유지합니다.
+카테고리 이름·설명·노출·순서는 `space_publication_categories`, 일반 메뉴·하단 소개는 `space_publication_settings.navigation`에서 관리합니다. 저장 후 새로고침하면 반영됩니다. [DB 관리 안내](docs/category-management.md)를 참고하세요.
+
+본문과 검색 메타데이터는 `space_publication_documents`, 홈 소개는 `space_publication_settings`, 강의·ETF·브리핑 소개는 `space_publication_categories`에 보관합니다. 원고를 Git에 넣거나 발행 때마다 빌드할 필요가 없습니다. 시각 자료는 비공개 Supabase Storage 버킷에서 서버가 제공하며 기존 이미지 주소를 유지합니다.
 
 2026-10-23 이전 대상은 글 54개(입문 강의 20개, ETF 34개), 소개·개인정보 페이지 4개, 시각 자료 72개입니다. 기존 `/learn/*`, `/etf/*`, `/about`, `/privacy` 및 영어판 주소를 유지합니다. 새 일반 아티클은 `/articles/{slug}`에 발행됩니다.
 

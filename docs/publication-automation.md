@@ -71,3 +71,7 @@ Supabase Space 프로젝트의 `space_publication_documents`에서 `kind`, `slug
 ## 권한과 보관
 
 브라우저에는 Supabase 비밀 키를 제공하지 않습니다. 데이터베이스 익명 접근은 발행된 글/설정 읽기만 허용하며, 서버가 검증한 새 원고만 전용 DB 함수로 저장합니다. 작성 요청 식별자를 보관하여 중복 발행을 막고, 네트워크 식별자는 서버에서 해시 처리하여 짧은 기간 요청 제한에만 사용합니다. 이력의 원고는 Git에 남아 있으나 현재 운영 원고의 원본은 Supabase입니다. 이전 원고·그림의 별도 백업도 소스 저장소 밖에 보관했습니다.
+
+## 카테고리 지정
+
+`GET /api/publish`의 `categories`에서 현재 DB에 등록된 분류와 `requiresSessionDate`를 확인합니다. 일반 글도 `category`에 카테고리의 `slug`를 보낼 수 있습니다. 브리핑만 `sessionDate`가 필요합니다. 생략하면 해당 글 종류의 기본 카테고리를 사용합니다. 운영 정보 변경은 [DB 카테고리 관리](category-management.md)를 참고하세요. 기존 강의·ETF·브리핑 소개 문구의 관리 위치도 `space_publication_categories`로 이동했습니다.

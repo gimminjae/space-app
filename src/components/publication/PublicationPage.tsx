@@ -1,3 +1,5 @@
+import {getPublicationCategories,categoryPublications} from '@/lib/server/publication-categories';
+import {categoryForDocument,categoryName,categoryPath} from '@/lib/publication-categories';
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import Ads from '@/components/Ads';
@@ -8,8 +10,8 @@ import learnStyles from '@/components/learn/learn.module.css';
 import {getI18n,localizedMetadata} from '@/lib/i18n/server';
 import {localizePath} from '@/lib/i18n/routing';
 import {absolute,slugify} from '@/lib/site';
-import {documentCollectionPath,isBriefingCategory,briefingLabel,publicationPath,publicationReadingMinutes,type PublicationKind} from '@/lib/publication';
-import {getPublication,listPublications,listBriefings,collectionText} from '@/lib/server/publications';
+import {publicationPath,publicationReadingMinutes,type PublicationKind} from '@/lib/publication';
+import {getPublication,listPublications,collectionText} from '@/lib/server/publications';
 
 export async function publicationMetadata(kind:PublicationKind,slug:string):Promise<Metadata>{
  const {locale}=await getI18n();const doc=await getPublication(kind,slug,locale);if(!doc)notFound();
@@ -23,14 +25,15 @@ export async function publicationMetadata(kind:PublicationKind,slug:string):Prom
 }
 export default async function PublicationPage({kind,slug}:{kind:PublicationKind;slug:string}){
  const {locale,date,t}=await getI18n();const doc=await getPublication(kind,slug,locale);if(!doc)notFound();
+ const category=categoryForDocument(doc,await getPublicationCategories());
  const isSeries=kind==='lesson'||kind==='etf';
- const [siblings,other,text]=await Promise.all([isBriefingCategory(doc.metadata.category)?listBriefings(doc.metadata.category,locale):listPublications(kind,locale),getPublication(kind,slug,locale==='ko'?'en':'ko'),isSeries?collectionText(kind,locale):Promise.resolve(null)]);
+ const [siblings,other,text]=await Promise.all([category?categoryPublications(category,locale):listPublications(kind,locale),getPublication(kind,slug,locale==='ko'?'en':'ko'),isSeries?collectionText(kind,locale):Promise.resolve(null)]);
  const index=siblings.findIndex(item=>item.id===doc.id),previous=siblings[index-1],next=siblings[index+1];
- const path=documentCollectionPath(doc),label=isBriefingCategory(doc.metadata.category)?briefingLabel(doc.metadata.category,locale):text?.label||(locale==='ko'?'아티클':'Articles');
+ const path=category?categoryPath(category):'/articles',label=category?categoryName(category,locale):text?.label||(locale==='ko'?'아티클':'Articles');
  const url=absolute(publicationPath(doc));
  const headings=[...doc.content.matchAll(/^#{1,2}\s+(.+)$/gm)].map((match,index)=>{const title=match[1].replace(/[*_`]/g,'');return{text:title,id:doc.metadata.anchors?.[title]||`${slugify(title)}-${index}`};});
  const structured={'@context':'https://schema.org','@graph':[
-  {'@type':kind==='page'?(slug==='about'?'AboutPage':'WebPage'):'Article','@id':`${url}#article`,url,mainEntityOfPage:url,headline:doc.title,description:doc.summary,inLanguage:locale,...(isBriefingCategory(doc.metadata.category)?{articleSection:briefingLabel(doc.metadata.category,locale),temporalCoverage:doc.metadata.sessionDate}:{}),datePublished:doc.published_at,dateModified:doc.updated_at,
+  {'@type':kind==='page'?(slug==='about'?'AboutPage':'WebPage'):'Article','@id':`${url}#article`,url,mainEntityOfPage:url,headline:doc.title,description:doc.summary,inLanguage:locale,...(category?{articleSection:categoryName(category,locale)}:{}),...(category?.requires_session_date?{temporalCoverage:doc.metadata.sessionDate}:{}),datePublished:doc.published_at,dateModified:doc.updated_at,
    author:{'@type':doc.origin==='editorial'?'Organization':'Person',name:doc.author,...(doc.origin==='editorial'?{url:absolute('/about')}:{})},publisher:{'@type':'Organization',name:'space',url:absolute('/')},image:[absolute(doc.metadata.ogImage||'/og.png')],keywords:doc.tags.join(', '),...(isSeries?{isPartOf:{'@type':'CreativeWorkSeries','@id':absolute(`${localizePath(path,locale)}#series`),name:text?.name,url:absolute(localizePath(path,locale))}}:{})},
   {'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'space',item:absolute(localizePath('/',locale))},...(kind==='page'?[]:[{'@type':'ListItem',position:2,name:label,item:absolute(localizePath(path,locale))}]),{'@type':'ListItem',position:kind==='page'?2:3,name:doc.title,item:url}]}
  ]};
