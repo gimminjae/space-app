@@ -28,7 +28,7 @@ export default async function PublicationPage({kind,slug}:{kind:PublicationKind;
  const index=siblings.findIndex(item=>item.id===doc.id),previous=siblings[index-1],next=siblings[index+1];
  const path=collectionPath(kind),label=text?.label||(locale==='ko'?'아티클':'Articles');
  const url=absolute(publicationPath(doc));
- const headings=[...doc.content.matchAll(/^##\s+(.+)$/gm)].map((match,index)=>{const title=match[1].replace(/[*_`]/g,'');return{text:title,id:doc.metadata.anchors?.[title]||`${slugify(title)}-${index}`};});
+ const headings=[...doc.content.matchAll(/^#{1,2}\s+(.+)$/gm)].map((match,index)=>{const title=match[1].replace(/[*_`]/g,'');return{text:title,id:doc.metadata.anchors?.[title]||`${slugify(title)}-${index}`};});
  const structured={'@context':'https://schema.org','@graph':[
   {'@type':kind==='page'?(slug==='about'?'AboutPage':'WebPage'):'Article','@id':`${url}#article`,url,mainEntityOfPage:url,headline:doc.title,description:doc.summary,inLanguage:locale,datePublished:doc.published_at,dateModified:doc.updated_at,
    author:{'@type':doc.origin==='editorial'?'Organization':'Person',name:doc.author,...(doc.origin==='editorial'?{url:absolute('/about')}:{})},publisher:{'@type':'Organization',name:'space',url:absolute('/')},image:[absolute(doc.metadata.ogImage||'/og.png')],keywords:doc.tags.join(', '),...(isSeries?{isPartOf:{'@type':'CreativeWorkSeries','@id':absolute(`${localizePath(path,locale)}#series`),name:text?.name,url:absolute(localizePath(path,locale))}}:{})},

@@ -8,6 +8,7 @@ function textOf(node:ReactNode):string{return Children.toArray(node).map(child=>
 export default async function Markdown({content,anchors={},userGenerated=false}:{content:string;anchors?:Record<string,string>;userGenerated?:boolean}){
  const {t,locale}=await getI18n();let i=0;
  return <div className="prose"><ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]} components={{
+  h1:({children})=>{const text=textOf(children),index=i++;return <h2 id={anchors[text]||`${slugify(text)}-${index}`}>{children}</h2>;},
   h2:({children})=>{const text=textOf(children),index=i++;return <h2 id={anchors[text]||`${slugify(text)}-${index}`}>{children}</h2>;},
   a:({href,children})=><a href={href} rel={href?.startsWith('http')?(userGenerated?'ugc nofollow noopener noreferrer':'noopener noreferrer'):undefined}>{children}</a>,
   img:({src,alt})=>typeof src==='string'&&(/^(?:https:\/\/|\/media\/|\/publication-assets\/)/.test(src)||/^\/(?:learn|etf)-assets\/[a-z0-9.-]+\.(?:png|svg)$/.test(src))

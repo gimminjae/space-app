@@ -44,3 +44,10 @@ test('publication database isolates drafts, prohibits direct public writes, and 
  await assert.rejects(publish([{...entry,slug:'over-limit'}]),/rate_limit/);
  await pg.close();
 });
+
+
+test('cover images cannot break article metadata or the sitemap',()=>{
+ const entry={locale:'ko',title:'검증 제목',content:'본문을 충분히 작성합니다. '.repeat(10)};
+ for(const coverImage of ['https://','https://[invalid','javascript:alert(1)','//evil.invalid/a.png','/etf-assets/../../about','https://user:pass@example.com/a.png'])assert.equal(publicationSubmissionSchema.safeParse({editions:[{...entry,coverImage}]}).success,false,coverImage);
+ for(const coverImage of ['', 'https://example.com/image.png','/etf-assets/schd.ko.og.png'])assert.equal(publicationSubmissionSchema.safeParse({editions:[{...entry,coverImage}]}).success,true,coverImage);
+});

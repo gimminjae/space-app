@@ -22,13 +22,18 @@ export function publicationReadingMinutes(doc: Pick<Publication,'content'|'local
   if(typeof stated==='number'&&stated>0)return String(stated);
   return String(Math.max(1,Math.ceil(doc.locale==='ko'?doc.content.length/550:doc.content.trim().split(/\s+/).length/180)));
 }
+function validCover(value:string){
+  if(!value)return true;
+  if(/^\/(?:etf|learn)-assets\/[a-z0-9][a-z0-9.-]*\.(?:png|svg|jpg|webp)$/i.test(value)&&!value.includes('..'))return true;
+  try{const url=new URL(value);return url.protocol==='https:'&&!!url.hostname&&!url.username&&!url.password;}catch{return false;}
+}
 const editionSchema=z.object({
   locale:z.enum(['ko','en']),title:z.string().trim().min(2).max(150),
   content:z.string().trim().min(80).max(200000),summary:z.string().trim().max(500).default(''),
   seoTitle:z.string().trim().max(200).default(''),author:z.string().trim().min(1).max(80).default('Contributor'),
   tags:z.array(z.string().trim().min(1).max(40)).max(12).default([]),
   sources:z.array(z.url().refine(value=>value.startsWith('https://'),'Use HTTPS source URLs.')).max(20).default([]),
-  coverImage:z.string().max(2000).refine(value=>!value||/^https:\/\//.test(value)||/^\/(?:etf-assets|learn-assets|publication-assets)\/[a-z0-9./_-]+$/i.test(value),'Use an HTTPS image URL.').default(''),
+  coverImage:z.string().max(2000).refine(validCover,'Use a valid HTTPS image URL or an existing illustration path.').default(''),
 }).strict();
 export const publicationSubmissionSchema=z.object({
   kind:z.enum(['article','etf','lesson']).default('article'),
