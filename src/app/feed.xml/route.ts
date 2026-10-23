@@ -1,8 +1,3 @@
-import { etfFeedItems } from '@/lib/etf-feed';
-import { contentOnly } from '@/lib/platform-mode';
-import {lessonFeedItems} from '@/lib/learn-feed';
-import {allPublicPosts} from '@/lib/server/posts';
-import {site,absolute,postPath,xmlEscape as esc} from '@/lib/site';
-import {markdownHtml} from '@/lib/markdown-html';
+import {publicationFeed} from '@/lib/server/publication-feed';
 export const dynamic='force-dynamic';
-export async function GET(){const posts=(contentOnly?[]:await allPublicPosts()).sort((a,b)=>new Date(b.published_at!).getTime()-new Date(a.published_at!).getTime()).slice(0,20);const items=await Promise.all(posts.map(async p=>`<item><title>${esc(p.title)}</title><link>${esc(absolute(postPath(p)))}</link><guid isPermaLink="true">${esc(absolute(postPath(p)))}</guid><pubDate>${new Date(p.published_at!).toUTCString()}</pubDate><description>${esc(p.summary)}</description><content:encoded>${esc(await markdownHtml(p.content.replaceAll('](/media/',`](${absolute('/media/')}`)))}</content:encoded></item>`));const [courseItems,etfItems]=await Promise.all([lessonFeedItems('ko'),etfFeedItems('ko')]);return new Response(`<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>space</title><link>${esc(site.url)}</link><description>${esc(site.description)}</description><language>ko</language>${etfItems.join('')}${courseItems.join('')}${items.join('')}</channel></rss>`,{headers:{'Content-Type':'application/rss+xml; charset=utf-8','Cache-Control':'no-store'}});}
+export async function GET(){return new Response(await publicationFeed('ko'),{headers:{'Content-Type':'application/rss+xml; charset=utf-8','Cache-Control':'no-store'}});}

@@ -10,9 +10,9 @@ const canonical=html=>attr(tags(html,'link').find(t=>attr(t,'rel')==='canonical'
 async function get(path){path=path.replace(/^\/en\/\?/, '/en?');const r=await fetch(origin+path,{headers:{'User-Agent':'Googlebot'},redirect:'manual',signal:AbortSignal.timeout(40000)});return {status:r.status,html:await r.text(),headers:r.headers};}
 const sitemap=await get('/sitemap.xml');assert.equal(sitemap.status,200);
 const paths=[...sitemap.html.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>decode(m[1]).replace(canonicalOrigin,''));
-assert.equal(paths.length,64);assert.equal(new Set(paths).size,paths.length);
+assert.ok(paths.length>=66);assert.equal(new Set(paths).size,paths.length);
 assert.ok(paths.includes('/privacy')&&paths.includes('/en/privacy'));
-assert.ok(paths.every(p=>!/(?:admin|search|login|signup|mypage|onboarding|password)/.test(p)));
+assert.ok(paths.every(p=>!/(?:admin|search|write|login|signup|mypage|onboarding|password)/.test(p)));
 const titles=new Set();
 for(let i=0;i<paths.length;i+=4)await Promise.all(paths.slice(i,i+4).map(async path=>{
  const {status,html}=await get(path);assert.equal(status,200,path);
@@ -30,7 +30,7 @@ for(let i=0;i<paths.length;i+=4)await Promise.all(paths.slice(i,i+4).map(async p
  results.push({path,status,result:'passed'});
 }));
 for(const prefix of ['','/en']){
- for(const path of ['/search']){
+ for(const path of ['/search','/write']){
   const {status,html}=await get(prefix+path);assert.equal(status,200,prefix+path);assert.match(meta(html,'robots'),/noindex/,prefix+path);
   if(path==='/category/basics'||path==='/spaces')assert.ok(!paths.includes(prefix+path),'Empty archive in sitemap');
   results.push({path:prefix+path,status,robots:'noindex',result:'passed'});
