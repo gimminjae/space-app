@@ -28,6 +28,8 @@ export async function proxy(request:NextRequest){
   await client.auth.getClaims();
  }
  if(!shared)response.cookies.set(localeCookie,locale,{httpOnly:true,secure:process.env.NODE_ENV==='production',sameSite:'lax',path:'/',maxAge:365*24*60*60});
+ // Public illustrations use the Storage route's cache policy; they do not depend on cookies.
+ if(/^\/(?:learn|etf)-assets\/[a-z0-9][a-z0-9.-]*\.(?:png|svg|jpg|webp)$/i.test(path))return response;
  response.headers.set('Cache-Control','private, no-store, max-age=0');
  response.headers.set('Netlify-CDN-Cache-Control','no-store');
  response.headers.set('Vary','Cookie');
