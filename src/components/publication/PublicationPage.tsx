@@ -8,8 +8,8 @@ import learnStyles from '@/components/learn/learn.module.css';
 import {getI18n,localizedMetadata} from '@/lib/i18n/server';
 import {localizePath} from '@/lib/i18n/routing';
 import {absolute,slugify} from '@/lib/site';
-import {collectionPath,publicationPath,publicationReadingMinutes,type PublicationKind} from '@/lib/publication';
-import {getPublication,listPublications,collectionText} from '@/lib/server/publications';
+import {documentCollectionPath,isBriefingCategory,briefingLabel,publicationPath,publicationReadingMinutes,type PublicationKind} from '@/lib/publication';
+import {getPublication,listPublications,listBriefings,collectionText} from '@/lib/server/publications';
 
 export async function publicationMetadata(kind:PublicationKind,slug:string):Promise<Metadata>{
  const {locale}=await getI18n();const doc=await getPublication(kind,slug,locale);if(!doc)notFound();
@@ -24,21 +24,22 @@ export async function publicationMetadata(kind:PublicationKind,slug:string):Prom
 export default async function PublicationPage({kind,slug}:{kind:PublicationKind;slug:string}){
  const {locale,date,t}=await getI18n();const doc=await getPublication(kind,slug,locale);if(!doc)notFound();
  const isSeries=kind==='lesson'||kind==='etf';
- const [siblings,other,text]=await Promise.all([listPublications(kind,locale),getPublication(kind,slug,locale==='ko'?'en':'ko'),isSeries?collectionText(kind,locale):Promise.resolve(null)]);
+ const [siblings,other,text]=await Promise.all([isBriefingCategory(doc.metadata.category)?listBriefings(doc.metadata.category,locale):listPublications(kind,locale),getPublication(kind,slug,locale==='ko'?'en':'ko'),isSeries?collectionText(kind,locale):Promise.resolve(null)]);
  const index=siblings.findIndex(item=>item.id===doc.id),previous=siblings[index-1],next=siblings[index+1];
- const path=collectionPath(kind),label=text?.label||(locale==='ko'?'아티클':'Articles');
+ const path=documentCollectionPath(doc),label=isBriefingCategory(doc.metadata.category)?briefingLabel(doc.metadata.category,locale):text?.label||(locale==='ko'?'아티클':'Articles');
  const url=absolute(publicationPath(doc));
  const headings=[...doc.content.matchAll(/^#{1,2}\s+(.+)$/gm)].map((match,index)=>{const title=match[1].replace(/[*_`]/g,'');return{text:title,id:doc.metadata.anchors?.[title]||`${slugify(title)}-${index}`};});
  const structured={'@context':'https://schema.org','@graph':[
-  {'@type':kind==='page'?(slug==='about'?'AboutPage':'WebPage'):'Article','@id':`${url}#article`,url,mainEntityOfPage:url,headline:doc.title,description:doc.summary,inLanguage:locale,datePublished:doc.published_at,dateModified:doc.updated_at,
+  {'@type':kind==='page'?(slug==='about'?'AboutPage':'WebPage'):'Article','@id':`${url}#article`,url,mainEntityOfPage:url,headline:doc.title,description:doc.summary,inLanguage:locale,...(isBriefingCategory(doc.metadata.category)?{articleSection:briefingLabel(doc.metadata.category,locale),temporalCoverage:doc.metadata.sessionDate}:{}),datePublished:doc.published_at,dateModified:doc.updated_at,
    author:{'@type':doc.origin==='editorial'?'Organization':'Person',name:doc.author,...(doc.origin==='editorial'?{url:absolute('/about')}:{})},publisher:{'@type':'Organization',name:'space',url:absolute('/')},image:[absolute(doc.metadata.ogImage||'/og.png')],keywords:doc.tags.join(', '),...(isSeries?{isPartOf:{'@type':'CreativeWorkSeries','@id':absolute(`${localizePath(path,locale)}#series`),name:text?.name,url:absolute(localizePath(path,locale))}}:{})},
   {'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'space',item:absolute(localizePath('/',locale))},...(kind==='page'?[]:[{'@type':'ListItem',position:2,name:label,item:absolute(localizePath(path,locale))}]),{'@type':'ListItem',position:kind==='page'?2:3,name:doc.title,item:url}]}
  ]};
  if(kind==='page')return <section className={styles.about}><p className={styles.eyebrow}>{slug==='about'?'ABOUT SPACE':'PRIVACY'}</p><h1>{doc.title}</h1><Markdown content={doc.content} anchors={doc.metadata.anchors}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(structured).replace(/</g,'\\u003c')}}/></section>;
  return <article className={styles.article}>
   <header className={styles.articleHeader}>
-   <nav aria-label={locale==='ko'?'현재 위치':'Breadcrumb'} className={styles.breadcrumb}><Link href="/">space</Link><span>/</span><Link href={path}>{label}</Link><span>/</span><span>{doc.sort_order}</span></nav>
-   <p className={learnStyles.kicker}>{text?.name||label} · {String(doc.sort_order).padStart(2,'0')} / {siblings.length}</p>
+   <nav aria-label={locale==='ko'?'현재 위치':'Breadcrumb'} className={styles.breadcrumb}><Link href="/">space</Link><span>/</span><Link href={path}>{label}</Link><span>/</span><span>{isSeries?doc.sort_order:doc.title}</span></nav>
+   <p className={learnStyles.kicker}>{text?.name||label}{isSeries?` · ${String(doc.sort_order).padStart(2,'0')} / ${siblings.length}`:''}</p>
+   {typeof doc.metadata.sessionDate==='string'&&<p className={learnStyles.meta}>{locale==='ko'?'거래일':'Trading session'}: {String(doc.metadata.sessionDate)}{doc.metadata.dataAsOf?` · ${locale==='ko'?'자료 기준':'Data as of'}: ${String(doc.metadata.dataAsOf)}`:''}</p>}
    <h1>{doc.title}</h1><p className={styles.articleSummary}>{doc.summary}</p>
    <div className={styles.articleMeta}><span>{doc.author}</span><time dateTime={doc.published_at}>{date(doc.published_at)}</time><span>{publicationReadingMinutes(doc)}{locale==='ko'?'분 읽기':' min read'}</span></div>
    {doc.origin==='open'&&<p className={learnStyles.meta}>{locale==='ko'?'공개 작성 글 · 발행 전 운영자 검토를 거치지 않은 제출 글입니다.':'Open submission · Published without prior editorial review.'}</p>}

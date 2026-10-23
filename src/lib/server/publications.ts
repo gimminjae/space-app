@@ -31,3 +31,5 @@ export async function searchPublications(query:string,locale:Locale){
  const terms=query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
  return(await allPublications(locale)).filter(doc=>doc.kind!=='page'&&terms.every(term=>`${doc.title} ${doc.summary} ${doc.tags.join(' ')} ${doc.content}`.toLocaleLowerCase().includes(term)));
 }
+
+export async function listBriefings(category:string,locale:Locale){return(await listPublications('article',locale)).filter(d=>d.metadata.category===category).sort((a,b)=>String(b.metadata.sessionDate||b.published_at).localeCompare(String(a.metadata.sessionDate||a.published_at)));}

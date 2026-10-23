@@ -5,7 +5,7 @@ import {absolute} from '@/lib/site';
 export const dynamic='force-dynamic';
 const headers={'Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow'};
 const reply=(value:unknown,status=200,extra:Record<string,string>={})=>Response.json(value,{status,headers:{...headers,...extra}});
-export async function GET(){return reply({endpoint:'/api/publish',method:'POST',authentication:'none',publishesImmediately:true,limits:{perClient:20,windowMinutes:15,maxBodyBytes:1500000},example:{kind:'article',slug:'my-first-article',idempotencyKey:'a054c391-cd4d-4c46-bad3-1be6ae5764b9',editions:[{locale:'ko',title:'글 제목',author:'작성자',summary:'글의 요약',content:'80자 이상의 Markdown 본문',tags:['경제'],sources:[]}]},notes:['One or two editions (ko/en) per request.','Use the same idempotencyKey for retries of the same content.','Existing articles cannot be edited or deleted by this endpoint.']});}
+export async function GET(){return reply({endpoint:'/api/publish',method:'POST',authentication:'none',publishesImmediately:true,limits:{perClient:20,windowMinutes:15,maxBodyBytes:1500000},example:{kind:'article',slug:'my-first-article',idempotencyKey:'a054c391-cd4d-4c46-bad3-1be6ae5764b9',editions:[{locale:'ko',title:'글 제목',author:'작성자',summary:'글의 요약',content:'80자 이상의 Markdown 본문',tags:['경제'],sources:[]}]},briefingCategories:['us-market-briefing','kr-market-briefing'],notes:['Use kind article, category and sessionDate YYYY-MM-DD for market briefings. The slug is category-sessionDate.','One or two editions (ko/en) per request.','Use the same idempotencyKey for retries of the same content.','Existing articles cannot be edited or deleted by this endpoint.']});}
 export async function POST(request:Request){
  if(!adminDatabaseConfigured())return reply({error:'작성 기능의 연결 설정을 확인하고 있습니다.'},503);
  if(!request.headers.get('content-type')?.toLowerCase().startsWith('application/json'))return reply({error:'application/json 형식으로 보내 주세요.'},415);
@@ -22,7 +22,7 @@ export async function POST(request:Request){
  const value=parsed.data,headerKey=request.headers.get('idempotency-key');
  const key=headerKey||value.idempotencyKey||randomUUID();
  if(!/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(key))return reply({error:'요청 식별자는 UUID 형식이어야 합니다.'},400);
- const slug=value.slug||`post-${key}`,entries=submissionEntries(value,slug);
+ const slug=value.category?`${value.category}-${value.sessionDate}`:value.slug||`post-${key}`,entries=submissionEntries(value,slug);
  if(entries.some(e=>e.content.length<80))return reply({error:'제목을 제외한 본문을 80자 이상 작성해 주세요.'},400);
  const fingerprint=createHash('sha256').update(JSON.stringify(entries)).digest('hex');
  const ip=request.headers.get('x-nf-client-connection-ip')||'shared';

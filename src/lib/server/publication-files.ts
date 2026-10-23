@@ -9,7 +9,7 @@ export async function publicationDownload(kind:string,locale:string,file:string)
  const sources=doc.origin==='open'&&doc.metadata.sources?.length?`\n\n## ${locale==='ko'?'참고 자료':'Sources'}\n${doc.metadata.sources.map(s=>`- ${s}`).join('\n')}`:'';
  return new Response(`# ${doc.title}\n\n${doc.content}${sources}\n`,{headers:{'Content-Type':'text/markdown; charset=utf-8','Content-Disposition':`attachment; filename="article.md"; filename*=UTF-8''${encodeURIComponent(doc.slug)}.${locale}.md`,'Cache-Control':'no-store','X-Robots-Tag':'noindex','X-Content-Type-Options':'nosniff'}});
 }
-export async function publicationAsset(folder:'learn-assets'|'etf-assets',file:string){
+export async function publicationAsset(folder:'learn-assets'|'etf-assets'|'briefing-assets',file:string){
  if(!/^[a-z0-9][a-z0-9.-]*\.(?:png|svg|jpg|webp)$/i.test(file)||file.includes('..'))return new Response(null,{status:404});
  const {data,error}=await db(true).storage.from(process.env.SUPABASE_PUBLICATION_BUCKET||'space-publication-assets').download(`${folder}/${file}`);
  if(error){return new Response(null,{status:error.message.toLowerCase().includes('not found')||String((error as {statusCode?:string}).statusCode)==='404'?404:503,headers:{'Cache-Control':'no-store'}});}

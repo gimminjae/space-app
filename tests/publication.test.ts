@@ -51,3 +51,11 @@ test('cover images cannot break article metadata or the sitemap',()=>{
  for(const coverImage of ['https://','https://[invalid','javascript:alert(1)','//evil.invalid/a.png','/etf-assets/../../about','https://user:pass@example.com/a.png'])assert.equal(publicationSubmissionSchema.safeParse({editions:[{...entry,coverImage}]}).success,false,coverImage);
  for(const coverImage of ['', 'https://example.com/image.png','/etf-assets/schd.ko.og.png'])assert.equal(publicationSubmissionSchema.safeParse({editions:[{...entry,coverImage}]}).success,true,coverImage);
 });
+
+test('briefing metadata is date-bound and cannot be assigned to unrelated content',()=>{
+ const editions=[{locale:'ko',title:'브리핑 검증',content:'오늘의 경제와 시장을 설명합니다. '.repeat(20),coverImage:'/briefing-assets/market.ko.png'}];
+ const sample={kind:'article',category:'us-market-briefing',sessionDate:'2026-10-22',dataAsOf:'2026-10-23T08:30:00+09:00',editions};
+ const value=publicationSubmissionSchema.parse(sample),entry=submissionEntries(value,'us-market-briefing-2026-10-22')[0];
+ assert.equal(entry.metadata.category,'us-market-briefing');assert.equal(entry.metadata.sessionDate,'2026-10-22');
+ for(const change of [{kind:'etf'},{sessionDate:undefined},{sessionDate:'2026-02-30'},{slug:'misleading-date'},{category:'made-up-market'},{category:undefined}])assert.equal(publicationSubmissionSchema.safeParse({...sample,...change}).success,false);
+});
